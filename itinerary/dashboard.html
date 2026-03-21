@@ -458,6 +458,124 @@
       .stamp-grid { grid-template-columns: 1fr; }
     }
 
+    /* ── DESTINATION CARDS ── */
+    .dest-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-bottom: 32px;
+    }
+    .dest-card {
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--card);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: box-shadow 0.2s, transform 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+    .dest-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.10); transform: translateY(-2px); }
+    .dest-card.tbd { opacity: 0.7; border-style: dashed; }
+    .dest-img-wrap {
+      position: relative;
+      height: 180px;
+      overflow: hidden;
+      background: #d0cec8;
+    }
+    .dest-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s;
+    }
+    .dest-card:hover .dest-img { transform: scale(1.03); }
+    .dest-img-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.55) 100%);
+      pointer-events: none;
+    }
+    .dest-img-badges {
+      position: absolute;
+      bottom: 10px;
+      left: 12px;
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+    .dest-day-badge {
+      background: rgba(255,255,255,0.92);
+      color: var(--text);
+      font-size: 10px;
+      font-weight: 700;
+      border-radius: 4px;
+      padding: 2px 7px;
+    }
+    .dest-region-badge {
+      font-size: 10px;
+      font-weight: 700;
+      color: white;
+      border-radius: 4px;
+      padding: 2px 7px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .dest-body {
+      padding: 14px 16px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex: 1;
+    }
+    .dest-name {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.3px;
+    }
+    .dest-desc {
+      font-size: 12px;
+      color: #5a5048;
+      line-height: 1.55;
+    }
+    .dest-facts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    .dest-fact {
+      background: #f0ede8;
+      border-radius: 4px;
+      padding: 2px 8px;
+      font-size: 11px;
+      color: #5a5048;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+    .dest-tips {
+      border-top: 1px solid var(--border);
+      padding-top: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .dest-tip {
+      font-size: 11px;
+      color: var(--muted);
+      display: flex;
+      gap: 5px;
+      align-items: flex-start;
+      line-height: 1.4;
+    }
+    .dest-tip::before { content: '💡'; flex-shrink: 0; font-size: 11px; }
+
+    @media (max-width: 1024px) { .dest-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 768px)  { .dest-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px)  { .dest-grid { grid-template-columns: 1fr; } }
+
     /* ── FOOTER ── */
     .footer {
       text-align: center;
@@ -602,6 +720,312 @@
       <div class="legend-item"><div class="legend-dot" style="background:#bbb"></div> TBD</div>
     </div>
   </div>
+
+  <!-- ═══════════════════════════════════════════ DESTINATIONS -->
+  <div class="section-title">Destinations</div>
+  <div class="dest-grid">
+
+    <!-- Sapporo -->
+    <div class="dest-card">
+      <div class="dest-img-wrap">
+        <img class="dest-img" src="https://source.unsplash.com/800x400/?sapporo,japan,city" alt="Sapporo" loading="lazy" onerror="this.style.display='none'">
+        <div class="dest-img-overlay"></div>
+        <div class="dest-img-badges">
+          <span class="dest-day-badge">Days 1–3</span>
+          <span class="dest-region-badge" style="background:var(--sky)">City</span>
+        </div>
+      </div>
+      <div class="dest-body">
+        <div class="dest-name">Sapporo</div>
+        <div class="dest-desc">Hokkaido's cosmopolitan capital balances city energy with mountain proximity. Odori Park bisects the urban grid and transforms each summer into one of Japan's largest beer festival grounds. World-class ramen, dairy, and seafood at every turn.</div>
+        <div class="dest-facts">
+          <span class="dest-fact">🍜 Miso ramen birthplace</span>
+          <span class="dest-fact">🍺 Beer Garden from Jul 18</span>
+          <span class="dest-fact">🚃 40 min from CTS airport</span>
+        </div>
+        <div class="dest-tips">
+          <div class="dest-tip">Buy a stamp notebook (スタンプ帳) at a 100-yen store on Day 1 — you'll fill it fast.</div>
+          <div class="dest-tip">Ramen Alley (Susukino) is steps from most hotels — perfect for an easy arrival dinner.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Otaru -->
+    <div class="dest-card">
+      <div class="dest-img-wrap">
+        <img class="dest-img" src="https://source.unsplash.com/800x400/?otaru,canal,japan" alt="Otaru Canal" loading="lazy" onerror="this.style.display='none'">
+        <div class="dest-img-overlay"></div>
+        <div class="dest-img-badges">
+          <span class="dest-day-badge">Day 3 (day trip)</span>
+          <span class="dest-region-badge" style="background:var(--sky)">Port Town</span>
+        </div>
+      </div>
+      <div class="dest-body">
+        <div class="dest-name">Otaru</div>
+        <div class="dest-desc">A 35-minute train from Sapporo drops you into a beautifully preserved 1920s port town. Gas-lit canals, Meiji-era brick warehouses, glassblowing studios, and some of Hokkaido's freshest seafood make this the ideal first excursion.</div>
+        <div class="dest-facts">
+          <span class="dest-fact">🏛 Preserved canal district</span>
+          <span class="dest-fact">🔮 Glassblowing &amp; music boxes</span>
+          <span class="dest-fact">🥃 Nikka Yoichi 30 min away</span>
+        </div>
+        <div class="dest-tips">
+          <div class="dest-tip">Visit Nikka Whisky Yoichi Distillery — free museum, free tastings, almost no tourists. Easily the best 2 hours near Otaru.</div>
+          <div class="dest-tip">Grab Kita no Aisu soft serve near the canal before the train back — open since 1978, velvety Hokkaido milk ice cream.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Furano / Biei -->
+    <div class="dest-card">
+      <div class="dest-img-wrap">
+        <img class="dest-img" src="https://source.unsplash.com/800x400/?lavender,purple,field" alt="Furano lavender" loading="lazy" onerror="this.style.display='none'">
+        <div class="dest-img-overlay"></div>
+        <div class="dest-img-badges">
+          <span class="dest-day-badge">Days 4–5</span>
+          <span class="dest-region-badge" style="background:var(--lavender)">Lavender ★★</span>
+        </div>
+      </div>
+      <div class="dest-body">
+        <div class="dest-name">Furano &amp; Biei</div>
+        <div class="dest-desc">Mid-July is peak lavender season — Farm Tomita's purple rows against rolling hills is one of Japan's most iconic landscapes. Biei adds patchwork crop fields and the surreal cobalt Blue Pond, featured as an Apple OS X wallpaper.</div>
+        <div class="dest-facts">
+          <span class="dest-fact">🌸 Peak bloom mid-July</span>
+          <span class="dest-fact">🔵 Biei Blue Pond</span>
+          <span class="dest-fact">🚂 Norokko train option</span>
+        </div>
+        <div class="dest-tips">
+          <div class="dest-tip">Arrive at Farm Tomita before 9am — tour buses arrive at 10am and the crowds are relentless after that.</div>
+          <div class="dest-tip">The Blue Pond shifts color with the light — early morning gives the most vivid cobalt blue.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jozankei -->
+    <div class="dest-card">
+      <div class="dest-img-wrap">
+        <img class="dest-img" src="https://source.unsplash.com/800x400/?onsen,japanese,ryokan" alt="Jozankei Onsen" loading="lazy" onerror="this.style.display='none'">
+        <div class="dest-img-overlay"></div>
+        <div class="dest-img-badges">
+          <span class="dest-day-badge">Night 6</span>
+          <span class="dest-region-badge" style="background:var(--lavender)">Private Ryokan ★</span>
+        </div>
+      </div>
+      <div class="dest-body">
+        <div class="dest-name">Jozankei Onsen</div>
+        <div class="dest-desc">Hokkaido's largest hot spring resort, tucked in a mountain river gorge 50 minutes from Sapporo. A private ryokan here with your own outdoor rotenburo and a multi-course kaiseki dinner is the trip's first true luxury pause.</div>
+        <div class="dest-facts">
+          <span class="dest-fact">♨️ Private rotenburo</span>
+          <span class="dest-fact">🍱 Kaiseki dinner</span>
+          <span class="dest-fact">📍 50 min from Sapporo</span>
+        </div>
+        <div class="dest-tips">
+          <div class="dest-tip">Book Yurakusoan or Kasho Gyoen via IKYU.com 3–5 months ahead — private in-room baths sell out first.</div>
+          <div class="dest-tip">Yurakusoan includes complimentary post-bath ramen for guests — surprisingly excellent and a great way to end the evening.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Asahikawa -->
+    <div class="dest-card">
+      <div class="dest-img-wrap">
+        <img class="dest-img" src="https://source.unsplash.com/800x400/?japan,ramen,noodle" alt="Asahikawa" loading="lazy" onerror="this.style.display='none'">
+        <div class="dest-img-overlay"></div>
+        <div class="dest-img-badges">
+          <span class="dest-day-badge">Day 7</span>
+          <span class="dest-region-badge" style="background:var(--amber)">Ramen + Zoo</span>
+        </div>
+      </div>
+      <div class="dest-body">
+        <div class="dest-name">Asahikawa</div>
+        <div class="dest-desc">Hokkaido's second city is famous for its rich shoyu ramen with a distinctive lard float — a different style entirely from Sapporo's miso. Asahiyama Zoo's behavioral exhibits (penguins flying underwater, polar bears above your head) redefined zoo design worldwide.</div>
+        <div class="dest-facts">
+          <span class="dest-fact">🍜 Shoyu ramen capital</span>
+          <span class="dest-fact">🦁 Asahiyama Zoo</span>
+          <span class="dest-fact">🚪 Gateway to Daisetsuzan</span>
+        </div>
+        <div class="dest-tips">
+          <div class="dest-tip">Ramen Shishio is a 15-seat hidden dive that locals rate above the famous Ramen Mura tourist complex — seek it out.</div>
+          <div class="dest-tip">The zoo is worth the morning stop — immersive, uncrowded by mid-summer, and genuinely world-class.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Daisetsuzan / Sounkyo -->
+    <div class="dest-card">
+      <div class="dest-img-wrap">
+        <img class="dest-img" src="https://source.unsplash.com/800x400/?gorge,cliffs,waterfall" alt="Sounkyo Gorge" loading="lazy" onerror="this.style.display='none'">
+        <div class="dest-img-overlay"></div>
+        <div class="dest-img-badges">
+          <span class="dest-day-badge">Days 8–9</span>
+          <span class="dest-region-badge" style="background:var(--forest)">National Park</span>
+        </div>
+      </div>
+      <div class="dest-body">
+        <div class="dest-name">Daisetsuzan &amp; Sounkyo</div>
+        <div class="dest-desc">Japan's largest national park (2,267 km²) of volcanic peaks and river gorges. Sounkyo's 100m columnar basalt cliffs and twin waterfalls are dramatic. Day 9 brings the ropeway up to Asahidake's alpine plateau — wildflowers above the treeline in late July.</div>
+        <div class="dest-facts">
+          <span class="dest-fact">🏔 Japan's largest NP</span>
+          <span class="dest-fact">💧 Twin waterfalls</span>
+          <span class="dest-fact">🌸 Alpine flowers peak late July</span>
+        </div>
+        <div class="dest-tips">
+          <div class="dest-tip">Don't skip the Asahidake Ropeway on Day 9 — the Sugatami Pond loop is a gentle 1–2hr walk at 1,600m with zero hiking experience required.</div>
+          <div class="dest-tip">Sounkyo Visitor Center has one of Hokkaido's most striking national park stamps — basalt cliffs design.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shiretoko -->
+    <div class="dest-card">
+      <div class="dest-img-wrap">
+        <img class="dest-img" src="https://source.unsplash.com/800x400/?wilderness,lake,forest,pristine" alt="Shiretoko" loading="lazy" onerror="this.style.display='none'">
+        <div class="dest-img-overlay"></div>
+        <div class="dest-img-badges">
+          <span class="dest-day-badge">Days 10–11</span>
+          <span class="dest-region-badge" style="background:var(--forest)">UNESCO ★★</span>
+        </div>
+      </div>
+      <div class="dest-body">
+        <div class="dest-name">Shiretoko Peninsula</div>
+        <div class="dest-desc">Japan's wildest corner — a UNESCO World Heritage peninsula where brown bears outnumber tourists and the coastline is completely inaccessible by road. Five Lakes, Kamuiwakka Hot Falls (a river you can soak in), and a coastal wildlife cruise are three of the trip's most memorable experiences.</div>
+        <div class="dest-facts">
+          <span class="dest-fact">🐻 Brown bears in the wild</span>
+          <span class="dest-fact">🌊 UNESCO coastline cruise</span>
+          <span class="dest-fact">♨️ Hot river at Kamuiwakka</span>
+        </div>
+        <div class="dest-tips">
+          <div class="dest-tip">Book the coastal boat cruise in advance — it accesses sea cliffs and waterfalls unreachable by land, and seats fill in summer.</div>
+          <div class="dest-tip">The Shiretoko World Heritage Conservation Center eki-stamp is the most sought-after in Hokkaido — don't miss it.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lake Akan -->
+    <div class="dest-card">
+      <div class="dest-img-wrap">
+        <img class="dest-img" src="https://source.unsplash.com/800x400/?crater,lake,japan,fog" alt="Lake Akan" loading="lazy" onerror="this.style.display='none'">
+        <div class="dest-img-overlay"></div>
+        <div class="dest-img-badges">
+          <span class="dest-day-badge">Night 12</span>
+          <span class="dest-region-badge" style="background:var(--lavender)">Private Ryokan ★★</span>
+        </div>
+      </div>
+      <div class="dest-body">
+        <div class="dest-name">Lake Akan</div>
+        <div class="dest-desc">A volcanic caldera lake home to marimo — perfectly spherical algae that are a Japanese natural monument. The Ainu Kotan village on the shore is the most authentic Indigenous cultural experience in Hokkaido, and the Hinanoza ryokan puts a private outdoor onsen on the lake's edge at your door.</div>
+        <div class="dest-facts">
+          <span class="dest-fact">🟢 Marimo algae spheres</span>
+          <span class="dest-fact">🏮 Ainu cultural village</span>
+          <span class="dest-fact">♨️ All suites private onsen</span>
+        </div>
+        <div class="dest-tips">
+          <div class="dest-tip">Akan Tsuruga Hinanoza sells out 5+ months ahead — set a reminder and book on IKYU.com the moment reservations open.</div>
+          <div class="dest-tip">Stay for the Ainu evening fire dance performance in Ainu Kotan — it runs most nights in summer and is genuinely moving.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Akan-Mashu Lakes -->
+    <div class="dest-card">
+      <div class="dest-img-wrap">
+        <img class="dest-img" src="https://source.unsplash.com/800x400/?caldera,volcanic,lake,mist" alt="Akan-Mashu" loading="lazy" onerror="this.style.display='none'">
+        <div class="dest-img-overlay"></div>
+        <div class="dest-img-badges">
+          <span class="dest-day-badge">Day 13</span>
+          <span class="dest-region-badge" style="background:var(--forest)">Caldera Lakes</span>
+        </div>
+      </div>
+      <div class="dest-body">
+        <div class="dest-name">Akan-Mashu Lakes</div>
+        <div class="dest-desc">A loop of three caldera lakes each with its own character — Lake Mashu (Japan's clearest, often fog-draped), Lake Kussharo (Japan's largest, with a beach where hot springs bubble up through the sand), and tiny Lake Onnetō, hidden and color-shifting at the base of Mt. Meakan.</div>
+        <div class="dest-facts">
+          <span class="dest-fact">🌫 Lake Mashu clarity record</span>
+          <span class="dest-fact">♨️ Kussharo DIY beach onsen</span>
+          <span class="dest-fact">🔵 Onnetō hidden gem</span>
+        </div>
+        <div class="dest-tips">
+          <div class="dest-tip">At Sunayu beach on Kussharo, just dig a hole — hot spring water fills it naturally. Bring a small towel and soak.</div>
+          <div class="dest-tip">Lake Mashu Observation Deck #1 gives the best angle. Both clear and foggy days are stunning in completely different ways.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kushiro -->
+    <div class="dest-card">
+      <div class="dest-img-wrap">
+        <img class="dest-img" src="https://source.unsplash.com/800x400/?marshland,wetland,reeds,crane" alt="Kushiro Wetlands" loading="lazy" onerror="this.style.display='none'">
+        <div class="dest-img-overlay"></div>
+        <div class="dest-img-badges">
+          <span class="dest-day-badge">Day 14</span>
+          <span class="dest-region-badge" style="background:var(--forest)">Wetlands</span>
+        </div>
+      </div>
+      <div class="dest-body">
+        <div class="dest-name">Kushiro &amp; Wetlands</div>
+        <div class="dest-desc">Japan's largest marshland preserves critical habitat for the endangered tancho crane and Ezo sika deer. A canoe tour paddles the Kushiro River at water level through tall reeds — a completely different perspective from any land-based wildlife experience.</div>
+        <div class="dest-facts">
+          <span class="dest-fact">🦢 Tancho crane habitat</span>
+          <span class="dest-fact">🛶 River canoe tours</span>
+          <span class="dest-fact">🐟 DIY kaisendon at Washo</span>
+        </div>
+        <div class="dest-tips">
+          <div class="dest-tip">Washo Market's DIY kaisendon is one of Japan's most unique market experiences — arrive by 10am for the widest selection of toppings.</div>
+          <div class="dest-tip">Kushiro Station's eki-stamp features the iconic tancho crane — one of the best-designed stamps on the route.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hakodate (TBD) -->
+    <div class="dest-card tbd">
+      <div class="dest-img-wrap">
+        <img class="dest-img" src="https://source.unsplash.com/800x400/?hakodate,japan,night" alt="Hakodate" loading="lazy" onerror="this.style.display='none'">
+        <div class="dest-img-overlay"></div>
+        <div class="dest-img-badges">
+          <span class="dest-day-badge">Day 14B ⚑ TBD</span>
+          <span class="dest-region-badge" style="background:#888">Decision Needed</span>
+        </div>
+      </div>
+      <div class="dest-body">
+        <div class="dest-name">Hakodate <span style="color:var(--muted);font-weight:400;font-size:12px">— TBD</span></div>
+        <div class="dest-desc">A historic port city with Japan's third-best night view from Mt. Hakodate. The star-shaped Goryokaku Fort, Meiji-era consulate buildings in Motomachi, and one of Japan's most legendary 5am morning markets (live squid fishing + immediate preparation) make this a strong case for inclusion.</div>
+        <div class="dest-facts">
+          <span class="dest-fact">🌃 Top 3 night view in Japan</span>
+          <span class="dest-fact">🌟 Goryokaku star fortress</span>
+          <span class="dest-fact">🦑 5am morning market</span>
+        </div>
+        <div class="dest-tips">
+          <div class="dest-tip">If you include Hakodate, take the shinkansen to Tokyo (~4 hrs from Shin-Hakodate-Hokuto) — no flight needed, and it's a beautiful ride.</div>
+          <div class="dest-tip">The 5am Asaichi Morning Market is worth setting an alarm for — it's uniquely atmospheric and has live squid you can catch yourself.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tokyo -->
+    <div class="dest-card">
+      <div class="dest-img-wrap">
+        <img class="dest-img" src="https://source.unsplash.com/800x400/?tokyo,japan,nakameguro" alt="Tokyo" loading="lazy" onerror="this.style.display='none'">
+        <div class="dest-img-overlay"></div>
+        <div class="dest-img-badges">
+          <span class="dest-day-badge">Days 15–16</span>
+          <span class="dest-region-badge" style="background:var(--sakura)">Tokyo Finale</span>
+        </div>
+      </div>
+      <div class="dest-body">
+        <div class="dest-name">Tokyo</div>
+        <div class="dest-desc">Two nights in the capital to decompress and eat well. Dinner at Cocon in Nakameguro — a 20-seat counter where a chef trained at Mirazur (3 Michelin stars) applies French technique to Japanese seasonal ingredients. Then a souvenir sweep through Asakusa, Ginza, and the Hokkaido Dosanko Plaza.</div>
+        <div class="dest-facts">
+          <span class="dest-fact">🍽 Cocon — book 2–4 wks ahead</span>
+          <span class="dest-fact">⛩ Asakusa &amp; Sensoji</span>
+          <span class="dest-fact">🛍 Hokkaido Dosanko Plaza</span>
+        </div>
+        <div class="dest-tips">
+          <div class="dest-tip">Book Cocon via Pocket Concierge — it's closed Wednesdays, so confirm your night doesn't land on one. Counter seats go fast.</div>
+          <div class="dest-tip">Hokkaido Dosanko Plaza (Yurakucho) stocks 1,200+ Hokkaido-exclusive products — go here for the best gifts and things you can't get at home.</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end dest-grid -->
 
   <!-- ═══════════════════════════════════════════ TIMELINE -->
   <div class="section-title">Day-by-Day</div>
