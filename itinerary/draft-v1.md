@@ -36,6 +36,7 @@ Sapporo (3 nights)
 - Easy arrival day — long flight from LAS, keep it simple
 - Check in, freshen up, walk Susukino
 - **Dinner:** Ramen Yokocho (Ramen Alley, Susukino) — try Sapporo miso ramen to start the trip right
+- 📮 **Stamp:** Sapporo Station (JR) — ask at the みどりの窓口 (green window / ticket counter); the Sapporo eki-stamp is one of the most detailed in Hokkaido
 
 ---
 
@@ -49,6 +50,7 @@ Sapporo (3 nights)
 - **Optional detour:** Makomanai Takino Cemetery — Moai stone heads + Tadao Ando's "Hill of the Buddha" emerging from a lavender field; one of Sapporo's most surprising hidden gems
 - **Evening:** Soup curry dinner — Soup Curry Garaku (the "quiet champion," tucked in an alley) or Aiiro
 - After dinner: Walk Susukino entertainment district; Okaeri Izakaya for drinks if energy allows
+- 📮 **Stamp:** Shiroi Koibito Park — stamp available at the park; Sapporo Beer Museum also has one at the entrance info desk
 
 ---
 
@@ -64,6 +66,7 @@ Sapporo (3 nights)
   - Aoyama Villa — Meiji-era herring baron's mansion; beautifully preserved, few tourists
 - **Before the train back:** Kita no Aisu soft serve stand (near the canal, open since 1978) — velvety Hokkaido milk ice cream
 - Return to Sapporo by evening
+- 📮 **Stamp:** Otaru Station (JR) — eki-stamp at the station counter; also check the Otaru Canal tourist information booth near the canal for a second tourist stamp
 
 ---
 
@@ -76,6 +79,7 @@ Sapporo (3 nights)
 - **Afternoon:** Shikisai no Oka (Hill of Colors) — curated flower fields in horizontal color rows; great photography even on the first day
 - **Evening:** Furano town dinner; Hokkaido dairy products, melon soft serve
 - Note: Lavender is in peak bloom right now — perfect timing
+- 📮 **Stamp:** Furano Station (JR) — eki-stamp at the counter; also Shikisai no Oka has a stamp at the main building
 
 ---
 
@@ -92,6 +96,7 @@ Sapporo (3 nights)
   - Biei Blue Pond (Shirogane Blue Pond) — vivid turquoise/blue pond; one of Japan's most-photographed spots; beautiful at dusk
 - **Optional:** Furano-Biei Norokko Train for part of the route — slow panoramic tourist train with lavender décor
 - **Evening:** Stay in Furano or Biei; lavender soft serve is mandatory
+- 📮 **Stamps:** Farm Tomita — one of the most beloved stamp stops in all of Hokkaido; they've offered a notebook stamp for decades; ask at the gift shop. Biei Station (JR) — eki-stamp at the counter; the Biei design is one of the prettiest in the region
 
 ---
 
@@ -122,6 +127,7 @@ Sapporo (3 nights)
 - **Afternoon:** Drive to Asahikawa (~1.5 hrs from Sapporo)
 - **Evening:** Asahikawa Ramen Village (Ramen Mura) — 8 legendary local shops; try the shoyu ramen with its distinctive lard float
   - Ask for Ramen Shishio specifically — a 15-seat hidden dive in the area; incredible
+- 📮 **Stamps:** Asahikawa Station (JR) — one of Hokkaido's main hub stations; eki-stamp at the みどりの窓口. Asahiyama Zoo — stamp available at the entrance gate
 
 ---
 
@@ -134,6 +140,7 @@ Sapporo (3 nights)
 - **Afternoon:** Sounkyo Gorge walk — flat, easy path through towering columnar basalt cliffs; Ryusei and Ginga waterfalls visible from the trail
 - **Optional:** Sounkyo Ropeway up to Kurodate plateau (~30 min ride; easy walking at the top)
 - **Evening:** Gorge-view onsen; kaiseki dinner at the ryokan
+- 📮 **Stamps:** Sounkyo Visitor Center — Daisetsuzan National Park stamp; one of the most striking park stamps in Hokkaido with the jagged basalt cliffs in the design. Also check the Sounkyo Ropeway station for a second stamp
 
 ---
 
@@ -146,6 +153,7 @@ Sapporo (3 nights)
 - No hiking experience needed; this is the ropeway + a gentle high-altitude stroll
 - **Afternoon:** Return to Sounkyo; Momijidani Trail (flat, 60–90 min along the gorge river) if energy allows
 - **Evening:** Onsen and a quiet dinner at the ryokan
+- 📮 **Stamp:** Asahidake Ropeway (Sugatami Station) — stamp available at the top station; the design features the volcanic peak and alpine terrain
 
 ---
 
@@ -157,6 +165,7 @@ Sapporo (3 nights)
 - **Afternoon:** Furepe Falls ("Tears of a Maiden") — 20-min flat forest trail; falls drop directly from a cliff into the sea; no crowds
 - **Evening:** Fresh seafood dinner in Utoro — you're in some of Japan's best seafood territory now
 - Note: Pick up rental car in Sounkyo or Asahikawa if switching vehicles
+- 📮 **Stamp:** Shiretoko World Heritage Conservation Center (Utoro) — national park stamp at the main visitor center; the Shiretoko UNESCO design is one of the most sought-after in Hokkaido
 
 ---
 
@@ -168,6 +177,7 @@ Sapporo (3 nights)
 - **Midday:** Kamuiwakka Hot Falls ★ — scramble up a river of naturally hot spring water cascading down a hillside; wade and soak in natural rock pools; one of Japan's most unusual experiences
 - **Afternoon:** Shiretoko coastal wildlife cruise (1.5–2 hrs) — boat tour along the inaccessible Shiretoko coastline; spot Steller's sea eagles, seals, and brown bears on shore ★
 - **Evening:** Seafood dinner; Utoro is known for excellent uni and crab
+- 📮 **Stamp:** Shiretoko Five Lakes visitor center — stamp at the trailhead building before the boardwalk; second stamp opportunity at the Shiretoko Goko Field House
 
 ---
 
@@ -179,6 +189,7 @@ Sapporo (3 nights)
 - **Drive to Lake Akan (~3 hrs)**
 - **Afternoon:** Ainu Kotan village ★ — the largest Ainu indigenous village in Japan; artisan craft shops, cultural performances, traditional food; the most authentic place in Hokkaido to engage with Ainu culture
 - **Evening:** Marimo exhibition aquarium (the rare spherical algae are a national natural monument); kaiseki dinner at Hinanoza; soak in your private outdoor onsen overlooking the lake
+- 📮 **Stamp:** Akan-Mashu National Park visitor center (Akanko Eco-Museum Center) — national park stamp; also check Ainu Kotan craft shops as some carry their own hand-carved stamps
 
 ---
 
@@ -192,6 +203,7 @@ Sapporo (3 nights)
   - **Lake Kussharo / Sunayu** — Japan's largest caldera lake; at Sunayu beach, dig a hole in the sand and hot spring water fills it naturally; soak in your own improvised outdoor onsen ★
   - **Lake Onnetō** (hidden gem) — tiny color-shifting caldera lake at the base of Mt. Meakan; changes between blue-green, jade, and silver; almost no tourists
 - **Evening:** Drive to Kushiro (~1.5 hrs); dinner at a local izakaya
+- 📮 **Stamps:** Lake Mashu Observation Deck (#1) — stamp at the visitor building; Lake Kussharo has a stamp at the Sunayu rest house near the beach
 
 ---
 
@@ -201,6 +213,7 @@ Sapporo (3 nights)
 
 - **Morning:** Kushiro Wetlands canoe tour ★ — paddle the Kushiro River through Japan's largest wetland; relaxed and scenic; realistic chance of seeing tancho cranes and Ezo sika deer from water level
 - **Midday:** Washo Market ★ — "do-it-yourself" kaisendon; buy a bowl of rice from the market entrance and pile it with uni, ikura, and crab from different vendor stalls; unique experience
+- 📮 **Stamps:** Kushiro Wetlands Hosooka Visitor Center — Kushiro-Shitsugen National Park stamp; also Kushiro Station (JR) eki-stamp at the counter — the crane design is iconic
 - **Afternoon:** HAKODATE DECISION POINT
 
 ---
@@ -216,6 +229,7 @@ Sapporo (3 nights)
   - Afternoon: Motomachi historic district (consulate buildings, churches) + Hakodate Park Ferris Wheel (Japan's oldest operating)
   - Evening: Mt. Hakodate night view by ropeway ★ (top 3 night views in Japan — go on a clear night)
   - **Exit:** Shinkansen from Shin-Hakodate-Hokuto → Tokyo (~4 hrs) — arrives at Tokyo Station; no need to fly
+  - 📮 **Stamps:** Hakodate Station (JR) — one of Hokkaido's most distinctive eki-stamps; also Fort Goryokaku Tower has a stamp at the observation desk
 - Night 15–16: Tokyo
 
 **Option B — Skip Hakodate:**
@@ -250,6 +264,7 @@ Sapporo (3 nights)
   - Look for: Edo Kiriko cut glass, fans, tenugui, ceramics, Ningyo-yaki sweets
   - Funawa Honten (imo-yokan sweet potato jelly, open since 1902)
   - Ame-shin amezaiku candy sculpting — uniquely Tokyo, very giftable
+  - 📮 **Stamp:** Sensoji Temple — goshuin (御朱印) available at the main hall for ¥300; requires a goshuin-cho notebook (sold at the temple). Tokyo Station — famous eki-stamp at the Marunouchi station office; the design features the iconic red-brick station facade
 - **Afternoon: Ginza** — high-end gifts
   - Ginza Six (underground food hall for premium packaged sweets)
   - Ginza Mitsukoshi (department store; impeccably wrapped Japanese food gifts)
@@ -309,3 +324,43 @@ Sapporo (3 nights)
    - Akan Hinanoza (Night 12): IKYU.com or hinanoza.com; 3–5 months ahead
 4. **Cocon reservation** — Pocket Concierge; 2–4 weeks before Tokyo dates; confirm it's not a Wednesday; decide Night 15 vs 16
 5. **Shiretoko Goko ground trails** — bear season guided requirement typically lifts mid-July; for a Jul 24 visit, solo hiking should be open; confirm closer to the trip
+
+---
+
+## 📮 Stamp Collecting Summary
+
+Japan has two main stamp traditions worth knowing about before you go:
+
+- **Eki-stamps (駅スタンプ)** — free stamps at JR train stations; ask at the ticket counter (みどりの窓口). Any notebook works.
+- **National park / attraction stamps** — free at visitor centers, ropeways, and tourist facilities. Any notebook works.
+- **Goshuin (御朱印)** — temple and shrine calligraphy stamps; ¥300–¥500 each; require a dedicated *goshuin-cho* notebook (sold at most temples). Sensoji in Tokyo is a great place to start one if you don't have one already.
+
+**Bring:** A blank notebook with reasonably thick pages (stamps can bleed through thin paper). Pick up a dedicated *stamp notebook (スタンプ帳)* at any souvenir shop or 100-yen store in Sapporo on Day 1 or 2.
+
+| Day | Location | Stamp |
+|---|---|---|
+| 1 | Sapporo Station | JR eki-stamp — detailed Hokkaido design |
+| 2 | Shiroi Koibito Park | Attraction stamp at the park |
+| 2 | Sapporo Beer Museum | Stamp at entrance info desk |
+| 3 | Otaru Station | JR eki-stamp |
+| 3 | Otaru Canal Tourist Info | Tourist stamp near the canal |
+| 4 | Furano Station | JR eki-stamp |
+| 4 | Shikisai no Oka | Stamp at main building |
+| 5 | Farm Tomita | Famous notebook stamp — ask at gift shop |
+| 5 | Biei Station | JR eki-stamp — one of the prettiest designs in the region |
+| 7 | Asahikawa Station | JR eki-stamp |
+| 7 | Asahiyama Zoo | Stamp at entrance gate |
+| 8 | Sounkyo Visitor Center | Daisetsuzan National Park stamp |
+| 8 | Sounkyo Ropeway | Stamp at ropeway station |
+| 9 | Asahidake Ropeway (top) | Stamp at Sugatami Station — volcanic peak design |
+| 10 | Shiretoko Conservation Center | UNESCO World Heritage stamp — highly sought after |
+| 11 | Shiretoko Five Lakes | Stamp at trailhead visitor building |
+| 12 | Akan-Mashu NP Visitor Center | National park stamp (Akanko Eco-Museum Center) |
+| 13 | Lake Mashu Obs. Deck #1 | Stamp at the visitor building |
+| 13 | Lake Kussharo / Sunayu | Stamp at the Sunayu rest house |
+| 14 | Kushiro Wetlands (Hosooka) | Kushiro-Shitsugen National Park stamp |
+| 14 | Kushiro Station | JR eki-stamp — iconic tancho crane design |
+| 14B | Hakodate Station (if visiting) | JR eki-stamp |
+| 14B | Goryokaku Tower (if visiting) | Stamp at observation desk |
+| 16 | Sensoji Temple, Asakusa | Goshuin (御朱印) — ¥300; requires goshuin-cho notebook |
+| 16 | Tokyo Station | JR eki-stamp — red-brick station facade design |
