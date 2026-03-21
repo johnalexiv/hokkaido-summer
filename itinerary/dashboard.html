@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hokkaido Summer 2026 — Itinerary Dashboard</title>
+  <style>
+    :root {
+      --lavender:   #9b7fbd;
+      --sky:        #4a9eca;
+      --forest:     #4a8c5c;
+      --amber:      #d4882a;
+      --sakura:     #c96a7a;
+      --slate:      #4a5568;
+      --bg:         #f7f5f0;
+      --card:       #ffffff;
+      --border:     #e2ddd6;
+      --text:       #2d2926;
+      --muted:      #7a7068;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* ── HEADER ── */
+    .header {
+      background: linear-gradient(135deg, #1a3a52 0%, #2d6a8f 50%, #3d8a6e 100%);
+      color: white;
+      padding: 32px 40px 28px;
+    }
+    .header h1 { font-size: 26px; font-weight: 700; letter-spacing: -0.5px; }
+    .header .sub { opacity: 0.8; margin-top: 4px; font-size: 15px; }
+
+    .header-meta {
+      display: flex;
+      gap: 24px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+    .meta-pill {
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* ── LAYOUT ── */
+    .main { padding: 28px 40px; max-width: 1400px; margin: 0 auto; }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    /* ── SECTION TITLES ── */
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ── CARDS ── */
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+    }
+    .card-title {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    /* ── STAT CARDS ── */
+    .stat-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px;
+      text-align: center;
+    }
+    .stat-card .number {
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 1;
+    }
+    .stat-card .label {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .stat-card .detail {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    /* ── ROUTE BAR ── */
+    .route-bar {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 28px;
+    }
+    .route-stops {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      flex-wrap: wrap;
+      row-gap: 8px;
+    }
+    .stop {
+      display: flex;
+      align-items: center;
+      gap: 0;
+    }
+    .stop-label {
+      background: var(--sky);
+      color: white;
+      border-radius: 6px;
+      padding: 5px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .stop-label.ryokan { background: var(--lavender); }
+    .stop-label.nature { background: var(--forest); }
+    .stop-label.food   { background: var(--amber); }
+    .stop-label.tokyo  { background: var(--sakura); }
+    .stop-label.travel { background: var(--slate); }
+    .stop-label.tbd    { background: #bbb; }
+    .arrow {
+      color: var(--muted);
+      font-size: 14px;
+      padding: 0 6px;
+    }
+
+    /* ── TIMELINE ── */
+    .timeline { display: flex; flex-direction: column; gap: 4px; }
+
+    .day-row {
+      display: grid;
+      grid-template-columns: 90px 130px 1fr auto;
+      align-items: start;
+      gap: 0;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--card);
+    }
+    .day-row:hover { border-color: #b0a898; }
+
+    .day-num {
+      padding: 10px 12px;
+      font-weight: 800;
+      font-size: 13px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1px;
+      min-height: 52px;
+    }
+    .day-num .d { font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.8); }
+    .day-num .n { font-size: 17px; line-height: 1; }
+
+    .region-tag {
+      padding: 10px 12px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      display: flex;
+      align-items: center;
+      border-right: 1px solid var(--border);
+      color: var(--slate);
+      background: #f9f8f6;
+    }
+
+    .day-content {
+      padding: 10px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .day-title {
+      font-weight: 700;
+      font-size: 13px;
+    }
+    .day-highlights {
+      font-size: 12px;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .highlight-tag {
+      background: #f0ede8;
+      border-radius: 4px;
+      padding: 1px 7px;
+      font-size: 11px;
+      color: #5a5048;
+    }
+    .star { color: var(--amber); }
+
+    .day-accom {
+      padding: 10px 12px;
+      font-size: 11px;
+      color: var(--muted);
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 2px;
+      min-width: 140px;
+      border-left: 1px solid var(--border);
+    }
+    .day-accom .accom-name { font-weight: 600; color: var(--text); font-size: 11px; }
+    .accom-badge {
+      display: inline-block;
+      border-radius: 3px;
+      padding: 1px 6px;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .badge-ryokan { background: #ede8f7; color: var(--lavender); }
+    .badge-city   { background: #e8f0f7; color: var(--sky); }
+    .badge-hotel  { background: #eef5ee; color: var(--forest); }
+    .badge-travel { background: #f0ede8; color: var(--slate); }
+    .badge-tbd    { background: #f5f5f5; color: #999; }
+
+    /* Region colors for day number background */
+    .bg-sapporo  { background: #2d6a8f; color: white; }
+    .bg-otaru    { background: #3d7ab0; color: white; }
+    .bg-furano   { background: #9b7fbd; color: white; }
+    .bg-jozankei { background: #7b5fa8; color: white; }
+    .bg-asahi    { background: #d4882a; color: white; }
+    .bg-daisestu { background: #4a8c5c; color: white; }
+    .bg-shireoko { background: #2d7a5a; color: white; }
+    .bg-akan     { background: #3d6b8a; color: white; }
+    .bg-kushiro  { background: #4a7a70; color: white; }
+    .bg-hakodate { background: #888; color: white; }
+    .bg-tokyo    { background: #c96a7a; color: white; }
+    .bg-transit  { background: #4a5568; color: white; }
+
+    /* ── FESTIVALS ── */
+    .festival-grid { display: flex; flex-direction: column; gap: 8px; }
+    .festival-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .fest-status {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      flex-shrink: 0;
+    }
+    .fest-hit  { background: #d4edda; color: #2d7a3a; }
+    .fest-miss { background: #f8d7da; color: #8a3040; }
+    .fest-info { flex: 1; }
+    .fest-name { font-weight: 600; font-size: 13px; }
+    .fest-date { font-size: 11px; color: var(--muted); }
+    .fest-note { font-size: 11px; color: var(--muted); }
+
+    /* ── OPEN ITEMS ── */
+    .open-items { display: flex; flex-direction: column; gap: 8px; }
+    .open-item {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 10px 12px;
+      border-radius: 7px;
+      border: 1px solid var(--border);
+      background: #fffdf9;
+    }
+    .open-item.urgent { border-left: 3px solid #e05a5a; }
+    .open-item.normal { border-left: 3px solid var(--amber); }
+    .open-item.info   { border-left: 3px solid var(--sky); }
+    .open-icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+    .open-body .open-title { font-weight: 600; font-size: 13px; }
+    .open-body .open-desc  { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+    /* ── ACCOMMODATIONS ── */
+    .accom-list { display: flex; flex-direction: column; gap: 6px; }
+    .accom-row {
+      display: grid;
+      grid-template-columns: 60px 1fr auto;
+      gap: 10px;
+      align-items: center;
+      padding: 8px 10px;
+      border-radius: 6px;
+      background: #faf9f7;
+      border: 1px solid var(--border);
+    }
+    .accom-nights {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--muted);
+      text-align: center;
+    }
+    .accom-name-big { font-weight: 600; font-size: 13px; }
+    .accom-loc { font-size: 11px; color: var(--muted); }
+    .accom-price { font-size: 12px; font-weight: 700; color: var(--text); white-space: nowrap; }
+    .accom-row.highlight-accom { background: #f3edf9; border-color: #cbb8e8; }
+
+    /* ── FLIGHTS ── */
+    .flight-block {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .flight-leg {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      border-radius: 7px;
+      border: 1px solid var(--border);
+      background: #faf9f7;
+    }
+    .flight-dir {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: white;
+      border-radius: 4px;
+      padding: 3px 8px;
+      white-space: nowrap;
+    }
+    .out { background: var(--sky); }
+    .ret { background: var(--sakura); }
+    .dom { background: var(--forest); }
+    .flight-route { font-weight: 700; font-size: 13px; flex: 1; }
+    .flight-details { font-size: 11px; color: var(--muted); }
+    .flight-price { font-size: 13px; font-weight: 800; color: var(--text); }
+
+    /* ── LEGEND ── */
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 11px;
+      color: var(--muted);
+    }
+    .legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 3px;
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 11px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      margin-top: 12px;
+    }
+
+    @media (max-width: 900px) {
+      .main { padding: 16px; }
+      .header { padding: 20px; }
+      .grid-3 { grid-template-columns: 1fr; }
+      .grid-2 { grid-template-columns: 1fr; }
+      .day-row { grid-template-columns: 64px 1fr; }
+      .day-accom, .region-tag { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════ HEADER -->
+<div class="header">
+  <h1>🌸 Hokkaido Summer 2026</h1>
+  <div class="sub">Two weeks in Japan's north — lavender, onsen, wilderness, and ramen</div>
+  <div class="header-meta">
+    <div class="meta-pill">📅 July 14 – July 30, 2026</div>
+    <div class="meta-pill">✈️ LAS → CTS inbound · HND → LAS outbound</div>
+    <div class="meta-pill">🗓 17 days · 16 nights</div>
+    <div class="meta-pill">🌡 20–25°C · No humidity</div>
+    <div class="meta-pill">📝 Draft v1</div>
+  </div>
+</div>
+
+<div class="main">
+
+  <!-- ═══════════════════════════════════════════ STATS -->
+  <div class="section-title">Trip at a Glance</div>
+  <div class="grid-3" style="grid-template-columns: repeat(6,1fr); margin-bottom: 20px;">
+    <div class="stat-card">
+      <div class="number" style="color:var(--sky)">14</div>
+      <div class="label">Hokkaido Nights</div>
+    </div>
+    <div class="stat-card">
+      <div class="number" style="color:var(--sakura)">2</div>
+      <div class="label">Tokyo Nights</div>
+    </div>
+    <div class="stat-card">
+      <div class="number" style="color:var(--lavender)">3</div>
+      <div class="label">Ryokan Nights</div>
+      <div class="detail">Private onsen ★</div>
+    </div>
+    <div class="stat-card">
+      <div class="number" style="color:var(--forest)">9</div>
+      <div class="label">Regions</div>
+    </div>
+    <div class="stat-card">
+      <div class="number" style="color:var(--amber)">~$590</div>
+      <div class="label">Flights/Person</div>
+      <div class="detail">LAS→HND→CTS</div>
+    </div>
+    <div class="stat-card">
+      <div class="number" style="color:#e05a5a">5</div>
+      <div class="label">Open Items</div>
+      <div class="detail">Before booking</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ ROUTE -->
+  <div class="section-title">Route</div>
+  <div class="route-bar" style="margin-bottom: 28px;">
+    <div style="font-size:11px; color:var(--muted); margin-bottom: 10px;">West → East → South → Tokyo</div>
+    <div class="route-stops">
+      <div class="stop"><div class="stop-label travel">LAS</div><div class="arrow">→</div></div>
+      <div class="stop"><div class="stop-label city">Sapporo</div><div class="arrow">→</div></div>
+      <div class="stop"><div class="stop-label city">Otaru</div><div class="arrow">→</div></div>
+      <div class="stop"><div class="stop-label ryokan">Furano / Biei</div><div class="arrow">→</div></div>
+      <div class="stop"><div class="stop-label ryokan">Jozankei ★</div><div class="arrow">→</div></div>
+      <div class="stop"><div class="stop-label food">Asahikawa</div><div class="arrow">→</div></div>
+      <div class="stop"><div class="stop-label nature">Daisetsuzan</div><div class="arrow">→</div></div>
+      <div class="stop"><div class="stop-label nature">Shiretoko</div><div class="arrow">→</div></div>
+      <div class="stop"><div class="stop-label ryokan">Lake Akan ★</div><div class="arrow">→</div></div>
+      <div class="stop"><div class="stop-label nature">Kushiro</div><div class="arrow">→</div></div>
+      <div class="stop"><div class="stop-label tbd">Hakodate ?</div><div class="arrow">→</div></div>
+      <div class="stop"><div class="stop-label tokyo">Tokyo</div><div class="arrow">→</div></div>
+      <div class="stop"><div class="stop-label travel">LAS</div></div>
+    </div>
+    <div style="display:flex; gap:14px; margin-top:12px; flex-wrap:wrap;">
+      <div class="legend-item"><div class="legend-dot" style="background:var(--sky)"></div> City</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--lavender)"></div> Ryokan ★</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--forest)"></div> Nature</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--amber)"></div> Food focus</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--sakura)"></div> Tokyo</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#bbb"></div> TBD</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ TIMELINE -->
+  <div class="section-title">Day-by-Day</div>
+  <div class="timeline" style="margin-bottom: 28px;">
+
+    <!-- Day 1 -->
+    <div class="day-row">
+      <div class="day-num bg-sapporo"><div class="d">Mon Jul 14</div><div class="n">D1</div></div>
+      <div class="region-tag">Sapporo</div>
+      <div class="day-content">
+        <div class="day-title">✈️ Arrive Sapporo</div>
+        <div class="day-highlights">
+          <span class="highlight-tag">Long travel day — take it easy</span>
+          <span class="highlight-tag">Transfer CTS → Sapporo (~40 min)</span>
+          <span class="highlight-tag">🍜 Ramen Yokocho dinner</span>
+        </div>
+      </div>
+      <div class="day-accom"><span class="accom-badge badge-city">City Hotel</span><div class="accom-name">Royal Park Canvas</div><div>or Tokyu Stay Odori</div><div>~$150–156/night</div></div>
+    </div>
+
+    <!-- Day 2 -->
+    <div class="day-row">
+      <div class="day-num bg-sapporo"><div class="d">Tue Jul 15</div><div class="n">D2</div></div>
+      <div class="region-tag">Sapporo</div>
+      <div class="day-content">
+        <div class="day-title">🏙 Sapporo City Day</div>
+        <div class="day-highlights">
+          <span class="highlight-tag">🐟 Nijo Market breakfast</span>
+          <span class="highlight-tag">🍫 Shiroi Koibito Park</span>
+          <span class="highlight-tag">🍫 ROYCE Chocolate Town</span>
+          <span class="highlight-tag">🍶 Chitosetsuru Sake Museum</span>
+          <span class="highlight-tag">🍺 Sapporo Beer Museum</span>
+          <span class="highlight-tag">🗿 Makomanai Cemetery (Moai + Buddha)</span>
+          <span class="highlight-tag">🍛 Soup Curry Garaku dinner</span>
+        </div>
+      </div>
+      <div class="day-accom"><span class="accom-badge badge-city">City Hotel</span><div class="accom-name">Sapporo</div><div>~$150–156/night</div></div>
+    </div>
+
+    <!-- Day 3 -->
+    <div class="day-row">
+      <div class="day-num bg-otaru"><div class="d">Wed Jul 16</div><div class="n">D3</div></div>
+      <div class="region-tag">Otaru</div>
+      <div class="day-content">
+        <div class="day-title">⛵ Otaru Day Trip</div>
+        <div class="day-highlights">
+          <span class="highlight-tag">Train from Sapporo (35 min)</span>
+          <span class="highlight-tag">🏛 Otaru Canal</span>
+          <span class="highlight-tag">🔮 Sakaimachi Street glassblowing</span>
+          <span class="highlight-tag">🦀 Seafood lunch</span>
+          <span class="highlight-tag">🥃 Nikka Yoichi Whisky Distillery</span>
+          <span class="highlight-tag">🍦 Kita no Aisu soft serve</span>
+        </div>
+      </div>
+      <div class="day-accom"><span class="accom-badge badge-city">City Hotel</span><div class="accom-name">Back to Sapporo</div><div>~$150–156/night</div></div>
+    </div>
+
+    <!-- Day 4 -->
+    <div class="day-row">
+      <div class="day-num bg-furano"><div class="d">Thu Jul 17</div><div class="n">D4</div></div>
+      <div class="region-tag">Furano</div>
+      <div class="day-content">
+        <div class="day-title">🌸 Drive to Furano</div>
+        <div class="day-highlights">
+          <span class="highlight-tag">Rental car or Lavender Express train</span>
+          <span class="highlight-tag">🌷 Shikisai no Oka (Hill of Colors)</span>
+          <span class="highlight-tag">🍈 Hokkaido melon soft serve</span>
+          <span class="highlight-tag">Lavender in bloom ✅</span>
+        </div>
+      </div>
+      <div class="day-accom"><span class="accom-badge badge-hotel">Hotel</span><div class="accom-name">Furano guesthouse</div><div>~$100–200/night</div></div>
+    </div>
+
+    <!-- Day 5 -->
+    <div class="day-row">
+      <div class="day-num bg-furano"><div class="d">Fri Jul 18</div><div class="n">D5</div></div>
+      <div class="region-tag">Furano / Biei</div>
+      <div class="day-content">
+        <div class="day-title">🌻 Peak Lavender Day <span class="star">★★</span></div>
+        <div class="day-highlights">
+          <span class="highlight-tag">7am: Farm Tomita (before crowds)</span>
+          <span class="highlight-tag">🌾 Lavender East (less crowded)</span>
+          <span class="highlight-tag">🛤 Biei Patchwork Road drive</span>
+          <span class="highlight-tag">🔵 Biei Blue Pond</span>
+          <span class="highlight-tag">🚂 Norokko train option</span>
+          <span class="highlight-tag" style="background:#fef3cd">🎉 Sapporo Beer Fest opens today</span>
+        </div>
+      </div>
+      <div class="day-accom"><span class="accom-badge badge-hotel">Hotel</span><div class="accom-name">Furano / Biei</div><div>~$100–200/night</div></div>
+    </div>
+
+    <!-- Day 6 -->
+    <div class="day-row">
+      <div class="day-num bg-jozankei"><div class="d">Sat Jul 19</div><div class="n">D6</div></div>
+      <div class="region-tag">Jozankei</div>
+      <div class="day-content">
+        <div class="day-title">♨️ Jozankei Ryokan Night <span class="star">★</span></div>
+        <div class="day-highlights">
+          <span class="highlight-tag">Morning: remaining Furano/Biei</span>
+          <span class="highlight-tag">🗿 Moerenuma Park (Isamu Noguchi)</span>
+          <span class="highlight-tag">Check in ~4pm — private rotenburo onsen</span>
+          <span class="highlight-tag">🍱 Kaiseki dinner</span>
+          <span class="highlight-tag">Optional: Sapporo Beer Garden tonight (~50 min)</span>
+        </div>
+      </div>
+      <div class="day-accom"><span class="accom-badge badge-ryokan">Ryokan ★</span><div class="accom-name">Yurakusoan</div><div>or Kasho Gyoen</div><div>$370–850/night</div></div>
+    </div>
+
+    <!-- Day 7 -->
+    <div class="day-row">
+      <div class="day-num bg-asahi"><div class="d">Sun Jul 20</div><div class="n">D7</div></div>
+      <div class="region-tag">Sapporo → Asahikawa</div>
+      <div class="day-content">
+        <div class="day-title">🍺 Beer Garden + Ramen</div>
+        <div class="day-highlights">
+          <span class="highlight-tag">Ryokan breakfast + morning soak</span>
+          <span class="highlight-tag" style="background:#fef3cd">🍺 Odori Park Beer Garden (12pm) ★</span>
+          <span class="highlight-tag">Drive to Asahikawa (1.5 hrs)</span>
+          <span class="highlight-tag">🍜 Asahikawa Ramen Mura (shoyu)</span>
+          <span class="highlight-tag">Ramen Shishio hidden gem</span>
+        </div>
+      </div>
+      <div class="day-accom"><span class="accom-badge badge-city">City Hotel</span><div class="accom-name">Asahikawa</div><div>~$100–150/night</div></div>
+    </div>
+
+    <!-- Day 8 -->
+    <div class="day-row">
+      <div class="day-num bg-daisestu"><div class="d">Mon Jul 21</div><div class="n">D8</div></div>
+      <div class="region-tag">Daisetsuzan</div>
+      <div class="day-content">
+        <div class="day-title">🏔 Sounkyo Gorge</div>
+        <div class="day-highlights">
+          <span class="highlight-tag">Optional: Asahiyama Zoo</span>
+          <span class="highlight-tag">Drive to Sounkyo (1.5 hrs)</span>
+          <span class="highlight-tag">🪨 Gorge walk — basalt cliffs</span>
+          <span class="highlight-tag">💧 Ryusei + Ginga waterfalls</span>
+          <span class="highlight-tag">🚡 Sounkyo Ropeway option</span>
+        </div>
+      </div>
+      <div class="day-accom"><span class="accom-badge badge-ryokan">Ryokan</span><div class="accom-name">Sounkyo Choyotei</div><div>or Hotel Taisetsu</div><div>$200–400/night</div></div>
+    </div>
+
+    <!-- Day 9 -->
+    <div class="day-row">
+      <div class="day-num bg-daisestu"><div class="d">Tue Jul 22</div><div class="n">D9</div></div>
+      <div class="region-tag">Daisetsuzan</div>
+      <div class="day-content">
+        <div class="day-title">🌸 Asahidake Ropeway + Alpine Flowers <span class="star">★</span></div>
+        <div class="day-highlights">
+          <span class="highlight-tag">Drive to Asahidake (1 hr)</span>
+          <span class="highlight-tag">🚡 Ropeway to 1,600m</span>
+          <span class="highlight-tag">🌿 Sugatami Pond loop (1–2 hrs, easy)</span>
+          <span class="highlight-tag">Alpine wildflowers in full bloom</span>
+          <span class="highlight-tag">Momijidani Trail in afternoon (optional)</span>
+        </div>
+      </div>
+      <div class="day-accom"><span class="accom-badge badge-ryokan">Ryokan</span><div class="accom-name">Sounkyo (night 2)</div><div>$200–400/night</div></div>
+    </div>
+
+    <!-- Day 10 -->
+    <div class="day-row">
+      <div class="day-num bg-shireoko"><div class="d">Wed Jul 23</div><div class="n">D10</div></div>
+      <div class="region-tag">Shiretoko</div>
+      <div class="day-content">
+        <div class="day-title">🦅 Drive to Shiretoko (UNESCO)</div>
+        <div class="day-highlights">
+          <span class="highlight-tag">Long drive — 3–3.5 hrs</span>
+          <span class="highlight-tag">💧 Furepe Falls ("Tears of a Maiden") on arrival</span>
+          <span class="highlight-tag">🦞 Fresh seafood dinner in Utoro</span>
+        </div>
+      </div>
+      <div class="day-accom"><span class="accom-badge badge-hotel">Hotel</span><div class="accom-name">Utoro, Shiretoko</div><div>~$150–250/night</div></div>
+    </div>
+
+    <!-- Day 11 -->
+    <div class="day-row">
+      <div class="day-num bg-shireoko"><div class="d">Thu Jul 24</div><div class="n">D11</div></div>
+      <div class="region-tag">Shiretoko</div>
+      <div class="day-content">
+        <div class="day-title">🐻 Shiretoko Full Day <span class="star">★★</span></div>
+        <div class="day-highlights">
+          <span class="highlight-tag">🏞 Five Lakes boardwalk (easy, 800m)</span>
+          <span class="highlight-tag">🌊 Kamuiwakka Hot Falls — soak in a river ★</span>
+          <span class="highlight-tag">🚢 Coastal wildlife cruise (sea eagles, bears, seals)</span>
+          <span class="highlight-tag">🦞 Uni + crab dinner</span>
+        </div>
+      </div>
+      <div class="day-accom"><span class="accom-badge badge-hotel">Hotel</span><div class="accom-name">Utoro (night 2)</div><div>~$150–250/night</div></div>
+    </div>
+
+    <!-- Day 12 -->
+    <div class="day-row">
+      <div class="day-num bg-akan"><div class="d">Fri Jul 25</div><div class="n">D12</div></div>
+      <div class="region-tag">Lake Akan</div>
+      <div class="day-content">
+        <div class="day-title">🏮 Shiretoko → Lake Akan Ryokan <span class="star">★★</span></div>
+        <div class="day-highlights">
+          <span class="highlight-tag">Shiretoko Pass scenic mountain drive</span>
+          <span class="highlight-tag">🏮 Ainu Kotan village — cultural performances ★</span>
+          <span class="highlight-tag">🟢 Marimo aquarium (rare spherical algae)</span>
+          <span class="highlight-tag">♨️ Private outdoor onsen on the lake</span>
+          <span class="highlight-tag">🍱 Kaiseki dinner</span>
+        </div>
+      </div>
+      <div class="day-accom"><span class="accom-badge badge-ryokan">Ryokan ★★</span><div class="accom-name">Akan Tsuruga Hinanoza</div><div>$400–600/night</div></div>
+    </div>
+
+    <!-- Day 13 -->
+    <div class="day-row">
+      <div class="day-num bg-akan"><div class="d">Sat Jul 26</div><div class="n">D13</div></div>
+      <div class="region-tag">Akan-Mashu → Kushiro</div>
+      <div class="day-content">
+        <div class="day-title">🌊 Caldera Lakes Loop</div>
+        <div class="day-highlights">
+          <span class="highlight-tag">Ryokan breakfast + morning onsen</span>
+          <span class="highlight-tag">🌫 Lake Mashu — Japan's clearest lake</span>
+          <span class="highlight-tag">♨️ Lake Kussharo / Sunayu — DIY beach onsen ★</span>
+          <span class="highlight-tag">🔵 Lake Onnetō — hidden color-shifting gem</span>
+          <span class="highlight-tag">Drive to Kushiro (~1.5 hrs)</span>
+        </div>
+      </div>
+      <div class="day-accom"><span class="accom-badge badge-city">City Hotel</span><div class="accom-name">Kushiro</div><div>~$100–150/night</div></div>
+    </div>
+
+    <!-- Day 14 -->
+    <div class="day-row">
+      <div class="day-num bg-kushiro"><div class="d">Sun Jul 27</div><div class="n">D14</div></div>
+      <div class="region-tag">Kushiro</div>
+      <div class="day-content">
+        <div class="day-title">🦢 Kushiro Wetlands + Market <span class="star">★</span></div>
+        <div class="day-highlights">
+          <span class="highlight-tag">🛶 Wetlands canoe tour (cranes, deer)</span>
+          <span class="highlight-tag">🍚 Washo Market — DIY kaisendon ★</span>
+          <span class="highlight-tag" style="background:#fff3cd; color:#856404;">⚑ DECISION: Hakodate (Option A) or fly to Tokyo early (Option B)</span>
+        </div>
+      </div>
+      <div class="day-accom"><span class="accom-badge badge-tbd">TBD</span><div class="accom-name">Hakodate hotel</div><div>OR Tokyo hotel</div></div>
+    </div>
+
+    <!-- Day 14B optional -->
+    <div class="day-row" style="opacity:0.65; border-style: dashed;">
+      <div class="day-num bg-hakodate"><div class="d">Mon Jul 28</div><div class="n">D14B</div></div>
+      <div class="region-tag" style="font-style:italic;">Hakodate (TBD)</div>
+      <div class="day-content">
+        <div class="day-title" style="font-style:italic;">⚑ Optional: Hakodate Day</div>
+        <div class="day-highlights">
+          <span class="highlight-tag">5am: Asaichi Morning Market ★</span>
+          <span class="highlight-tag">🌟 Fort Goryokaku (star fortress)</span>
+          <span class="highlight-tag">🏛 Motomachi historic district</span>
+          <span class="highlight-tag">🎡 Hakodate Park Ferris Wheel (oldest in Japan)</span>
+          <span class="highlight-tag">🌃 Mt. Hakodate night view ★★</span>
+          <span class="highlight-tag">Shinkansen to Tokyo (~4 hrs)</span>
+        </div>
+      </div>
+      <div class="day-accom"><span class="accom-badge badge-tbd">TBD</span><div class="accom-name">Decision pending</div><div>research needed</div></div>
+    </div>
+
+    <!-- Day 15 -->
+    <div class="day-row">
+      <div class="day-num bg-tokyo"><div class="d">Mon/Tue Jul 28/29</div><div class="n">D15</div></div>
+      <div class="region-tag">Tokyo</div>
+      <div class="day-content">
+        <div class="day-title">🌆 Arrive Tokyo · Dinner at Cocon <span class="star">★★</span></div>
+        <div class="day-highlights">
+          <span class="highlight-tag">Fly CTS→HND (1h45) OR shinkansen from Hakodate</span>
+          <span class="highlight-tag">🛍 Hokkaido Dosanko Plaza (Yurakucho)</span>
+          <span class="highlight-tag">🍽 Cocon — Nakameguro (book Pocket Concierge)</span>
+          <span class="highlight-tag">French + Australian + Japanese · Natural wine</span>
+          <span class="highlight-tag">~¥15,000–20,000/person with wine</span>
+        </div>
+      </div>
+      <div class="day-accom"><span class="accom-badge badge-hotel">Hotel</span><div class="accom-name">Nakameguro / Ginza</div><div>or Shibuya</div><div>~$150–300/night</div></div>
+    </div>
+
+    <!-- Day 16 -->
+    <div class="day-row">
+      <div class="day-num bg-tokyo"><div class="d">Tue/Wed Jul 29/30</div><div class="n">D16</div></div>
+      <div class="region-tag">Tokyo</div>
+      <div class="day-content">
+        <div class="day-title">🛍 Tokyo Souvenir Day</div>
+        <div class="day-highlights">
+          <span class="highlight-tag">⛩ Asakusa — Nakamise-dori, traditional gifts</span>
+          <span class="highlight-tag">💎 Ginza Six food hall</span>
+          <span class="highlight-tag">🏬 Ginza Mitsukoshi</span>
+          <span class="highlight-tag">🧴 Shiseido Parlour (exclusive Hanatsubaki biscuit tin)</span>
+          <span class="highlight-tag">🛒 Tokyu Hands or Don Quijote (last-minute)</span>
+        </div>
+      </div>
+      <div class="day-accom"><span class="accom-badge badge-hotel">Hotel</span><div class="accom-name">Tokyo (last night)</div><div>~$150–300/night</div></div>
+    </div>
+
+    <!-- Day 17 -->
+    <div class="day-row">
+      <div class="day-num bg-transit"><div class="d">Wed/Thu Jul 30+</div><div class="n">D17</div></div>
+      <div class="region-tag">Fly Home</div>
+      <div class="day-content">
+        <div class="day-title">✈️ Tokyo → Las Vegas</div>
+        <div class="day-highlights">
+          <span class="highlight-tag">HND or NRT → LAS</span>
+          <span class="highlight-tag">Tokyo Station Gransta for last-minute souvenirs</span>
+          <span class="highlight-tag">HND: Monorail from Hamamatsucho (20 min)</span>
+          <span class="highlight-tag">NRT: N'EX from Tokyo Station (60 min)</span>
+        </div>
+      </div>
+      <div class="day-accom"><span class="accom-badge badge-travel">Travel Day</span></div>
+    </div>
+
+  </div><!-- end timeline -->
+
+  <!-- ═══════════════════════════════════════════ BOTTOM GRID -->
+  <div class="grid-2">
+
+    <!-- OPEN ITEMS -->
+    <div>
+      <div class="section-title">Open Items — Before Booking</div>
+      <div class="open-items">
+        <div class="open-item urgent">
+          <div class="open-icon">⚑</div>
+          <div class="open-body">
+            <div class="open-title">Hakodate Decision</div>
+            <div class="open-desc">Day 14 is a pivot point. If included, best exit is shinkansen → Tokyo. If skipped, fly CTS → HND for a slower Tokyo finish.</div>
+          </div>
+        </div>
+        <div class="open-item urgent">
+          <div class="open-icon">♨️</div>
+          <div class="open-body">
+            <div class="open-title">Book Ryokan — IKYU.com (3–5 months ahead)</div>
+            <div class="open-desc">Night 6: Yurakusoan ($370–580) or Kasho Gyoen ($580–850) — Jozankei. Night 12: Akan Tsuruga Hinanoza ($400–600) — Lake Akan.</div>
+          </div>
+        </div>
+        <div class="open-item normal">
+          <div class="open-icon">🚗</div>
+          <div class="open-body">
+            <div class="open-title">Rental Car — Eastern Hokkaido (Days 8–13)</div>
+            <div class="open-desc">Pick up Asahikawa or Sounkyo, drop off Kushiro. Book 3+ months ahead — summer demand is high.</div>
+          </div>
+        </div>
+        <div class="open-item normal">
+          <div class="open-icon">🍽</div>
+          <div class="open-body">
+            <div class="open-title">Cocon Reservation — Pocket Concierge (2–4 weeks ahead)</div>
+            <div class="open-desc">Nakameguro, Tokyo. Closed Wednesdays. ~¥11,000/person food; ~¥15,000–20,000+ with natural wine pairing.</div>
+          </div>
+        </div>
+        <div class="open-item info">
+          <div class="open-icon">🐻</div>
+          <div class="open-body">
+            <div class="open-title">Shiretoko Goko Ground Trails — Confirm Bear Season</div>
+            <div class="open-desc">Guided requirement typically lifts mid-July. For a Jul 24 visit, solo hiking should be open — confirm closer to the trip.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div style="display:flex; flex-direction:column; gap:28px;">
+
+      <!-- FESTIVALS -->
+      <div>
+        <div class="section-title">Festival &amp; Timing</div>
+        <div class="festival-grid">
+          <div class="festival-row">
+            <div class="fest-status fest-hit">✓</div>
+            <div class="fest-info">
+              <div class="fest-name">🌸 Lavender Peak — Farm Tomita, Biei</div>
+              <div class="fest-date">Mid-July – Early August</div>
+              <div class="fest-note">✅ Days 4–5 (Jul 17–18) — perfect timing</div>
+            </div>
+          </div>
+          <div class="festival-row">
+            <div class="fest-status fest-hit">✓</div>
+            <div class="fest-info">
+              <div class="fest-name">🍺 Sapporo Summer Festival Beer Garden</div>
+              <div class="fest-date">July 18 – August 13</div>
+              <div class="fest-note">✅ Day 7 (Jul 20) — midday stop en route to Asahikawa</div>
+            </div>
+          </div>
+          <div class="festival-row">
+            <div class="fest-status fest-hit">✓</div>
+            <div class="fest-info">
+              <div class="fest-name">🌼 Alpine Wildflowers — Asahidake</div>
+              <div class="fest-date">Late July</div>
+              <div class="fest-note">✅ Day 9 (Jul 22) — ropeway + Sugatami Pond hike</div>
+            </div>
+          </div>
+          <div class="festival-row">
+            <div class="fest-status fest-miss">✗</div>
+            <div class="fest-info">
+              <div class="fest-name">⛩ Otaru Ushio Festival</div>
+              <div class="fest-date">July 25–27</div>
+              <div class="fest-note">❌ In eastern Hokkaido on those dates</div>
+            </div>
+          </div>
+          <div class="festival-row">
+            <div class="fest-status fest-miss">✗</div>
+            <div class="fest-info">
+              <div class="fest-name">🎭 Hokkai Heso Matsuri (Belly Button Fest)</div>
+              <div class="fest-date">July 28–29 (Furano)</div>
+              <div class="fest-note">❌ In Tokyo by then</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FLIGHTS -->
+      <div>
+        <div class="section-title">Flights</div>
+        <div class="flight-block">
+          <div class="flight-leg">
+            <span class="flight-dir out">Outbound</span>
+            <div class="flight-route">LAS → LAX → HND → CTS</div>
+            <div>
+              <div class="flight-details">American (JAL) + ANA domestic · 13h 46m + 1h 45m</div>
+            </div>
+            <div class="flight-price">~$590/pp</div>
+          </div>
+          <div class="flight-leg">
+            <span class="flight-dir dom">Domestic</span>
+            <div class="flight-route">CTS → HND</div>
+            <div><div class="flight-details">ANA or JAL · 1h 45m</div></div>
+            <div class="flight-price">~$77–150</div>
+          </div>
+          <div class="flight-leg">
+            <span class="flight-dir ret">Return</span>
+            <div class="flight-route">HND (or NRT) → LAS</div>
+            <div><div class="flight-details">ANA / JAL / American · via connecting hub</div></div>
+            <div class="flight-price">TBD</div>
+          </div>
+          <div style="font-size:11px; color:var(--muted); padding: 4px 2px;">
+            💡 Search as two one-ways (open-jaw: fly into CTS, out of HND) for better pricing.
+            If Hakodate is included, shinkansen to Tokyo skips the CTS→HND flight.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- end grid-2 -->
+
+  <!-- ═══════════════════════════════════════════ ACCOMMODATIONS -->
+  <div class="section-title" style="margin-top: 8px;">Accommodations</div>
+  <div class="accom-list" style="margin-bottom: 28px;">
+    <div class="accom-row">
+      <div class="accom-nights">Nights<br>1–3</div>
+      <div><div class="accom-name-big">Royal Park Canvas <span style="color:var(--muted);font-weight:400">or</span> Tokyu Stay Sapporo Odori</div><div class="accom-loc">Sapporo · City hotel</div></div>
+      <div class="accom-price">$150–156 / night</div>
+    </div>
+    <div class="accom-row">
+      <div class="accom-nights">Nights<br>4–5</div>
+      <div><div class="accom-name-big">Local guesthouse / hotel</div><div class="accom-loc">Furano / Biei</div></div>
+      <div class="accom-price">$100–200 / night</div>
+    </div>
+    <div class="accom-row highlight-accom">
+      <div class="accom-nights">Night<br>6</div>
+      <div><div class="accom-name-big">♨️ Yurakusoan <span style="color:var(--muted);font-weight:400">or</span> Okujozankei Kasho Gyoen</div><div class="accom-loc">Jozankei Onsen · Private rotenburo · Kaiseki dinner · Book IKYU.com</div></div>
+      <div class="accom-price">$370–850 / night</div>
+    </div>
+    <div class="accom-row">
+      <div class="accom-nights">Night<br>7</div>
+      <div><div class="accom-name-big">City hotel</div><div class="accom-loc">Asahikawa</div></div>
+      <div class="accom-price">$100–150 / night</div>
+    </div>
+    <div class="accom-row">
+      <div class="accom-nights">Nights<br>8–9</div>
+      <div><div class="accom-name-big">Sounkyo Choyotei <span style="color:var(--muted);font-weight:400">or</span> Hotel Taisetsu</div><div class="accom-loc">Sounkyo Onsen · Daisetsuzan National Park · Gorge views</div></div>
+      <div class="accom-price">$200–400 / night</div>
+    </div>
+    <div class="accom-row">
+      <div class="accom-nights">Nights<br>10–11</div>
+      <div><div class="accom-name-big">Local hotel</div><div class="accom-loc">Utoro, Shiretoko Peninsula</div></div>
+      <div class="accom-price">$150–250 / night</div>
+    </div>
+    <div class="accom-row highlight-accom">
+      <div class="accom-nights">Night<br>12</div>
+      <div><div class="accom-name-big">♨️ Akan Tsuruga Bessou Hinanoza</div><div class="accom-loc">Lake Akan · All 25 suites have private outdoor onsen · Michelin recommended · Book IKYU.com</div></div>
+      <div class="accom-price">$400–600 / night</div>
+    </div>
+    <div class="accom-row">
+      <div class="accom-nights">Night<br>13</div>
+      <div><div class="accom-name-big">City hotel</div><div class="accom-loc">Kushiro</div></div>
+      <div class="accom-price">$100–150 / night</div>
+    </div>
+    <div class="accom-row" style="border-style:dashed; opacity:0.7;">
+      <div class="accom-nights">Night<br>14</div>
+      <div><div class="accom-name-big">Hakodate hotel <span style="color:var(--muted);font-weight:400">OR</span> Tokyo early arrival</div><div class="accom-loc">⚑ Hakodate decision required</div></div>
+      <div class="accom-price">$150–250 / night</div>
+    </div>
+    <div class="accom-row">
+      <div class="accom-nights">Nights<br>15–16</div>
+      <div><div class="accom-name-big">Hotel — Nakameguro, Ginza, or Shibuya</div><div class="accom-loc">Tokyo · Near Cocon restaurant (Nakameguro) + shopping</div></div>
+      <div class="accom-price">$150–300 / night</div>
+    </div>
+  </div>
+
+</div><!-- end main -->
+
+<div class="footer">
+  Hokkaido Summer 2026 · Draft v1 · Generated from itinerary/draft-v1.md
+</div>
+
+</body>
+</html>
