@@ -25,7 +25,7 @@
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       background: var(--bg);
       color: var(--text);
-      font-size: 14px;
+      font-size: clamp(13px, 1.2vw, 15px);
       line-height: 1.5;
     }
 
@@ -33,10 +33,10 @@
     .header {
       background: linear-gradient(135deg, #1a3a52 0%, #2d6a8f 50%, #3d8a6e 100%);
       color: white;
-      padding: 32px 40px 28px;
+      padding: clamp(16px, 4vw, 32px) clamp(16px, 5vw, 40px) clamp(14px, 3.5vw, 28px);
     }
-    .header h1 { font-size: 26px; font-weight: 700; letter-spacing: -0.5px; }
-    .header .sub { opacity: 0.8; margin-top: 4px; font-size: 15px; }
+    .header h1 { font-size: clamp(18px, 3vw, 26px); font-weight: 700; letter-spacing: -0.5px; }
+    .header .sub { opacity: 0.8; margin-top: 4px; font-size: clamp(13px, 1.5vw, 15px); }
 
     .header-meta {
       display: flex;
@@ -56,19 +56,19 @@
     }
 
     /* ── LAYOUT ── */
-    .main { padding: 28px 40px; max-width: 1400px; margin: 0 auto; }
+    .main { padding: clamp(16px, 3vw, 28px) clamp(16px, 4vw, 40px); max-width: 1400px; margin: 0 auto; }
 
     .grid-3 {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      margin-bottom: 28px;
+      gap: clamp(10px, 1.5vw, 16px);
+      margin-bottom: clamp(16px, 2.5vw, 28px);
     }
     .grid-2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      margin-bottom: 28px;
+      gap: clamp(10px, 1.5vw, 16px);
+      margin-bottom: clamp(16px, 2.5vw, 28px);
     }
 
     /* ── SECTION TITLES ── */
@@ -115,7 +115,7 @@
       text-align: center;
     }
     .stat-card .number {
-      font-size: 32px;
+      font-size: clamp(22px, 3vw, 32px);
       font-weight: 800;
       line-height: 1;
     }
@@ -410,13 +410,55 @@
       margin-top: 12px;
     }
 
-    @media (max-width: 900px) {
-      .main { padding: 16px; }
-      .header { padding: 20px; }
+    /* ── RESPONSIVE ── */
+
+    /* Tablet: 1024px and below */
+    @media (max-width: 1024px) {
+      .grid-3 { grid-template-columns: repeat(3, 1fr); }
+      .day-row { grid-template-columns: 80px 110px 1fr auto; }
+      .day-accom { min-width: 120px; }
+    }
+
+    /* Small tablet / large phone: 768px and below */
+    @media (max-width: 768px) {
+      .grid-3 { grid-template-columns: repeat(2, 1fr); }
+      .grid-2 { grid-template-columns: 1fr 1fr; }
+
+      .day-row { grid-template-columns: 64px 1fr auto; }
+      .region-tag { display: none; }
+      .day-accom { min-width: 100px; }
+      .day-accom .accom-name { display: none; }
+
+      .header-meta { gap: 10px; }
+      .meta-pill { font-size: 12px; padding: 4px 10px; }
+
+      .route-stops { gap: 0; }
+      .stop-label { font-size: 11px; padding: 4px 8px; }
+    }
+
+    /* Mobile: 540px and below */
+    @media (max-width: 540px) {
       .grid-3 { grid-template-columns: 1fr; }
       .grid-2 { grid-template-columns: 1fr; }
-      .day-row { grid-template-columns: 64px 1fr; }
-      .day-accom, .region-tag { display: none; }
+
+      .day-row { grid-template-columns: 56px 1fr; }
+      .day-accom { display: none; }
+      .region-tag { display: none; }
+
+      .day-num { min-height: 44px; }
+      .day-num .n { font-size: 15px; }
+
+      .header-meta { flex-direction: column; gap: 6px; }
+      .meta-pill { width: fit-content; }
+
+      .route-bar { overflow-x: auto; }
+      .route-stops { flex-wrap: nowrap; }
+
+      .accom-row { grid-template-columns: 48px 1fr; }
+      .accom-price { display: none; }
+
+      .flight-leg { flex-wrap: wrap; gap: 8px; }
+      .flight-route { min-width: 100%; }
     }
   </style>
 </head>
