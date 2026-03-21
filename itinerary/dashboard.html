@@ -400,6 +400,64 @@
       border-radius: 3px;
     }
 
+    /* ── STAMP TAGS ── */
+    .stamp-tag {
+      background: #eaf4e8;
+      color: #3a6e35;
+      border: 1px solid #c5dfc2;
+    }
+
+    /* ── STAMP SECTION ── */
+    .stamp-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+    .stamp-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 9px 12px;
+      border-radius: 7px;
+      background: #f7fbf6;
+      border: 1px solid #d0e8cc;
+    }
+    .stamp-day {
+      font-size: 10px;
+      font-weight: 700;
+      color: #3a6e35;
+      background: #d4edcf;
+      border-radius: 4px;
+      padding: 2px 6px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .stamp-info { flex: 1; }
+    .stamp-name { font-weight: 600; font-size: 12px; color: var(--text); }
+    .stamp-type { font-size: 11px; color: var(--muted); margin-top: 1px; }
+    .stamp-note { font-size: 11px; color: #5a8a55; margin-top: 2px; }
+    .stamp-type-badge {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      border-radius: 3px;
+      padding: 1px 5px;
+    }
+    .badge-eki      { background: #e8f0f7; color: var(--sky); }
+    .badge-park     { background: #eef5ee; color: var(--forest); }
+    .badge-attract  { background: #fef3e2; color: var(--amber); }
+    .badge-goshuin  { background: #f7eef7; color: var(--lavender); }
+
+    @media (max-width: 900px) {
+      .stamp-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 540px) {
+      .stamp-grid { grid-template-columns: 1fr; }
+    }
+
     /* ── FOOTER ── */
     .footer {
       text-align: center;
@@ -481,7 +539,7 @@
 
   <!-- ═══════════════════════════════════════════ STATS -->
   <div class="section-title">Trip at a Glance</div>
-  <div class="grid-3" style="grid-template-columns: repeat(6,1fr); margin-bottom: 20px;">
+  <div class="grid-3" style="grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); margin-bottom: 20px;">
     <div class="stat-card">
       <div class="number" style="color:var(--sky)">14</div>
       <div class="label">Hokkaido Nights</div>
@@ -503,6 +561,11 @@
       <div class="number" style="color:var(--amber)">~$590</div>
       <div class="label">Flights/Person</div>
       <div class="detail">LAS→HND→CTS</div>
+    </div>
+    <div class="stat-card">
+      <div class="number" style="color:#7a9e4a">24</div>
+      <div class="label">Stamp Stops</div>
+      <div class="detail">📮 Eki + Parks + Attractions</div>
     </div>
     <div class="stat-card">
       <div class="number" style="color:#e05a5a">5</div>
@@ -554,6 +617,7 @@
           <span class="highlight-tag">Long travel day — take it easy</span>
           <span class="highlight-tag">Transfer CTS → Sapporo (~40 min)</span>
           <span class="highlight-tag">🍜 Ramen Yokocho dinner</span>
+          <span class="highlight-tag stamp-tag">📮 Sapporo Station eki-stamp</span>
         </div>
       </div>
       <div class="day-accom"><span class="accom-badge badge-city">City Hotel</span><div class="accom-name">Royal Park Canvas</div><div>or Tokyu Stay Odori</div><div>~$150–156/night</div></div>
@@ -573,6 +637,7 @@
           <span class="highlight-tag">🍺 Sapporo Beer Museum</span>
           <span class="highlight-tag">🗿 Makomanai Cemetery (Moai + Buddha)</span>
           <span class="highlight-tag">🍛 Soup Curry Garaku dinner</span>
+          <span class="highlight-tag stamp-tag">📮 Shiroi Koibito Park · Beer Museum</span>
         </div>
       </div>
       <div class="day-accom"><span class="accom-badge badge-city">City Hotel</span><div class="accom-name">Sapporo</div><div>~$150–156/night</div></div>
@@ -591,6 +656,7 @@
           <span class="highlight-tag">🦀 Seafood lunch</span>
           <span class="highlight-tag">🥃 Nikka Yoichi Whisky Distillery</span>
           <span class="highlight-tag">🍦 Kita no Aisu soft serve</span>
+          <span class="highlight-tag stamp-tag">📮 Otaru Station · Canal tourist info</span>
         </div>
       </div>
       <div class="day-accom"><span class="accom-badge badge-city">City Hotel</span><div class="accom-name">Back to Sapporo</div><div>~$150–156/night</div></div>
@@ -607,6 +673,7 @@
           <span class="highlight-tag">🌷 Shikisai no Oka (Hill of Colors)</span>
           <span class="highlight-tag">🍈 Hokkaido melon soft serve</span>
           <span class="highlight-tag">Lavender in bloom ✅</span>
+          <span class="highlight-tag stamp-tag">📮 Furano Station · Shikisai no Oka</span>
         </div>
       </div>
       <div class="day-accom"><span class="accom-badge badge-hotel">Hotel</span><div class="accom-name">Furano guesthouse</div><div>~$100–200/night</div></div>
@@ -625,6 +692,7 @@
           <span class="highlight-tag">🔵 Biei Blue Pond</span>
           <span class="highlight-tag">🚂 Norokko train option</span>
           <span class="highlight-tag" style="background:#fef3cd">🎉 Sapporo Beer Fest opens today</span>
+          <span class="highlight-tag stamp-tag">📮 Farm Tomita (beloved!) · Biei Station</span>
         </div>
       </div>
       <div class="day-accom"><span class="accom-badge badge-hotel">Hotel</span><div class="accom-name">Furano / Biei</div><div>~$100–200/night</div></div>
@@ -659,6 +727,7 @@
           <span class="highlight-tag">Drive to Asahikawa (1.5 hrs)</span>
           <span class="highlight-tag">🍜 Asahikawa Ramen Mura (shoyu)</span>
           <span class="highlight-tag">Ramen Shishio hidden gem</span>
+          <span class="highlight-tag stamp-tag">📮 Asahikawa Station · Asahiyama Zoo</span>
         </div>
       </div>
       <div class="day-accom"><span class="accom-badge badge-city">City Hotel</span><div class="accom-name">Asahikawa</div><div>~$100–150/night</div></div>
@@ -676,6 +745,7 @@
           <span class="highlight-tag">🪨 Gorge walk — basalt cliffs</span>
           <span class="highlight-tag">💧 Ryusei + Ginga waterfalls</span>
           <span class="highlight-tag">🚡 Sounkyo Ropeway option</span>
+          <span class="highlight-tag stamp-tag">📮 Sounkyo Visitor Ctr (NP stamp) · Ropeway</span>
         </div>
       </div>
       <div class="day-accom"><span class="accom-badge badge-ryokan">Ryokan</span><div class="accom-name">Sounkyo Choyotei</div><div>or Hotel Taisetsu</div><div>$200–400/night</div></div>
@@ -693,6 +763,7 @@
           <span class="highlight-tag">🌿 Sugatami Pond loop (1–2 hrs, easy)</span>
           <span class="highlight-tag">Alpine wildflowers in full bloom</span>
           <span class="highlight-tag">Momijidani Trail in afternoon (optional)</span>
+          <span class="highlight-tag stamp-tag">📮 Asahidake Ropeway top station</span>
         </div>
       </div>
       <div class="day-accom"><span class="accom-badge badge-ryokan">Ryokan</span><div class="accom-name">Sounkyo (night 2)</div><div>$200–400/night</div></div>
@@ -708,6 +779,7 @@
           <span class="highlight-tag">Long drive — 3–3.5 hrs</span>
           <span class="highlight-tag">💧 Furepe Falls ("Tears of a Maiden") on arrival</span>
           <span class="highlight-tag">🦞 Fresh seafood dinner in Utoro</span>
+          <span class="highlight-tag stamp-tag">📮 Shiretoko World Heritage Ctr (UNESCO stamp)</span>
         </div>
       </div>
       <div class="day-accom"><span class="accom-badge badge-hotel">Hotel</span><div class="accom-name">Utoro, Shiretoko</div><div>~$150–250/night</div></div>
@@ -724,6 +796,7 @@
           <span class="highlight-tag">🌊 Kamuiwakka Hot Falls — soak in a river ★</span>
           <span class="highlight-tag">🚢 Coastal wildlife cruise (sea eagles, bears, seals)</span>
           <span class="highlight-tag">🦞 Uni + crab dinner</span>
+          <span class="highlight-tag stamp-tag">📮 Shiretoko Five Lakes visitor center</span>
         </div>
       </div>
       <div class="day-accom"><span class="accom-badge badge-hotel">Hotel</span><div class="accom-name">Utoro (night 2)</div><div>~$150–250/night</div></div>
@@ -741,6 +814,7 @@
           <span class="highlight-tag">🟢 Marimo aquarium (rare spherical algae)</span>
           <span class="highlight-tag">♨️ Private outdoor onsen on the lake</span>
           <span class="highlight-tag">🍱 Kaiseki dinner</span>
+          <span class="highlight-tag stamp-tag">📮 Akan-Mashu NP visitor center</span>
         </div>
       </div>
       <div class="day-accom"><span class="accom-badge badge-ryokan">Ryokan ★★</span><div class="accom-name">Akan Tsuruga Hinanoza</div><div>$400–600/night</div></div>
@@ -758,6 +832,7 @@
           <span class="highlight-tag">♨️ Lake Kussharo / Sunayu — DIY beach onsen ★</span>
           <span class="highlight-tag">🔵 Lake Onnetō — hidden color-shifting gem</span>
           <span class="highlight-tag">Drive to Kushiro (~1.5 hrs)</span>
+          <span class="highlight-tag stamp-tag">📮 Lake Mashu Obs. Deck · Lake Kussharo</span>
         </div>
       </div>
       <div class="day-accom"><span class="accom-badge badge-city">City Hotel</span><div class="accom-name">Kushiro</div><div>~$100–150/night</div></div>
@@ -773,6 +848,7 @@
           <span class="highlight-tag">🛶 Wetlands canoe tour (cranes, deer)</span>
           <span class="highlight-tag">🍚 Washo Market — DIY kaisendon ★</span>
           <span class="highlight-tag" style="background:#fff3cd; color:#856404;">⚑ DECISION: Hakodate (Option A) or fly to Tokyo early (Option B)</span>
+          <span class="highlight-tag stamp-tag">📮 Kushiro Wetlands NP · Kushiro Station (crane design)</span>
         </div>
       </div>
       <div class="day-accom"><span class="accom-badge badge-tbd">TBD</span><div class="accom-name">Hakodate hotel</div><div>OR Tokyo hotel</div></div>
@@ -791,6 +867,7 @@
           <span class="highlight-tag">🎡 Hakodate Park Ferris Wheel (oldest in Japan)</span>
           <span class="highlight-tag">🌃 Mt. Hakodate night view ★★</span>
           <span class="highlight-tag">Shinkansen to Tokyo (~4 hrs)</span>
+          <span class="highlight-tag stamp-tag">📮 Hakodate Station · Goryokaku Tower</span>
         </div>
       </div>
       <div class="day-accom"><span class="accom-badge badge-tbd">TBD</span><div class="accom-name">Decision pending</div><div>research needed</div></div>
@@ -825,6 +902,7 @@
           <span class="highlight-tag">🏬 Ginza Mitsukoshi</span>
           <span class="highlight-tag">🧴 Shiseido Parlour (exclusive Hanatsubaki biscuit tin)</span>
           <span class="highlight-tag">🛒 Tokyu Hands or Don Quijote (last-minute)</span>
+          <span class="highlight-tag stamp-tag">📮 Sensoji goshuin (¥300) · Tokyo Station eki-stamp</span>
         </div>
       </div>
       <div class="day-accom"><span class="accom-badge badge-hotel">Hotel</span><div class="accom-name">Tokyo (last night)</div><div>~$150–300/night</div></div>
@@ -1031,6 +1109,225 @@
       <div class="accom-price">$150–300 / night</div>
     </div>
   </div>
+
+  <!-- ═══════════════════════════════════════════ STAMPS -->
+  <div class="section-title" style="margin-top: 8px;">📮 Stamp Collecting — 24 Stops</div>
+  <div style="font-size:12px; color:var(--muted); margin-bottom:14px; display:flex; gap:16px; flex-wrap:wrap; align-items:center;">
+    <span><span class="stamp-type-badge badge-eki">Eki</span> JR station — free, ask at ticket counter (みどりの窓口)</span>
+    <span><span class="stamp-type-badge badge-park">NP</span> National park visitor center — free</span>
+    <span><span class="stamp-type-badge badge-attract">Attraction</span> Tourist site — free</span>
+    <span><span class="stamp-type-badge badge-goshuin">Goshuin</span> Temple calligraphy — ¥300, requires goshuin-cho notebook</span>
+  </div>
+  <div style="font-size:12px; color:#3a6e35; background:#f0f8ee; border:1px solid #c5dfc2; border-radius:8px; padding:10px 14px; margin-bottom:14px;">
+    💡 <strong>Tip:</strong> Buy a blank stamp notebook (<em>スタンプ帳</em>) at a 100-yen store or souvenir shop in Sapporo on Day 1 — pages fill fast. Thick paper works better; stamps can bleed through thin pages.
+  </div>
+  <div class="stamp-grid" style="margin-bottom: 28px;">
+
+    <div class="stamp-row">
+      <div class="stamp-day">D1</div>
+      <div class="stamp-info">
+        <div class="stamp-name">Sapporo Station</div>
+        <div class="stamp-type"><span class="stamp-type-badge badge-eki">Eki</span> One of Hokkaido's most detailed designs</div>
+      </div>
+    </div>
+
+    <div class="stamp-row">
+      <div class="stamp-day">D2</div>
+      <div class="stamp-info">
+        <div class="stamp-name">Shiroi Koibito Park</div>
+        <div class="stamp-type"><span class="stamp-type-badge badge-attract">Attraction</span> At the park entrance</div>
+      </div>
+    </div>
+
+    <div class="stamp-row">
+      <div class="stamp-day">D2</div>
+      <div class="stamp-info">
+        <div class="stamp-name">Sapporo Beer Museum</div>
+        <div class="stamp-type"><span class="stamp-type-badge badge-attract">Attraction</span> At the info desk</div>
+      </div>
+    </div>
+
+    <div class="stamp-row">
+      <div class="stamp-day">D3</div>
+      <div class="stamp-info">
+        <div class="stamp-name">Otaru Station</div>
+        <div class="stamp-type"><span class="stamp-type-badge badge-eki">Eki</span> Classic Otaru design</div>
+      </div>
+    </div>
+
+    <div class="stamp-row">
+      <div class="stamp-day">D3</div>
+      <div class="stamp-info">
+        <div class="stamp-name">Otaru Canal Tourist Info</div>
+        <div class="stamp-type"><span class="stamp-type-badge badge-attract">Attraction</span> Near the canal</div>
+      </div>
+    </div>
+
+    <div class="stamp-row">
+      <div class="stamp-day">D4</div>
+      <div class="stamp-info">
+        <div class="stamp-name">Furano Station</div>
+        <div class="stamp-type"><span class="stamp-type-badge badge-eki">Eki</span></div>
+      </div>
+    </div>
+
+    <div class="stamp-row">
+      <div class="stamp-day">D4</div>
+      <div class="stamp-info">
+        <div class="stamp-name">Shikisai no Oka</div>
+        <div class="stamp-type"><span class="stamp-type-badge badge-attract">Attraction</span> At the main building</div>
+      </div>
+    </div>
+
+    <div class="stamp-row">
+      <div class="stamp-day">D5</div>
+      <div class="stamp-info">
+        <div class="stamp-name">Farm Tomita</div>
+        <div class="stamp-type"><span class="stamp-type-badge badge-attract">Attraction</span> Ask at gift shop</div>
+        <div class="stamp-note">★ Most beloved stamp stop in Hokkaido — decades-old tradition</div>
+      </div>
+    </div>
+
+    <div class="stamp-row">
+      <div class="stamp-day">D5</div>
+      <div class="stamp-info">
+        <div class="stamp-name">Biei Station</div>
+        <div class="stamp-type"><span class="stamp-type-badge badge-eki">Eki</span> One of the prettiest designs in the region</div>
+      </div>
+    </div>
+
+    <div class="stamp-row">
+      <div class="stamp-day">D7</div>
+      <div class="stamp-info">
+        <div class="stamp-name">Asahikawa Station</div>
+        <div class="stamp-type"><span class="stamp-type-badge badge-eki">Eki</span> Major Hokkaido hub</div>
+      </div>
+    </div>
+
+    <div class="stamp-row">
+      <div class="stamp-day">D7</div>
+      <div class="stamp-info">
+        <div class="stamp-name">Asahiyama Zoo</div>
+        <div class="stamp-type"><span class="stamp-type-badge badge-attract">Attraction</span> At the entrance gate</div>
+      </div>
+    </div>
+
+    <div class="stamp-row">
+      <div class="stamp-day">D8</div>
+      <div class="stamp-info">
+        <div class="stamp-name">Sounkyo Visitor Center</div>
+        <div class="stamp-type"><span class="stamp-type-badge badge-park">NP</span> Daisetsuzan National Park — basalt cliffs design</div>
+        <div class="stamp-note">★ One of the most striking NP stamps in Hokkaido</div>
+      </div>
+    </div>
+
+    <div class="stamp-row">
+      <div class="stamp-day">D8</div>
+      <div class="stamp-info">
+        <div class="stamp-name">Sounkyo Ropeway Station</div>
+        <div class="stamp-type"><span class="stamp-type-badge badge-attract">Attraction</span></div>
+      </div>
+    </div>
+
+    <div class="stamp-row">
+      <div class="stamp-day">D9</div>
+      <div class="stamp-info">
+        <div class="stamp-name">Asahidake Ropeway (Top)</div>
+        <div class="stamp-type"><span class="stamp-type-badge badge-attract">Attraction</span> Sugatami Station — volcanic peak design</div>
+      </div>
+    </div>
+
+    <div class="stamp-row">
+      <div class="stamp-day">D10</div>
+      <div class="stamp-info">
+        <div class="stamp-name">Shiretoko World Heritage Center</div>
+        <div class="stamp-type"><span class="stamp-type-badge badge-park">NP</span> UNESCO stamp — Utoro</div>
+        <div class="stamp-note">★ Most sought-after stamp in Hokkaido</div>
+      </div>
+    </div>
+
+    <div class="stamp-row">
+      <div class="stamp-day">D11</div>
+      <div class="stamp-info">
+        <div class="stamp-name">Shiretoko Five Lakes</div>
+        <div class="stamp-type"><span class="stamp-type-badge badge-park">NP</span> Trailhead visitor building</div>
+      </div>
+    </div>
+
+    <div class="stamp-row">
+      <div class="stamp-day">D12</div>
+      <div class="stamp-info">
+        <div class="stamp-name">Akan-Mashu NP Visitor Center</div>
+        <div class="stamp-type"><span class="stamp-type-badge badge-park">NP</span> Akanko Eco-Museum Center</div>
+      </div>
+    </div>
+
+    <div class="stamp-row">
+      <div class="stamp-day">D13</div>
+      <div class="stamp-info">
+        <div class="stamp-name">Lake Mashu Obs. Deck #1</div>
+        <div class="stamp-type"><span class="stamp-type-badge badge-attract">Attraction</span> At the visitor building</div>
+      </div>
+    </div>
+
+    <div class="stamp-row">
+      <div class="stamp-day">D13</div>
+      <div class="stamp-info">
+        <div class="stamp-name">Lake Kussharo / Sunayu</div>
+        <div class="stamp-type"><span class="stamp-type-badge badge-attract">Attraction</span> At the Sunayu rest house</div>
+      </div>
+    </div>
+
+    <div class="stamp-row">
+      <div class="stamp-day">D14</div>
+      <div class="stamp-info">
+        <div class="stamp-name">Kushiro Wetlands (Hosooka)</div>
+        <div class="stamp-type"><span class="stamp-type-badge badge-park">NP</span> Kushiro-Shitsugen National Park</div>
+      </div>
+    </div>
+
+    <div class="stamp-row">
+      <div class="stamp-day">D14</div>
+      <div class="stamp-info">
+        <div class="stamp-name">Kushiro Station</div>
+        <div class="stamp-type"><span class="stamp-type-badge badge-eki">Eki</span> Iconic tancho crane design</div>
+      </div>
+    </div>
+
+    <div class="stamp-row" style="opacity:0.7; border-style:dashed;">
+      <div class="stamp-day">D14B</div>
+      <div class="stamp-info">
+        <div class="stamp-name">Hakodate Station <span style="color:var(--muted); font-weight:400">(if visiting)</span></div>
+        <div class="stamp-type"><span class="stamp-type-badge badge-eki">Eki</span></div>
+      </div>
+    </div>
+
+    <div class="stamp-row" style="opacity:0.7; border-style:dashed;">
+      <div class="stamp-day">D14B</div>
+      <div class="stamp-info">
+        <div class="stamp-name">Goryokaku Tower <span style="color:var(--muted); font-weight:400">(if visiting)</span></div>
+        <div class="stamp-type"><span class="stamp-type-badge badge-attract">Attraction</span> At the observation desk</div>
+      </div>
+    </div>
+
+    <div class="stamp-row">
+      <div class="stamp-day">D16</div>
+      <div class="stamp-info">
+        <div class="stamp-name">Sensoji Temple, Asakusa</div>
+        <div class="stamp-type"><span class="stamp-type-badge badge-goshuin">Goshuin</span> ¥300 — requires goshuin-cho notebook (sold at temple)</div>
+        <div class="stamp-note">Great place to start a goshuin collection if you don't have one</div>
+      </div>
+    </div>
+
+    <div class="stamp-row">
+      <div class="stamp-day">D16</div>
+      <div class="stamp-info">
+        <div class="stamp-name">Tokyo Station</div>
+        <div class="stamp-type"><span class="stamp-type-badge badge-eki">Eki</span> Red-brick station facade design</div>
+      </div>
+    </div>
+
+  </div><!-- end stamp-grid -->
 
 </div><!-- end main -->
 
