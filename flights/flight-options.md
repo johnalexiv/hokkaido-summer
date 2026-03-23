@@ -1,61 +1,67 @@
 # Flight Options
 
-## Confirmed Routing Plan
+## Confirmed Bookings — Summer 2026
+
+### Outbound: Las Vegas → Sapporo (New Chitose)
 
 ```
-OUTBOUND:  LAS → (LAX layover) → HND → CTS (Sapporo)
-RETURN:    CTS → HND (or domestic to Tokyo)  →  2 nights Tokyo  →  HND/NRT → LAS
+[1] WED Jul 15 — UA2615 — Las Vegas (LAS) → San Francisco (SFO)
+    Terminal 3  |  Dep 21:10 · Arr 22:52  |  Seats 29B, 29C
+
+[2] THU Jul 16 — NH107 — San Francisco (SFO) → Tokyo Haneda (HND)
+    Terminal I  |  Dep 01:40 · Arr 04:25 (Jul 17 JST)  |  Seats 30C, 30A  |  Economy Class: K
+
+[3] FRI Jul 17 — NH987 — Tokyo Haneda (HND) → Sapporo New Chitose (CTS)
+    Terminal 2  |  Dep 06:20 · Arr 07:50  |  Seats 16A, 16C  |  Economy Class: K
 ```
 
----
+**Arrive CTS: Friday July 17, 7:50am**
 
-## Outbound: Las Vegas → Sapporo
-
-### LAS → HND → CTS ✅ Preferred Route
-| Leg | Airline | Duration | Est. Price |
-|---|---|---|---|
-| LAS → HND | American (JAL) | 13hr 46min (1hr layover in LAX) | $513 |
-| HND → CTS | ANA | 1hr 45min | $77 |
-| **Total** | | | **~$590/person** |
+Connection notes:
+- LAS→SFO arrives 22:52; SFO→HND departs 01:40 — **2h 48min connection at SFO** ✓
+- SFO→HND arrives 04:25 Jul 17 JST; HND→CTS departs 06:20 — **1h 55min at Haneda** ✓ (same terminal area for domestic)
 
 ---
 
-## Return: Sapporo → Tokyo → Las Vegas
+### Return: Sapporo → Las Vegas
 
-### Leg 1: Sapporo (CTS) → Tokyo
-Options to position from Sapporo to Tokyo for the 2-night Tokyo stay:
+```
+[4] FRI Jul 31 — NH988 — Sapporo New Chitose (CTS) → Tokyo Haneda (HND)
+    Terminal D  |  Dep 21:40 · Arr 23:30  |  Seats 14C, 14B  |  Economy Class: V
 
-| Option | Route | Duration | Notes |
-|---|---|---|---|
-| Fly | CTS → HND (ANA/JAL) | ~1hr 45min | ~$77–$150; most convenient; multiple daily flights |
-| Shinkansen | Sapporo → Shin-Hakodate-Hokuto → Tokyo | ~5hr (from 2031 full extension) | Full Hokkaido Shinkansen extension not complete until ~2031; currently requires transfer at Shin-Hakodate-Hokuto (~8–9 hrs total — not recommended) |
+[5] SAT Aug 1  — NH106 — Tokyo Haneda (HND) → Los Angeles (LAX)
+    Terminal 2  |  Dep 00:30 · Arr 19:10  |  Seats 21C, 21B  |  Economy Class: V
 
-**Recommendation:** Fly CTS → HND. Fast, cheap, and lands you at Haneda which is the most convenient Tokyo airport.
+[6] SAT Aug 1  — UA2315 — Los Angeles (LAX) → Las Vegas (LAS)
+    Terminal 7  |  Dep 22:59 · Arr 00:21 (Aug 2)  |  Seats 29C, 29B
+```
 
-### Leg 2: Tokyo → Las Vegas
-| Route | Notes |
-|---|---|
-| HND → LAS | Check ANA, JAL, American; likely routing via LAX or connecting hub |
-| NRT → LAS | More international options from Narita but further from central Tokyo |
+**Arrive LAS: Sunday August 2, 12:21am**
+
+> ⚠️ **60-minute connection at Haneda (return):** NH988 arrives HND 23:30 (Jul 31) → NH106 departs 00:30 (Aug 1) — only **60 minutes** to connect from domestic to international at Haneda. ANA booked these as a single itinerary, so if NH988 is delayed, ANA is responsible for rebooking the HND→LAX leg. Keep documents ready at arrival gate and go straight to international terminal.
 
 ---
 
-## Previously Noted: Round Trip Estimates (for reference)
+## Lounge Access Notes
 
-| Airline | Duration | Layovers | Est. Price |
-|---|---|---|---|
-| Korean Air | 21hr 30min | 1 (6hr) | $1,090 |
-| United / ANA | 21hr 30min | 2 (7hr) | $1,400 |
-| United / ANA | 19hr 40min | 2 (5.5hr) | $1,599 |
-| United / ANA | 17hr 50min | 2 (3.5hr) | $1,557 |
-| United / ANA | 17hr 50min | 2 (3.5hr) | $907 |
+### Outbound — LAS (Jul 15)
+- **Chase Sapphire Lounge by The Club** (Terminal 3) — CSR Priority Pass; both travelers free ✓
+
+### Outbound — SFO (Jul 15–16)
+- SFO has multiple Priority Pass lounges; check current availability on arrival
+
+### Outbound — HND (Jul 17 early morning)
+- **TIAT Lounge** (International Terminal 3) — Priority Pass; open 24/7 ✓
+- 1h 55min window before NH987 — time to visit
+
+### Return — CTS (Jul 31)
+> ⚠️ **Café Sky Library hours: 11:00am–5:00pm.** NH988 departs CTS at 21:40 — the lounge is **closed** at departure time. No Priority Pass lounge access on the return flight out of CTS.
 
 ---
 
 ## Notes
 
-- All prices are estimates — verify current fares when booking
-- The CTS → HND domestic leg (~$77–$150) can be booked separately on ANA or JAL
-- **Book early** — July is peak season; fares and availability tighten significantly
-- The 1hr LAX layover on the outbound LAS → HND leg is domestic-to-domestic, so it's manageable — but keep an eye on delays
-- With the Tokyo tail added, this is now an open-jaw itinerary: **fly into CTS, fly home from HND/NRT** — search as two one-ways rather than a round trip for potentially better pricing
+- Charge all flights to CSR for **$500/person trip delay insurance** — significant on a transpacific itinerary with connections
+- Economy Class K (outbound) earns more frequent flyer miles than V (return)
+- Both pairs of seats confirmed together on all legs
+- This is a round-trip itinerary: fly in **and** out of CTS

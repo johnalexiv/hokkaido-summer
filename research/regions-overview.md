@@ -15,7 +15,7 @@ Hokkaido is Japan's northernmost island, roughly the size of Austria. July tempe
 
 Hokkaido's capital, population ~1.9M. Most flights arrive here.
 
-- **Odori Park** — city spine; site of the massive Sapporo Summer Festival beer garden in July (runs ~July 18–Aug 13, Japan's largest outdoor beer event)
+- **Odori Park** — city spine; site of the massive Sapporo Summer Festival beer garden in July (**2026 dates: July 23–Aug 18**; Japan's largest outdoor beer event; 9,000+ seats)
 - **Susukino / Ramen Yokocho** — Japan's largest entertainment district north of Tokyo; narrow postwar-era Ramen Alley
 - **Nijo Market (Nijo Ichiba)** — compact seafood market; great for kaisen-don breakfasts
 - **Moerenuma Park** — designed entirely by Isamu Noguchi; worth a half-day
@@ -109,35 +109,101 @@ Compact, walkable port city with Hokkaido's most "European" feel — one of Japa
 - **Hakodate Park Ferris Wheel** — Japan's oldest operating Ferris wheel (inside Hakodate Park); a nostalgic, atmospheric hidden gem most tourists walk right past
 
 ### Niseko — Summer Adventure Base
-**Stay: 1–2 nights** (combine with Shakotan/Otaru loop)
+**Stay: 2 nights** (Draft v2: Park Hyatt Hanazono, Jul 16–17)
 
 Famous as a ski resort, but genuinely worthwhile in summer. Lush green hills and potato/sunflower fields; Mt. Yotei ("Ezo Fuji") dominates the skyline.
 
-- Summer activities: rafting, mountain biking, paddleboarding, cycling
-- **Noboribetsu Onsen** — 1 hour away; Hokkaido's most famous onsen resort; **Jigokudani ("Hell Valley")** active volcanic steam vents as free outdoor spectacle
-- **Lake Toya** — near-perfect circular caldera lake ~40 min from Niseko; resort hotels, small island in center; **Showa Shinzan** volcanic lava dome and **Usu-zan** volcano nearby
-- **Otaru sea cave cruise** — seasonal summer boat tour along Shakotan coastline
+- **Park Hyatt Niseko Hanazono** — the best hotel base for summer; on-site zipline (Asia's largest), tree trekking, e-bikes, 18-hole golf
+- **Hanazono Zipline MACH3** — 1.7km course at up to 110 km/h; two lanes run side-by-side ★
+- **Shiribetsu River rafting** — Niseko's top summer water activity; ~2–3 hrs
+- **Kutchan town e-bike loop** — rural roads through farmland and potato fields with Mt. Yotei views
+- **Niki town fruit picking** — cherries, plums (seasonal, July); 15 min from Niseko
+- **Hirafu Village** — base village; restaurants, izakaya, ramen; 15 min from Park Hyatt
+- Mt. Yotei climb (full-day, 6–8 hrs round trip) — for experienced hikers only; not necessary with 2 nights
 
 ---
 
-## Suggested Route Skeleton (16 nights total)
+### Noboribetsu — Hokkaido's Onsen Capital
+**Stay: 1 night** (Draft v2: KAI Poroto, Jul 24)
 
-**Routing:** LAS → CTS (arrive Sapporo) ... Hokkaido loop ... CTS → HND → 2 nights Tokyo → HND/NRT → LAS
+Hokkaido's most famous onsen resort. 11 types of mineral springs — more than anywhere else in Japan. Visible geothermal activity everywhere.
+
+- **Jigokudani Hell Valley** — free outdoor geothermal spectacle; main boardwalk through steam vents and sulfur formations; Oyunuma Pond (milky blue sulfuric lake); natural foot bath at Oyunumagawa river
+- **Jigokudani Onibi no Michi** — after-dark illuminated path through the steam; eerie and atmospheric
+- **Oni-hanabi (Demon Fireworks)** — Thu/Fri nights June–August at 8:30pm; 8-meter fire columns + taiko drums; genuinely spectacular ★
+- **KAI Poroto (Hoshino Resorts)** — ryokan on Lake Poroto; Ainu-inspired architecture; rare moor spring onsen (dark brown, organic-rich water from ancient plants); craft activities; adjacent to Upopoy Museum
+- **Upopoy National Ainu Museum** — opened 2020; Japan's first national Ainu museum; outdoor projection mapping performances; reconstructed Ainu houses; hands-on Mukkuri music + archery; **reserve in advance** (¥1,200)
+- Drive time from Sapporo: ~1.5 hrs; from Lake Toya: ~45 min
+
+---
+
+### Lake Toya — Caldera Lake with Volcanoes
+**Stay: 2 nights** (Draft v2: Hikari no uta, Jul 25–26)
+
+Near-perfect circular caldera lake, 11km in diameter. Active volcanoes (Usu-zan, Showa Shinzan) frame the southern shore. Nightly fireworks April–October.
+
+- **Lake Toya nightly fireworks** — ~450 fireworks, 20-min show, 8:45pm nightly late April–October; viewable from hotel or lakeside ★★
+- **Mt. Usu Ropeway** — active volcano (last erupted 2000); panoramic views of Lake Toya, Pacific Ocean, Showa Shinzan lava dome ★
+- **Showa Shinzan** — lava dome formed 1943; rises 398m from flat farmland; viewable up close from the road
+- **Nakajima Island boat cruise** — 40-min round trip; island has 4 sub-islands connected by bridges; sika deer roam freely
+- **Lake Toya Gurutto Sculpture Park** — 58 outdoor sculptures along a 4km lakeside path
+- **Lake activities:** canoeing, paddleboarding, kayaking, horseback riding, glass crafting workshop
+- **Hikari no uta (Tsuruga Resort)** — opened April 2023; 48 rooms all with private open-air baths; French/kaiseki/teppanyaki dining options ★★
+
+---
+
+### Rishiri Island — Sea Urchin and a Volcano in the Sea
+**Stay: 1 night** (Draft v2: Jul 22)
+
+Remote volcanic island 20km off Hokkaido's northwest coast. Mt. Rishiri (1,721m) rises dramatically from the sea — called "Rishiri Fuji." Accessible only by plane or ferry (summer only).
+
+- **Access:** ANA flight CTS→RIS 12:30pm daily (seasonal June–Sept); 55 min; only 1 flight/day — book early ★
+- **Cape Peshi** — 5-min walk from Oshidomari port; immediate panoramic view of Mt. Rishiri and harbor; perfect first stop after landing
+- **Hime Pond** — iconic mirror reflection of Mt. Rishiri in calm water; 15 min by bike from port
+- **Otatomori Pond** — largest pond on island; morning wildflower fields + Mt. Rishiri reflection
+- **Sea urchin (uni)** — July is peak harvesting season; Rishiri sea urchin is among Japan's finest; dinner at any local minshuku will feature it prominently ★★
+- **Cycling** — the island perimeter road is 26km; bikeable in 3–4 hrs; scooter rental also available at port
+- **Rebun Island** — 45 min by ferry from Rishiri; best for dedicated alpine hiking (Haboro Trail, 8hrs); not practical on a 1-night Rishiri stay — save for a dedicated visit
+- Accommodation: minshuku (guesthouse with meals) are the norm; most include fresh seafood dinner
+
+---
+
+## Draft v2 Route Skeleton (14 nights — July 17–30, 2026)
+
+**Routing:** LAS → SFO → HND → CTS (arrive Jul 17 7:50am) ... western Hokkaido loop ... CTS → HND → LAX → LAS (depart Jul 31)
+
+| Days | Date | Area | Notes |
+|---|---|---|---|
+| 1–2 | Jul 17–18 | Niseko | Park Hyatt Hanazono; zipline MACH3, e-bikes, rafting |
+| 3 | Jul 19 | Cape Kamui → Otaru | Shakotan Blue cliffs; uni lunch; Otaru canal overnight |
+| 4 | Jul 20 | Otaru → Sapporo | TAISHOU Glass glassblowing; Snoopy Village; Music Box Museum; Sapporo eve |
+| 5 | Jul 21 | Sapporo Day 1 | Hill of the Buddha; Moerenuma Park; Sapporo Art Park; Ramen Yokocho |
+| 6 | Jul 22 | Sapporo Day 2 | Shiroi Koibito; ROYCE' Cacao & Chocolate Town; soup curry |
+| 7 | Jul 23 | Sapporo Day 3 → Furano | Beer Garden OPENING DAY ★★; drive Furano evening |
+| 8 | Jul 24 | Furano Day 1 | Farm Tomita dawn; Lavender East; Shikisai no Oka; Ningle Terrace |
+| 9 | Jul 25 | Furano Day 2 | Biei Patchwork Road; Shirogane Blue Pond |
+| 10 | Jul 26 | Furano → Noboribetsu | Drive; Jigokudani; KAI Poroto check-in |
+| 11 | Jul 27 | Noboribetsu | Upopoy National Ainu Museum ★★; Onibi no Michi evening |
+| 12 | Jul 28 | Noboribetsu → Lake Toya | KAI Poroto checkout; Hikari no uta check-in; Mt. Usu ropeway; fireworks |
+| 13 | Jul 29 | Lake Toya | Nakajima Island cruise; Sculpture Park; canoeing; fireworks |
+| 14 | Jul 30 | Lake Toya → Lake Shikotsu → CTS | Afternoon at Shikotsu; final night near airport |
+| 15 | Jul 31 | CTS → LAS | NH988 21:40 CTS→HND; NH106 00:30 HND→LAX; UA2315 22:59 LAX→LAS |
+
+---
+
+## Legacy Route Reference (v1 — Eastern Hokkaido)
+
+*The original draft-v1.md route covered eastern Hokkaido. That route skeleton is preserved below for reference if a future eastern Hokkaido trip is planned.*
 
 | Days | Area | Notes |
 |---|---|---|
-| 1–2 | Sapporo | Arrive from LAS via HND; city sights, Nijo Market, Ramen Yokocho, Beer Garden |
-| 3 | Otaru | Day trip; canal, seafood, Ushio Festival (if late July) |
-| 4–5 | Furano/Biei | Lavender peak; Farm Tomita, Blue Pond, Shikisai no Oka, Heso Matsuri (if late July) |
+| 1–2 | Sapporo | Arrive from LAS via HND; city sights, Beer Garden |
+| 3 | Otaru | Day trip; canal, seafood |
+| 4–5 | Furano/Biei | Lavender peak; Farm Tomita, Blue Pond, Shikisai no Oka |
 | 6 | Asahikawa | Ramen Mura; transit hub toward east |
-| 7–8 | Daisetsuzan | Sounkyo Gorge, onsen, ropeway/hiking on Asahidake |
+| 7–8 | Daisetsuzan | Sounkyo Gorge, onsen, Asahidake ropeway/hiking |
 | 9–10 | Shiretoko | Goko lakes, Kamuiwakka, coastal cruise, wildlife |
-| 11 | Akan-Mashu | Lake Akan (Ainu Kotan, marimo), Lake Mashu, Lake Kussharo beach onsen |
-| 12 | Kushiro | Wetlands canoe, Washo Market; fly CTS → HND in evening |
-| 13 | Hakodate | *(optional swap: reorder Hakodate before Daisetsuzan loop if preferred)* |
-| 13–14 | Tokyo | Dinner at Cocon; souvenir shopping; see tokyo.md |
-| 15 | Tokyo → LAS | Fly home from HND or NRT |
-
-**Note on Hakodate:** With Tokyo added at the end, Hakodate fits most naturally as a stop *before* the eastern Hokkaido loop (days 12–13 area) rather than as the last Hokkaido night — since you'll be flying out of CTS back to Tokyo. Alternatively, take the shinkansen from Hakodate directly to Tokyo (Shin-Hakodate-Hokuto → Tokyo Shinkansen, ~4hrs) and skip the CTS → HND flight.
-
-*To add Rishiri/Rebun Islands: requires 2 extra days + detour to Wakkanai (far north). See hidden-gems.md.*
+| 11 | Akan-Mashu | Lake Akan (Ainu Kotan, marimo), Lake Mashu, Lake Kussharo |
+| 12 | Kushiro | Wetlands canoe, Washo Market |
+| 13–14 | Tokyo | Dinner at Cocon; souvenir shopping |
+| 15 | Tokyo → LAS | Fly home |

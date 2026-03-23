@@ -2,6 +2,58 @@
 
 ---
 
+## Draft v2 Route — Confirmed Stays
+
+> These are the planned accommodations for the July 2026 itinerary (draft-v2.md). See sections below for full notes.
+
+| Night | Date | Property | Location | Est. Cost/Night |
+|---|---|---|---|---|
+| 1–2 | Jul 16–17 | **Park Hyatt Niseko Hanazono** | Niseko | ~$500–800 |
+| 3–4 | Jul 18–19 | Royal Park Canvas / Tokyu Stay Odori | Sapporo | $150–$156 |
+| 5–6 | Jul 20–21 | TBD guesthouse | Furano | $100–$200 |
+| 7 | Jul 22 | TBD minshuku | Rishiri Island | $80–$150 |
+| 8 | Jul 23 | City hotel | Sapporo | $150–$156 |
+| 9 | Jul 24 | **KAI Poroto** (Hoshino Resorts) | Noboribetsu | ~$300–500 |
+| 10–11 | Jul 25–26 | **Hikari no uta** (Tsuruga Resort) | Lake Toya | ~$400–700 |
+| 12 | Jul 27 | TBD onsen ryokan | Lake Shikotsu | $150–$300 |
+| 13–14 | Jul 28–29 | TBD hotel | Tokyo (Nakameguro/Ginza) | $150–$300 |
+
+---
+
+## Park Hyatt Niseko Hanazono ⭐ Draft v2 Pick — Nights 1–2
+
+- ~$500–800/night; 100 rooms across tower and chalets; Mt. Yotei and ski slope views
+- **Amenities:** Full-service spa + indoor pool; breakfast buffet 7–10:30am (sashimi station, noodle station, grilled salmon, eggs to order); multiple dining outlets
+- **Summer activities on-site:** Hanazono Zipline (Asia's largest mega-zip — MACH3 course 1.7km, up to 110 km/h); Tree Trekking (7 high-ropes courses through birch forest); e-bike rentals; golf at Hanazono 18-hole course (May–Nov)
+- **Nearby:** Shiribetsu River rafting (~15 min); Kutchan town e-bike loop; Niki town fruit picking
+- Book direct at park.hyatt.com or via Hyatt app; 3–6 months ahead for July
+- **Booking note:** Confirm summer package rates; sometimes includes breakfast + activity voucher
+
+---
+
+## Hoshino Resorts KAI Poroto ⭐ Draft v2 Pick — Night 9
+
+- ~$300–500/night for two with dinner + breakfast; lakeside setting on Lake Poroto
+- **Onsen:** Rare "moor spring" (植物性モール温泉) — dark brown, organic-rich water from ancient plant matter; therapeutic properties differ from sulfur or iron springs; private baths + communal baths
+- **Ainu theme:** Architecture inspired by Ainu motifs; craft activity included (make Ikema plant amulets); Ainu-style dishware for meals
+- Adjacent to **Upopoy National Ainu Museum** — plan for morning after check-in; reserve museum entry online in advance (¥1,200)
+- Dinner: Hokkaido seafood — crab, botan shrimp, scallops, salmon
+- **Evening option from property:** Jigokudani Onibi no Michi (illuminated steam path); Demon Fireworks (Oni-hanabi) Thu/Fri nights June–August at 8:30pm — 8-meter fire columns + taiko drums ★
+- Book via hoshinoresorts.com (English available); popular, book 3–4 months ahead
+
+---
+
+## Lake Toya Tsuruga Resort Hikari no uta ⭐⭐ Draft v2 Pick — Nights 10–11
+
+- ~$400–700/night for two with meals; opened April 2023; 48 rooms, all with private open-air baths overlooking Lake Toya
+- **Dining flexibility** (major differentiator): choose between French, kaiseki, or teppanyaki each evening — all Hokkaido ingredients; no obligation to do pure kaiseki every night
+- **Fireworks:** Lake Toya nightly fireworks run late April–October at 8:45pm (~450 fireworks, 20-min show); visible from rooms and hotel terrace ★★
+- Hillside garden setting; part of the Tsuruga Group (same operator as Hinanoza at Lake Akan)
+- Book via hikarino-uta.com (English) or Jalan/IKYU; opened 2023 so still relatively bookable; 3–5 months ahead for July
+- **Room note:** Confirm "open-air bath" (露天風呂付) when booking — all 48 rooms have one but verify at time of reservation
+
+---
+
 ## Hotels on the Radar
 
 ### Sapporo (City Hotels)
@@ -111,7 +163,9 @@
 
 ---
 
-### Lake Akan (Eastern Hokkaido)
+### Lake Akan (Eastern Hokkaido) — *Not on v2 Route*
+
+> Eastern Hokkaido was dropped from the draft v2 itinerary. These entries are kept for reference in case of a future eastern Hokkaido trip.
 
 **Akan Tsuruga Bessou Hinanoza** ⭐ Top Pick for Eastern Hokkaido
 - ~$400–$600+/night; Michelin Guide recommended
@@ -123,7 +177,9 @@
 
 ---
 
-### Sounkyo / Daisetsuzan
+### Sounkyo / Daisetsuzan — *Not on v2 Route*
+
+> Eastern Hokkaido was dropped from the draft v2 itinerary.
 
 **Hotel Taisetsu**
 - ~¥25,000–¥50,000/night for two with meals
@@ -153,6 +209,9 @@
 | **Hikari no Uta** | Lake Toya | $270–$610+ | 33 of 48 rooms | ★★★ |
 | **WE Hotel Toya** | Lake Toya | Check direct | Yes (all rooms) | ★★★ |
 | **Sounkyo Choyotei** | Sounkyo | $200–$400 | No (1 kashikiri) | ★★★ |
+| **Park Hyatt Niseko Hanazono** | Niseko | $500–800 | No (hotel-style) | ★★★ |
+| **KAI Poroto** | Noboribetsu | $300–500 | Yes (moor spring) | ★★★★ |
+| **Hikari no uta** | Lake Toya | $400–700 | Yes (all 48 rooms) | ★★★★ |
 
 ---
 
