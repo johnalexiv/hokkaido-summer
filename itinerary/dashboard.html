@@ -552,14 +552,16 @@
       padding: 6px 10px;
       border-bottom: 1px solid var(--border);
     }
-    .cost-table th:last-child { text-align: right; }
+    .cost-table th:nth-child(3),
+    .cost-table th:nth-child(4) { text-align: right; }
     .cost-table td {
       padding: 9px 10px;
       font-size: 13px;
       border-bottom: 1px solid #f0ede8;
       vertical-align: middle;
     }
-    .cost-table td:last-child { text-align: right; font-weight: 700; white-space: nowrap; }
+    .cost-table td:nth-child(3) { text-align: right; font-weight: 700; white-space: nowrap; }
+    .cost-table td:nth-child(4) { text-align: right; font-weight: 500; white-space: nowrap; color: var(--muted); }
     .cost-table tr:last-child td { border-bottom: none; }
     .cost-table tr:hover td { background: #faf9f7; }
     .cost-label { font-weight: 600; }
@@ -1553,80 +1555,92 @@
         <tr>
           <th>Item</th>
           <th>Details</th>
-          <th>Cost (USD)</th>
+          <th>Total (USD)</th>
+          <th>Per Person</th>
         </tr>
       </thead>
       <tbody>
 
         <!-- Confirmed -->
-        <tr class="cost-section-header"><td colspan="3">Confirmed Bookings</td></tr>
+        <tr class="cost-section-header"><td colspan="4">Confirmed Bookings</td></tr>
 
         <tr>
           <td><div class="cost-label">Flights <span class="cost-badge badge-confirmed">Confirmed</span></div><div class="cost-sub">LAS→SFO→HND→CTS · CTS→HND→LAX→LAS · 2 travelers</div></td>
           <td><div class="cost-sub">UA2615 + NH107 + NH987 · NH988 + NH106 + UA2315</div></td>
           <td>$3,159.66</td>
+          <td>$1,579.83</td>
         </tr>
 
         <tr>
           <td><div class="cost-label">Park Hyatt Niseko Hanazono <span class="cost-badge badge-confirmed">Confirmed</span></div><div class="cost-sub">Jul 17–19 · 2 nights · 2 guests</div></td>
           <td><div class="cost-sub">Hanazono, Niseko · Room + tax</div></td>
           <td>$1,590.03</td>
+          <td>$795.02</td>
         </tr>
 
         <tr class="cost-confirmed-total">
           <td colspan="2"><div class="cost-label">Confirmed subtotal</div></td>
           <td>$4,749.69</td>
+          <td>$2,374.85</td>
         </tr>
 
         <!-- Estimated -->
-        <tr class="cost-section-header"><td colspan="3">Estimated / To Book</td></tr>
+        <tr class="cost-section-header"><td colspan="4">Estimated / To Book</td></tr>
 
         <tr>
           <td><div class="cost-label">KAI Poroto <span class="cost-badge badge-estimate">Estimate</span></div><div class="cost-sub">Jul 26–28 · 2 nights · 2 guests · w/ meals</div></td>
           <td><div class="cost-sub">Noboribetsu · hoshinoresorts.com</div></td>
           <td>~$800</td>
+          <td>~$400</td>
         </tr>
 
         <tr>
           <td><div class="cost-label">Hikari no uta <span class="cost-badge badge-estimate">Estimate</span></div><div class="cost-sub">Jul 28–30 · 2 nights · 2 guests · w/ meals</div></td>
           <td><div class="cost-sub">Lake Toya · hikarino-uta.com</div></td>
           <td>~$1,100</td>
+          <td>~$550</td>
         </tr>
 
         <tr>
           <td><div class="cost-label">Rental Car <span class="cost-badge badge-estimate">Estimate</span></div><div class="cost-sub">Jul 17–30 · 14 days · compact/mid-size</div></td>
           <td><div class="cost-sub">CTS · OTS or Toyota Rent-a-Car</div></td>
           <td>~$840</td>
+          <td>~$420</td>
         </tr>
 
         <tr>
           <td><div class="cost-label">Sapporo Hotel <span class="cost-badge badge-estimate">Estimate</span></div><div class="cost-sub">Jul 20–23 · 3 nights · 2 guests</div></td>
           <td><div class="cost-sub">Royal Park Canvas or Tokyu Stay</div></td>
           <td>~$480</td>
+          <td>~$240</td>
         </tr>
 
         <tr>
           <td><div class="cost-label">Furano Hotel <span class="cost-badge badge-estimate">Estimate</span></div><div class="cost-sub">Jul 23–26 · 3 nights · 2 guests</div></td>
           <td><div class="cost-sub">Furano · Local hotel / guesthouse</div></td>
           <td>~$450</td>
+          <td>~$225</td>
         </tr>
 
         <tr>
           <td><div class="cost-label">Otaru Hotel <span class="cost-badge badge-estimate">Estimate</span></div><div class="cost-sub">Jul 19 · 1 night · 2 guests</div></td>
           <td><div class="cost-sub">Near Otaru Canal</div></td>
           <td>~$130</td>
+          <td>~$65</td>
         </tr>
 
         <tr>
           <td><div class="cost-label">Chitose Hotel <span class="cost-badge badge-estimate">Estimate</span></div><div class="cost-sub">Jul 30 · 1 night · 2 guests</div></td>
           <td><div class="cost-sub">Near CTS airport · final night</div></td>
           <td>~$120</td>
+          <td>~$60</td>
         </tr>
 
         <!-- Total -->
         <tr class="cost-total">
           <td colspan="2"><div class="cost-label">Estimated Trip Total</div><div class="cost-sub">Confirmed + all estimates above · excludes food, activities, incidentals</div></td>
           <td>~$9,670</td>
+          <td>~$4,835</td>
         </tr>
 
       </tbody>
