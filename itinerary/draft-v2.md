@@ -33,12 +33,13 @@ Land CTS Jul 17 7:50am
       ↳ Arrive + Farm Tomita + Ningle Terrace (Day 1)
       ↳ Farm Tomita dawn + Lavender East + Shikisai no Oka (Day 2)
       ↳ Biei Patchwork Road + Shirogane Blue Pond (Day 3)
-  → Noboribetsu — KAI Poroto (1 night — Jul 28)
-      ↳ Jigokudani Hell Valley + check-in
-  → Lake Toya — Hikari no uta (2 nights — Jul 29–30)
-      ↳ Upopoy Ainu Museum (morning) → drive Toya → Mt. Usu Ropeway + fireworks (Day 1)
+  → Lake Toya — Hikari no uta (2 nights — Jul 28–29)
+      ↳ Drive from Furano → Mt. Usu Ropeway + nightly fireworks (Day 1)
       ↳ Island cruise + Sculpture Park + fireworks (Day 2)
-  → Lake Shikotsu afternoon → CTS (Jul 31 — fly day)
+  → Noboribetsu — KAI Poroto (1 night — Jul 30)
+      ↳ Jigokudani Hell Valley + public footbath → check-in + Amano Family Farm dinner
+      ↳ Demon Fireworks (Oni-hanabi) Jul 30 = Thursday ✓✓
+  → Upopoy Ainu Museum (morning Jul 31) → CTS (fly day)
   → Fly CTS → LAS (Jul 31 · NH988 21:40)
 ```
 
@@ -195,55 +196,55 @@ Note: Hinode Park Illumination (historically ends ~Jul 21) is definitively misse
 
 ---
 
-### Day 12 — Tuesday, July 28 — Furano → Noboribetsu (KAI Poroto)
+### Day 12 — Tuesday, July 28 — Furano → Lake Toya (Hikari no uta)
 
 - **Morning:** Relaxed checkout; final Furano melon purchase at roadside stand
-- **Drive:** Furano → Noboribetsu (~2.5–3 hrs via Route 38/274 or through Tomamu)
-- **Afternoon:** **Jigokudani Hell Valley ★** — free outdoor boardwalk through active geothermal landscape; Oyunuma Pond (milky blue sulfuric lake); natural foot bath at Oyunumagawa river
-- **Check in: Hoshino Resorts KAI Poroto** — lakeside ryokan on Lake Poroto; Ainu-inspired architecture; rare dark-brown "moor spring" onsen (organic-rich water from ancient plants — unique in Hokkaido); craft activities
-- **Evening:** Ainu-inspired dinner with Hokkaido seafood; moor spring onsen
-
-Note: Demon Fireworks (Oni-hanabi) run Thu/Fri nights only. Jul 28 = Tuesday — fireworks not available ❌.
-
-**Hotel:** KAI Poroto — Night 12
-
----
-
-### Day 13 — Wednesday, July 29 — Noboribetsu → Lake Toya (Hikari no uta)
-
-- **Morning:** **Upopoy National Ainu Museum ★★** (15 min drive from KAI Poroto; 9am open; ¥1,200 — advance reservation required)
-  - Opened 2020; Japan's first national museum dedicated to Ainu culture
-  - Outdoor projection mapping performances; reconstructed Ainu houses
-  - Hands-on Mukkuri mouth harp demos; archery; traditional craft exhibits
-  - 📮 Upopoy Museum stamp
-- **~11am:** Checkout KAI Poroto; drive → Lake Toya (~45 min via Route 37)
+- **Drive:** Furano → Lake Toya (~2–2.5 hrs via Route 38/453)
 - **Check in: Lake Toya Tsuruga Resort Hikari no uta ★★** — opened April 2023; 48 rooms all with private open-air baths overlooking Lake Toya; hillside gardens; dining: French, kaiseki, or teppanyaki
 - **Afternoon:** **Mt. Usu Ropeway ★★** — active volcano (last erupted 2000); panoramic views of Lake Toya, Pacific Ocean, and Showa Shinzan lava dome; **Showa Shinzan** viewable up close from the road
 - 📮 Lake Toya visitor center stamp
 - **8:45pm: Lake Toya nightly fireworks ★★** — ~450 fireworks, 20-min show; runs late April–October nightly; viewable from hotel room or lakeside
 
-**Hotel:** Hikari no uta — Night 13
+**Hotel:** Hikari no uta — Night 12
 
 ---
 
-### Day 14 — Thursday, July 30 — Lake Toya Full Day
+### Day 13 — Wednesday, July 29 — Lake Toya Full Day
 
 - **Morning:** **Nakajima Island boat cruise ★** — 40-min round trip; 4 sub-islands connected by bridges; sika deer roam freely
 - **Afternoon:** **Lake Toya Gurutto Sculpture Park** — 58 outdoor sculptures along a 4km lakeside walking path; glass crafting workshop at the lake activities center
 - **Other options:** Canoeing / paddleboarding / kayaking on the caldera lake; horseback riding
-- **8:45pm: Lake Toya nightly fireworks ★★** (different programs nightly)
+- **8:45pm: Lake Toya nightly fireworks ★★** (different programs nightly — 2nd consecutive night)
 
-**Hotel:** Hikari no uta — Night 14
+**Hotel:** Hikari no uta — Night 13
 
 ---
 
-### Day 15 — Friday, July 31 — Lake Toya → Lake Shikotsu → Fly Home
+### Day 14 — Thursday, July 30 — Lake Toya → Noboribetsu (KAI Poroto)
 
 - **Morning:** Relaxed late checkout at Hikari no uta; enjoy private open-air bath one last time
-- **Drive:** Lake Toya → Lake Shikotsu (~1.5 hrs via Route 230/453)
-- **Lake Shikotsu afternoon:** One of Japan's clearest caldera lakes; forested ring of mountains; almost no foreign tourists; canoe or kayak; Marukoma Onsen on the lakeshore (outdoor bath accessible by boat)
+- **Drive:** Lake Toya → Noboribetsu (~45 min via Route 37)
+- **Afternoon:** **Jigokudani Hell Valley ★** — free outdoor boardwalk through active geothermal landscape; Oyunuma Pond (milky blue sulfuric lake)
+- **Public footbath:** Oyunumagawa natural foot bath — free, on the river fed by geothermal springs; bring a towel
+- **Check in: Hoshino Resorts KAI Poroto** — lakeside ryokan on Lake Poroto; Ainu-inspired architecture; rare dark-brown "moor spring" onsen (organic-rich water from ancient plants — unique in Hokkaido)
+- **Dinner: Amano Family Farm** (天野農場) — near KAI Poroto; farm-to-table meals using local Hokkaido produce ★
+- **8:30pm: Demon Fireworks (Oni-hanabi) ✓✓ ★★** — Jul 30 = Thursday; dramatic fireworks launched from the Jigokudani rim; runs Thu/Fri
+
+**Hotel:** KAI Poroto — Night 14
+
+---
+
+### Day 15 — Friday, July 31 — Fly Home
+
+- **9am: Upopoy National Ainu Museum ★★** (15 min drive from KAI Poroto; ¥1,200 — advance reservation required)
+  - Opened 2020; Japan's first national museum dedicated to Ainu culture
+  - Outdoor projection mapping performances; reconstructed Ainu houses
+  - Hands-on Mukkuri mouth harp demos; archery; traditional craft exhibits
+  - 📮 Upopoy Museum stamp
+- **~11am:** Checkout KAI Poroto
+- **Optional detour:** Lake Shikotsu (~45 min from Noboribetsu → ~30 min to CTS) — one of Japan's clearest caldera lakes; kayak or walk the lakeshore; Marukoma Onsen boat-access bath
   - 📮 Shikotsu-Toya NP visitor center stamp
-- **~6pm:** Drive to CTS (~30 min); airport dinner; check in for evening flight
+- **~6pm:** Drive to CTS (~45 min direct, or ~1.5 hrs via Shikotsu); airport dinner
 - **NH988** CTS → HND: Dep **21:40**, Arr 23:30 (Terminal D, Seats 14C/14B)
 - **NH106** HND → LAX: Dep **00:30 Aug 1**, Arr 19:10 (Terminal 2, Seats 21C/21B)
 - **UA2315** LAX → LAS: Dep **22:59 Aug 1**, Arr 00:21 Aug 2 (Terminal 7, Seats 29C/29B)
@@ -260,8 +261,8 @@ Note: Demon Fireworks (Oni-hanabi) run Thu/Fri nights only. Jul 28 = Tuesday —
 | 3–4 | Jul 19–20 | Otaru | City inn (near canal) | $100–150 |
 | 5–8 | Jul 21–24 | Sapporo | City hotel (Royal Park Canvas or Tokyu Stay) | $150–180 |
 | 9–11 | Jul 25–27 | Furano | Local hotel/guesthouse (3 nights) | $100–200 |
-| 12 | Jul 28 | Noboribetsu | **KAI Poroto** (Hoshino Resorts) ★ | ~$300–500 |
-| 13–14 | Jul 29–30 | Lake Toya | **Hikari no uta** (Tsuruga Resort) ★★ | ~$400–700 |
+| 12–13 | Jul 28–29 | Lake Toya | **Hikari no uta** (Tsuruga Resort) ★★ | ~$400–700 |
+| 14 | Jul 30 | Noboribetsu | **KAI Poroto** (Hoshino Resorts) ★ | ~$300–500 |
 
 ---
 
@@ -277,9 +278,9 @@ Note: Demon Fireworks (Oni-hanabi) run Thu/Fri nights only. Jul 28 = Tuesday —
 | 6 | Farm Tomita ★ | Day 9 | Jul 25 | Attraction (notebook stamp; ask at gift shop) |
 | 7 | Shikisai no Oka | Day 10 | Jul 26 | Attraction |
 | 8 | Biei Station | Day 11 | Jul 27 | Eki-stamp |
-| 9 | Upopoy Museum | Day 13 | Jul 29 | Attraction/NP |
-| 10 | Lake Toya visitor center | Day 13 | Jul 29 | National Park |
-| 11 | Shikotsu-Toya NP | Day 15 | Jul 31 | National Park |
+| 9 | Lake Toya visitor center | Day 12 | Jul 28 | National Park |
+| 10 | Upopoy Museum | Day 15 | Jul 31 | Attraction/NP |
+| 11 | Shikotsu-Toya NP | Day 15 | Jul 31 | National Park (optional Shikotsu detour) |
 
 ---
 
@@ -292,9 +293,9 @@ Note: Demon Fireworks (Oni-hanabi) run Thu/Fri nights only. Jul 28 = Tuesday —
 | Beer Garden (Sapporo) | **Jul 23–Aug 18** | ✅✅ **Day 7 (Jul 23) — OPENING DAY** |
 | Lavender peak — Farm Tomita | Mid-July | ✅ Days 9–10 (Jul 25–26) — peak timing |
 | Ningle Terrace evening | Year-round until 8:45pm | ✅ Day 9 (Jul 25) |
-| Upopoy Museum | Year-round | ✅ Day 13 (Jul 29) |
-| Lake Toya nightly fireworks | Late Apr–Oct 8:45pm | ✅✅ Nights 13–14 (Jul 29–30) |
-| Demon Fireworks (Oni-hanabi) | Thu/Fri 8:30pm | ❌ Noboribetsu Night 12 = Tue (Jul 28) — missed |
+| Upopoy Museum | Year-round | ✅ Day 15 (Jul 31) — morning of fly day |
+| Lake Toya nightly fireworks | Late Apr–Oct 8:45pm | ✅✅ Nights 12–13 (Jul 28–29) |
+| Demon Fireworks (Oni-hanabi) | Thu/Fri 8:30pm | ✅✅ Night 14 = **Thursday Jul 30** — CATCHABLE! |
 | Hinode Park Lavender Illumination | ~Jul 12–21 | ❌ Furano Days 10–11 = Jul 26–27 — definitively missed |
 
 ---
@@ -304,8 +305,8 @@ Note: Demon Fireworks (Oni-hanabi) run Thu/Fri nights only. Jul 28 = Tuesday —
 | Item | Urgency | Book Via |
 |---|---|---|
 | **Park Hyatt Niseko Hanazono** | 3–6 months ahead | Hyatt.com or Amex FHR |
-| **KAI Poroto** (Hoshino) | Book now — very popular | hoshinoresorts.com · Jul 28, 1 night |
-| **Hikari no uta** | 3–5 months ahead | hikarino-uta.com · Jul 29–30, 2 nights |
+| **Hikari no uta** | 3–5 months ahead | hikarino-uta.com · Jul 28–29, 2 nights |
+| **KAI Poroto** (Hoshino) | Book now — very popular | hoshinoresorts.com · Jul 30, 1 night |
 | **OTARU TAISHOU GLASS MUSEUM** workshop | 1–2 months ahead | Direct reservation · Jul 20 morning |
 | **Rental car at CTS** | ✅ Booked | AVIS · Jul 17 8:00am – Jul 31 6:00pm · $832.89 pay at pickup |
 | **Upopoy Museum** | Before trip | Book online (¥1,200) · Jul 29 |
@@ -317,7 +318,7 @@ Note: Demon Fireworks (Oni-hanabi) run Thu/Fri nights only. Jul 28 = Tuesday —
 
 ## Open Flags
 
-- ⚠️ **Demon Fireworks (KAI Poroto)** — Cannot catch with this schedule (Noboribetsu Jul 28 = Tuesday; fireworks Thu/Fri only). Accept the miss — Jigokudani geothermal boardwalk is the evening alternative.
+- ✅✅ **Demon Fireworks (KAI Poroto)** — **Now catchable!** Noboribetsu Jul 30 = Thursday; Demon Fireworks run Thu/Fri 8:30pm from the Jigokudani rim. One of the highlights of the trip.
 - ⚠️ **Hinode Park Illumination** — Definitively missed; Furano is Jul 25–27, illumination historically ends ~Jul 21. Lavender itself is still at peak ✓.
 - ⚠️ **OTARU TAISHOU GLASS MUSEUM** — Book glassblowing workshop 1–2 months ahead; Day 4 (Jul 20 morning).
 - ⚠️ **Upopoy Museum** — ¥1,200; advance reservation required; Day 13 (Jul 29 morning, before KAI Poroto checkout).
