@@ -1,6 +1,6 @@
 # Hokkaido Summer 2026 — Itinerary Draft v2
 
-> **Route:** Niseko-first western loop. Arrive CTS Jul 17, fly home Jul 31. Eastern Hokkaido dropped in favor of: Niseko → Cape Kamui → Otaru (2 nights) → Sapporo (4 days) → Furano → Noboribetsu → Lake Toya → Lake Shikotsu. See draft-v1.md for original eastern route.
+> **Route:** Niseko-first western loop. Arrive CTS Jul 17, fly home Jul 31. Eastern Hokkaido dropped in favor of: Niseko → Cape Kamui → Otaru (2 nights) → Sapporo (4 days) → Furano → Lake Toya → Noboribetsu → Lake Shikotsu. See draft-v1.md for original eastern route.
 
 ---
 
@@ -12,7 +12,7 @@
 | **Arrive CTS** | July 17, 7:50am |
 | **Depart CTS** | July 31, 2026 (21:40) |
 | **Total nights** | 14 |
-| **Car rental** | CTS arrival → July 30 return |
+| **Car rental** | CTS arrival → July 31, 6:00pm return |
 | **Arrive LAS** | August 2, 12:21am |
 
 ---
@@ -309,7 +309,7 @@ Note: Hinode Park Illumination (historically ends ~Jul 21) is definitively misse
 | **KAI Poroto** (Hoshino) | Book now — very popular | hoshinoresorts.com · Jul 30, 1 night |
 | **OTARU TAISHOU GLASS MUSEUM** workshop | 1–2 months ahead | Direct reservation · Jul 20 morning |
 | **Rental car at CTS** | ✅ Booked | AVIS · Jul 17 8:00am – Jul 31 6:00pm · $832.89 pay at pickup |
-| **Upopoy Museum** | Before trip | Book online (¥1,200) · Jul 29 |
+| **Upopoy Museum** | Before trip | Book online (¥1,200) · Jul 31 |
 | **Furano hotel** | 2–3 months ahead | Booking.com / Jalan · Jul 25–27, 3 nights |
 | **Sapporo hotel** | 2–3 months ahead | Jul 21–24, 4 nights |
 | **Otaru hotel** | 1–2 months ahead | Booking.com / Jalan · Jul 19–20, 2 nights |
@@ -319,8 +319,7 @@ Note: Hinode Park Illumination (historically ends ~Jul 21) is definitively misse
 ## Open Flags
 
 - ✅✅ **Demon Fireworks (KAI Poroto)** — **Now catchable!** Noboribetsu Jul 30 = Thursday; Demon Fireworks run Thu/Fri 8:30pm from the Jigokudani rim. One of the highlights of the trip.
-- ⚠️ **Hinode Park Illumination** — Definitively missed; Furano is Jul 25–27, illumination historically ends ~Jul 21. Lavender itself is still at peak ✓.
 - ⚠️ **OTARU TAISHOU GLASS MUSEUM** — Book glassblowing workshop 1–2 months ahead; Day 4 (Jul 20 morning).
-- ⚠️ **Upopoy Museum** — ¥1,200; advance reservation required; Day 13 (Jul 29 morning, before KAI Poroto checkout).
+- ⚠️ **Upopoy Museum** — ¥1,200; advance reservation required; Day 15 (Jul 31 morning).
 - ⚠️ **Haneda 60-min connection (return)** — NH988 arr 23:30 → NH106 dep 00:30; booked as one ANA itinerary. Go straight to international terminal on landing at HND.
 - ⚠️ **CTS Café Sky Library closed for return** — Lounge hours 11am–5pm; NH988 departs 21:40. No Priority Pass lounge available. Plan airport dinner.
