@@ -623,6 +623,50 @@
     /* ── Smooth scroll ── */
     html { scroll-behavior: smooth; }
 
+    /* ── Sticky nav bar ── */
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #1a3a52;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      padding: 0 clamp(8px, 3vw, 32px);
+      gap: 0;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .site-nav::-webkit-scrollbar { display: none; }
+    .site-nav a {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 10px 16px;
+      font-size: 12px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+      white-space: nowrap;
+      border-bottom: 2px solid transparent;
+      transition: color 0.15s, border-color 0.15s;
+      letter-spacing: 0.2px;
+    }
+    .site-nav a:hover {
+      color: rgba(255,255,255,0.9);
+      border-bottom-color: rgba(255,255,255,0.35);
+      background: rgba(255,255,255,0.05);
+    }
+    .site-nav a.nav-active {
+      color: #ffffff;
+      border-bottom-color: #5bbfd6;
+    }
+
+    /* Scroll offset so sections aren't hidden behind sticky nav */
+    .section-title, .nav-anchor, #section-festivals, #section-stays { scroll-margin-top: 44px; }
+
     /* ── Clickable destination cards ── */
     a.dest-card-link { display: block; text-decoration: none; color: inherit; }
     .dest-card { cursor: pointer; }
@@ -700,6 +744,15 @@
   </div>
 </div>
 
+<nav class="site-nav">
+  <a href="#section-destinations">📍 Destinations</a>
+  <a href="#section-timeline">📅 Timeline</a>
+  <a href="#section-festivals">🎉 Festivals</a>
+  <a href="#section-stays">🏨 Stays</a>
+  <a href="#section-stamps">📮 Stamps</a>
+  <a href="#section-costs">💴 Costs</a>
+</nav>
+
 <div class="main">
 
   <!-- ══════════ STATS ══════════ -->
@@ -755,7 +808,7 @@
   </div>
 
   <!-- ══════════ DESTINATION CARDS ══════════ -->
-  <div class="section-title">📍 Destinations</div>
+  <div class="section-title" id="section-destinations">📍 Destinations</div>
   <div class="dest-grid">
 
     <!-- Niseko -->
@@ -969,7 +1022,7 @@
   </div>
 
   <!-- ══════════ TIMELINE ══════════ -->
-  <div class="section-title">📅 Day-by-Day Timeline</div>
+  <div class="section-title" id="section-timeline">📅 Day-by-Day Timeline</div>
   <div class="legend">
     <div class="legend-item"><div class="legend-dot" style="background:#3d6e9a;"></div> Niseko</div>
     <div class="legend-item"><div class="legend-dot" style="background:#3d7ab0;"></div> Otaru</div>
@@ -1398,7 +1451,7 @@
   <div class="grid-2">
 
     <!-- Festivals -->
-    <div class="card">
+    <div class="card" id="section-festivals">
       <div class="card-title">🎉 Festival & Timing Check</div>
       <div class="festival-grid">
         <div class="festival-row">
@@ -1516,7 +1569,7 @@
   <!-- ══════════ ACCOMMODATIONS + FLIGHTS ══════════ -->
   <div class="grid-2">
 
-    <div class="card">
+    <div class="card" id="section-stays">
       <div class="card-title">🏨 Accommodations</div>
       <div class="accom-list">
         <div class="accom-row highlight-accom">
@@ -1591,7 +1644,7 @@
   </div>
 
   <!-- ══════════ STAMP SECTION ══════════ -->
-  <div class="section-title">📮 Stamp Collecting — 11 Stops</div>
+  <div class="section-title" id="section-stamps">📮 Stamp Collecting — 11 Stops</div>
   <div class="stamp-grid" style="margin-bottom:28px;">
 
     <div class="stamp-row">
@@ -1696,7 +1749,7 @@
   </div>
 
   <!-- ══════════ COST BREAKDOWN ══════════ -->
-  <div class="section-title">💴 Trip Cost Breakdown</div>
+  <div class="section-title" id="section-costs">💴 Trip Cost Breakdown</div>
   <div class="card" style="margin-bottom:28px;">
     <table class="cost-table">
       <thead>
@@ -1789,5 +1842,27 @@
   </div>
 
 </div><!-- /main -->
+
+<script>
+  (function() {
+    const links = document.querySelectorAll('.site-nav a');
+    const ids = [...links].map(a => a.getAttribute('href').slice(1));
+    const sections = ids.map(id => document.getElementById(id)).filter(Boolean);
+
+    const activate = (id) => {
+      links.forEach(a => {
+        a.classList.toggle('nav-active', a.getAttribute('href') === '#' + id);
+      });
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) activate(entry.target.id);
+      });
+    }, { rootMargin: '-10% 0px -80% 0px', threshold: 0 });
+
+    sections.forEach(s => observer.observe(s));
+  })();
+</script>
 </body>
 </html>
