@@ -619,6 +619,68 @@
       .stamp-grid { grid-template-columns: 1fr; }
       .route-stops { gap: 2px; }
     }
+
+    /* ── Smooth scroll ── */
+    html { scroll-behavior: smooth; }
+
+    /* ── Clickable destination cards ── */
+    a.dest-card-link { display: block; text-decoration: none; color: inherit; }
+    .dest-card { cursor: pointer; }
+
+    /* ── Location group wrapper ── */
+    .loc-group { margin-bottom: 12px; }
+
+    /* ── Location group header ── */
+    .loc-group-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #ebe7e0;
+      border-radius: 10px 10px 0 0;
+      padding: 9px 14px;
+      border-bottom: 2px solid #d4cfc8;
+      gap: 12px;
+      flex-wrap: wrap;
+      scroll-margin-top: 16px;
+    }
+    .loc-group-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .loc-group-name {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 99px;
+      color: white;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+    }
+    .loc-group-dates {
+      font-size: 12px;
+      color: #6b6360;
+      font-weight: 500;
+    }
+    .loc-group-hotel { text-align: right; }
+    .loc-group-hotel-name {
+      font-size: 12px;
+      font-weight: 600;
+      color: #3a3330;
+    }
+    .loc-group-hotel-times {
+      font-size: 11px;
+      color: #8a8380;
+      margin-top: 1px;
+    }
+
+    /* ── Travel day rows ── */
+    .day-row.travel-day { background: #f4f1ec; }
+    .day-row.travel-day .day-title::before { content: "🚗 "; }
+
+    /* ── Last row in group: no bottom border radius clash ── */
+    .loc-group .day-row:last-child { border-radius: 0 0 8px 8px; }
   </style>
 </head>
 <body>
@@ -697,7 +759,7 @@
   <div class="dest-grid">
 
     <!-- Niseko -->
-    <div class="dest-card">
+    <a href="#loc-niseko" class="dest-card-link"><div class="dest-card">
       <div class="dest-img-wrap">
         <img src="../images/niseko.jpg" alt="Niseko / Mt. Yotei" />
         <div class="dest-img-overlay"></div>
@@ -720,10 +782,10 @@
           <div class="dest-tip">Shiribetsu River rafting 15 min away — Niseko's best summer activity</div>
         </div>
       </div>
-    </div>
+    </div></a>
 
     <!-- Cape Kamui -->
-    <div class="dest-card">
+    <a href="#loc-otaru" class="dest-card-link"><div class="dest-card">
       <div class="dest-img-wrap">
         <img src="../images/cape-kamui.jpg" alt="Cape Kamui Shakotan" />
         <div class="dest-img-overlay"></div>
@@ -746,10 +808,10 @@
           <div class="dest-tip">Shakotan uni is as good as Rishiri's — grab a bowl at the port before continuing to Otaru</div>
         </div>
       </div>
-    </div>
+    </div></a>
 
     <!-- Otaru -->
-    <div class="dest-card">
+    <a href="#loc-otaru" class="dest-card-link"><div class="dest-card">
       <div class="dest-img-wrap">
         <img src="../images/otaru.jpg" alt="Otaru Canal" />
         <div class="dest-img-overlay"></div>
@@ -772,10 +834,10 @@
           <div class="dest-tip">Snoopy Village is on Canal Plaza 3F — one of only a few locations in Japan</div>
         </div>
       </div>
-    </div>
+    </div></a>
 
     <!-- Sapporo -->
-    <div class="dest-card">
+    <a href="#loc-sapporo" class="dest-card-link"><div class="dest-card">
       <div class="dest-img-wrap">
         <img src="../images/sapporo.jpg" alt="Sapporo" />
         <div class="dest-img-overlay"></div>
@@ -798,10 +860,10 @@
           <div class="dest-tip">Beer Garden: 9,000 seats, opening day Jul 23; stay the night in Sapporo — drive to Furano next morning</div>
         </div>
       </div>
-    </div>
+    </div></a>
 
     <!-- Furano -->
-    <div class="dest-card">
+    <a href="#loc-furano" class="dest-card-link"><div class="dest-card">
       <div class="dest-img-wrap">
         <img src="../images/furano.jpg" alt="Furano lavender" />
         <div class="dest-img-overlay"></div>
@@ -824,10 +886,10 @@
           <div class="dest-tip">Biei Patchwork Road Day 9 — Ken &amp; Mary Tree, Seven Stars, no rush</div>
         </div>
       </div>
-    </div>
+    </div></a>
 
     <!-- Lake Toya -->
-    <div class="dest-card">
+    <a href="#loc-toya" class="dest-card-link"><div class="dest-card">
       <div class="dest-img-wrap">
         <img src="../images/lake-toya.jpg" alt="Lake Toya" />
         <div class="dest-img-overlay"></div>
@@ -850,10 +912,10 @@
           <div class="dest-tip">Choose French, kaiseki, or teppanyaki each evening — all Hokkaido ingredients</div>
         </div>
       </div>
-    </div>
+    </div></a>
 
     <!-- Noboribetsu -->
-    <div class="dest-card">
+    <a href="#loc-noboribetsu" class="dest-card-link"><div class="dest-card">
       <div class="dest-img-wrap">
         <img src="../images/noboribetsu.jpg" alt="Noboribetsu Jigokudani" />
         <div class="dest-img-overlay"></div>
@@ -876,10 +938,10 @@
           <div class="dest-tip">Demon Fireworks (Day 14): Thu/Fri 8:30pm from Jigokudani rim — now catchable ✓✓. Upopoy (Day 15): book ¥1,200 ticket in advance</div>
         </div>
       </div>
-    </div>
+    </div></a>
 
     <!-- Lake Shikotsu -->
-    <div class="dest-card">
+    <a href="#loc-noboribetsu" class="dest-card-link"><div class="dest-card">
       <div class="dest-img-wrap">
         <img src="../images/lake-shikotsu.jpg" alt="Lake Shikotsu" />
         <div class="dest-img-overlay"></div>
@@ -902,7 +964,7 @@
           <div class="dest-tip">📮 Shikotsu-Toya NP visitor center stamp here</div>
         </div>
       </div>
-    </div>
+    </div></a>
 
   </div>
 
@@ -919,325 +981,414 @@
   </div>
   <div class="timeline" style="margin-bottom:28px;">
 
-    <!-- Day 1 -->
-    <div class="day-row">
-      <div class="day-num bg-niseko"><div class="d">FRI</div><div class="n">Jul 17</div></div>
-      <div class="region-tag">Niseko</div>
-      <div class="day-content">
-        <div class="day-title">Land CTS 7:50am → Niseko</div>
-        <div class="day-highlights">
-          <span class="highlight-tag">Collect rental car at CTS</span>
-          <span class="highlight-tag">Drive ~2hrs to Niseko</span>
-          <span class="highlight-tag">Tree Trekking / Zipline ★</span>
-          <span class="highlight-tag">Dinner Hirafu Village</span>
+    <!-- ══ NISEKO ══ -->
+    <div class="loc-group" id="loc-niseko">
+      <div class="loc-group-header">
+        <div class="loc-group-left">
+          <span class="loc-group-name bg-niseko">Niseko</span>
+          <span class="loc-group-dates">Jul 17–18 · Nights 1–2 · 2 nights</span>
+        </div>
+        <div class="loc-group-hotel">
+          <div class="loc-group-hotel-name">🏨 Park Hyatt Hanazono</div>
+          <div class="loc-group-hotel-times">Check-in ~3pm · Check-out ~10am</div>
         </div>
       </div>
-      <div class="day-accom">
-        <span class="accom-badge badge-hotel">Hotel</span>
-        <span class="accom-name">Park Hyatt Hanazono</span>
-        <span>Night 1 · ~$500–800</span>
+
+      <!-- Day 1 -->
+      <div class="day-row travel-day">
+        <div class="day-num bg-niseko"><div class="d">FRI</div><div class="n">Jul 17</div></div>
+        <div class="region-tag">Arrive CTS</div>
+        <div class="day-content">
+          <div class="day-title">Land CTS 7:50am → Niseko</div>
+          <div class="day-highlights">
+            <span class="highlight-tag">Collect rental car at CTS</span>
+            <span class="highlight-tag">Drive ~2hrs to Niseko</span>
+            <span class="highlight-tag">Tree Trekking / Zipline ★</span>
+            <span class="highlight-tag">Dinner Hirafu Village</span>
+          </div>
+        </div>
+        <div class="day-accom">
+          <span class="accom-badge badge-hotel">Hotel</span>
+          <span class="accom-name">Park Hyatt Hanazono</span>
+          <span>Check-in ~3pm · Night 1 of 2</span>
+        </div>
+      </div>
+
+      <!-- Day 2 -->
+      <div class="day-row">
+        <div class="day-num bg-niseko"><div class="d">SAT</div><div class="n">Jul 18</div></div>
+        <div class="region-tag">Niseko</div>
+        <div class="day-content">
+          <div class="day-title">Niseko Full Day</div>
+          <div class="day-highlights">
+            <span class="highlight-tag">E-bike to Kutchan town</span>
+            <span class="highlight-tag">Golf or Rafting ★</span>
+            <span class="highlight-tag">Mt. Yotei views</span>
+            <span class="highlight-tag">Niki fruit picking option</span>
+          </div>
+        </div>
+        <div class="day-accom">
+          <span class="accom-badge badge-hotel">Hotel</span>
+          <span class="accom-name">Park Hyatt Hanazono</span>
+          <span>Night 2 of 2 · Checkout ~10am</span>
+        </div>
       </div>
     </div>
 
-    <!-- Day 2 -->
-    <div class="day-row">
-      <div class="day-num bg-niseko"><div class="d">SAT</div><div class="n">Jul 18</div></div>
-      <div class="region-tag">Niseko</div>
-      <div class="day-content">
-        <div class="day-title">Niseko Full Day</div>
-        <div class="day-highlights">
-          <span class="highlight-tag">E-bike to Kutchan town</span>
-          <span class="highlight-tag">Golf or Rafting ★</span>
-          <span class="highlight-tag">Mt. Yotei views</span>
-          <span class="highlight-tag">Niki fruit picking option</span>
+    <!-- ══ CAPE KAMUI + OTARU ══ -->
+    <div class="loc-group" id="loc-otaru">
+      <div class="loc-group-header">
+        <div class="loc-group-left">
+          <span class="loc-group-name" style="background:#3d7ab0;">Otaru</span>
+          <span class="loc-group-dates">Jul 19–20 · Nights 3–4 · 2 nights · via Cape Kamui</span>
+        </div>
+        <div class="loc-group-hotel">
+          <div class="loc-group-hotel-name">🏨 Otaru Hotel ✅</div>
+          <div class="loc-group-hotel-times">Check-in 3pm–midnight · Check-out 11am</div>
         </div>
       </div>
-      <div class="day-accom">
-        <span class="accom-badge badge-hotel">Hotel</span>
-        <span class="accom-name">Park Hyatt Hanazono</span>
-        <span>Night 2 · ~$500–800</span>
+
+      <!-- Day 3 -->
+      <div class="day-row travel-day">
+        <div class="day-num" style="background:#2d7a6a;color:white;"><div class="d">SUN</div><div class="n">Jul 19</div></div>
+        <div class="region-tag">Cape Kamui</div>
+        <div class="day-content">
+          <div class="day-title">Niseko → Cape Kamui (Shakotan) → Otaru overnight</div>
+          <div class="day-highlights">
+            <span class="highlight-tag">Checkout Park Hyatt ~10am</span>
+            <span class="highlight-tag">Drive to Shakotan ~1.5hrs</span>
+            <span class="highlight-tag">Cliff walk to cape tip ★★</span>
+            <span class="highlight-tag">Shakotan Blue sea</span>
+            <span class="highlight-tag">Uni lunch at the port ★</span>
+            <span class="highlight-tag">Drive to Otaru ~1.5hrs</span>
+            <span class="highlight-tag">Canal at golden hour</span>
+          </div>
+        </div>
+        <div class="day-accom">
+          <span class="accom-badge badge-city">City</span>
+          <span class="accom-name">Otaru Hotel</span>
+          <span>Check-in 3pm–midnight · Night 1 of 2</span>
+        </div>
+      </div>
+
+      <!-- Day 4 -->
+      <div class="day-row">
+        <div class="day-num bg-otaru"><div class="d">MON</div><div class="n">Jul 20</div></div>
+        <div class="region-tag">Otaru</div>
+        <div class="day-content">
+          <div class="day-title">Otaru Full Day: Glassblowing + Snoopy Village + Music Box Museum</div>
+          <div class="day-highlights">
+            <span class="highlight-tag">TAISHOU Glass Museum workshop ★</span>
+            <span class="highlight-tag">Snoopy Village (Canal Plaza 3F)</span>
+            <span class="highlight-tag">Music Box Museum (Orgel-do)</span>
+            <span class="highlight-tag">Kitaichi Glass Oil Lamp Café</span>
+            <span class="highlight-tag stamp-tag">📮 Otaru eki-stamp · Canal stamp</span>
+            <span class="highlight-tag">Canal at golden hour · dinner</span>
+          </div>
+        </div>
+        <div class="day-accom">
+          <span class="accom-badge badge-city">City</span>
+          <span class="accom-name">Otaru Hotel</span>
+          <span>Night 2 of 2 · Checkout 11am</span>
+        </div>
       </div>
     </div>
 
-    <!-- Day 3 -->
-    <div class="day-row">
-      <div class="day-num" style="background:#2d7a6a;color:white;"><div class="d">SUN</div><div class="n">Jul 19</div></div>
-      <div class="region-tag">Cape Kamui</div>
-      <div class="day-content">
-        <div class="day-title">Niseko → Cape Kamui (Shakotan) → Otaru overnight</div>
-        <div class="day-highlights">
-          <span class="highlight-tag">Drive to Shakotan ~1.5hrs</span>
-          <span class="highlight-tag">Cliff walk to cape tip ★★</span>
-          <span class="highlight-tag">Shakotan Blue sea</span>
-          <span class="highlight-tag">Uni lunch at the port ★</span>
-          <span class="highlight-tag">Drive to Otaru ~1.5hrs</span>
-          <span class="highlight-tag">Canal at golden hour</span>
+    <!-- ══ SAPPORO ══ -->
+    <div class="loc-group" id="loc-sapporo">
+      <div class="loc-group-header">
+        <div class="loc-group-left">
+          <span class="loc-group-name bg-sapporo">Sapporo</span>
+          <span class="loc-group-dates">Jul 21–24 · Nights 5–8 · 4 nights</span>
+        </div>
+        <div class="loc-group-hotel">
+          <div class="loc-group-hotel-name">🏨 Hotel TBD</div>
+          <div class="loc-group-hotel-times">Check-in ~3pm · Check-out ~11am</div>
         </div>
       </div>
-      <div class="day-accom">
-        <span class="accom-badge badge-city">City</span>
-        <span class="accom-name">Otaru Hotel</span>
-        <span>Night 3 · ~$100–150</span>
+
+      <!-- Day 5 -->
+      <div class="day-row travel-day">
+        <div class="day-num bg-sapporo"><div class="d">TUE</div><div class="n">Jul 21</div></div>
+        <div class="region-tag">Otaru → Sapporo</div>
+        <div class="day-content">
+          <div class="day-title">Otaru → Sapporo · Arrive · Susukino Evening</div>
+          <div class="day-highlights">
+            <span class="highlight-tag">Checkout Otaru Hotel 11am</span>
+            <span class="highlight-tag">Drive ~40min (Route 5)</span>
+            <span class="highlight-tag">Odori Park · TV Tower</span>
+            <span class="highlight-tag">Tanuki Koji shopping arcade</span>
+            <span class="highlight-tag">Light dinner in Susukino</span>
+          </div>
+        </div>
+        <div class="day-accom">
+          <span class="accom-badge badge-city">City</span>
+          <span class="accom-name">Sapporo Hotel</span>
+          <span>Check-in ~3pm · Night 1 of 4</span>
+        </div>
+      </div>
+
+      <!-- Day 6 -->
+      <div class="day-row">
+        <div class="day-num bg-sapporo"><div class="d">WED</div><div class="n">Jul 22</div></div>
+        <div class="region-tag">Sapporo</div>
+        <div class="day-content">
+          <div class="day-title">Sapporo Day 1: Hill of the Buddha + Moerenuma + Art Park + Ramen</div>
+          <div class="day-highlights">
+            <span class="highlight-tag">Hill of the Buddha 9am ★ (Tadao Ando)</span>
+            <span class="highlight-tag">150k lavender in July bloom</span>
+            <span class="highlight-tag">Moerenuma Park (Isamu Noguchi) ★</span>
+            <span class="highlight-tag">Nijo Market kaisen-don lunch</span>
+            <span class="highlight-tag">Sapporo Art Park ★</span>
+            <span class="highlight-tag">Ramen Yokocho dinner</span>
+            <span class="highlight-tag stamp-tag">📮 Sapporo Station eki-stamp</span>
+          </div>
+        </div>
+        <div class="day-accom">
+          <span class="accom-badge badge-city">City</span>
+          <span class="accom-name">Sapporo Hotel</span>
+          <span>Night 2 of 4</span>
+        </div>
+      </div>
+
+      <!-- Day 7 -->
+      <div class="day-row">
+        <div class="day-num bg-sapporo"><div class="d">THU</div><div class="n">Jul 23</div></div>
+        <div class="region-tag">Sapporo</div>
+        <div class="day-content">
+          <div class="day-title">Sapporo Day 2: Beer Garden OPENING DAY 🍺</div>
+          <div class="day-highlights">
+            <span class="highlight-tag">Mt. Moiwa ropeway morning ★</span>
+            <span class="highlight-tag" style="background:#fde68a;color:#78350f;">🍺 Beer Garden OPENS TODAY ✓✓ ★★</span>
+            <span class="highlight-tag">9,000 seats · 12pm–9pm</span>
+            <span class="highlight-tag">Zangi · Genghis Khan · Hofbräu Munich</span>
+            <span class="highlight-tag">Stay in Sapporo tonight — no drive</span>
+          </div>
+        </div>
+        <div class="day-accom">
+          <span class="accom-badge badge-city">City</span>
+          <span class="accom-name">Sapporo Hotel</span>
+          <span>Night 3 of 4</span>
+        </div>
+      </div>
+
+      <!-- Day 8 -->
+      <div class="day-row">
+        <div class="day-num bg-sapporo"><div class="d">FRI</div><div class="n">Jul 24</div></div>
+        <div class="region-tag">Sapporo</div>
+        <div class="day-content">
+          <div class="day-title">Sapporo Day 3: Shiroi Koibito + ROYCE' + Sake Museum</div>
+          <div class="day-highlights">
+            <span class="highlight-tag">Shiroi Koibito Park ★ (cookie workshop)</span>
+            <span class="highlight-tag stamp-tag">📮 Shiroi Koibito stamp</span>
+            <span class="highlight-tag">ROYCE' Cacao &amp; Chocolate Town</span>
+            <span class="highlight-tag">Hokkaido Univ Botanical Garden</span>
+            <span class="highlight-tag">Soup curry dinner (Garaku/Aiiro)</span>
+            <span class="highlight-tag stamp-tag">📮 Sapporo Beer Museum stamp</span>
+          </div>
+        </div>
+        <div class="day-accom">
+          <span class="accom-badge badge-city">City</span>
+          <span class="accom-name">Sapporo Hotel</span>
+          <span>Night 4 of 4 · Checkout ~11am</span>
+        </div>
       </div>
     </div>
 
-    <!-- Day 4 -->
-    <div class="day-row">
-      <div class="day-num bg-otaru"><div class="d">MON</div><div class="n">Jul 20</div></div>
-      <div class="region-tag">Otaru</div>
-      <div class="day-content">
-        <div class="day-title">Otaru Full Day: Glassblowing + Snoopy Village + Music Box Museum</div>
-        <div class="day-highlights">
-          <span class="highlight-tag">TAISHOU Glass Museum workshop ★</span>
-          <span class="highlight-tag">Snoopy Village (Canal Plaza 3F)</span>
-          <span class="highlight-tag">Music Box Museum (Orgel-do)</span>
-          <span class="highlight-tag">Kitaichi Glass Oil Lamp Café</span>
-          <span class="highlight-tag stamp-tag">📮 Otaru eki-stamp · Canal stamp</span>
-          <span class="highlight-tag">Canal at golden hour · dinner</span>
+    <!-- ══ FURANO ══ -->
+    <div class="loc-group" id="loc-furano">
+      <div class="loc-group-header">
+        <div class="loc-group-left">
+          <span class="loc-group-name bg-furano">Furano &amp; Biei</span>
+          <span class="loc-group-dates">Jul 25–27 · Nights 9–11 · 3 nights</span>
+        </div>
+        <div class="loc-group-hotel">
+          <div class="loc-group-hotel-name">🏨 Hotel TBD</div>
+          <div class="loc-group-hotel-times">Check-in ~3pm · Check-out ~11am</div>
         </div>
       </div>
-      <div class="day-accom">
-        <span class="accom-badge badge-city">City</span>
-        <span class="accom-name">Otaru Hotel</span>
-        <span>Night 4 · ~$100–150</span>
+
+      <!-- Day 9 -->
+      <div class="day-row travel-day">
+        <div class="day-num bg-furano"><div class="d">SAT</div><div class="n">Jul 25</div></div>
+        <div class="region-tag">Sapporo → Furano</div>
+        <div class="day-content">
+          <div class="day-title">Drive Sapporo → Furano · Farm Tomita · Ningle Terrace</div>
+          <div class="day-highlights">
+            <span class="highlight-tag">Checkout Sapporo ~11am</span>
+            <span class="highlight-tag">Drive ~2hrs (Route 12/38) · arrive noon</span>
+            <span class="highlight-tag">Farm Tomita afternoon ★★</span>
+            <span class="highlight-tag stamp-tag">📮 Farm Tomita notebook stamp ★</span>
+            <span class="highlight-tag">Ningle Terrace evening ★ (until 8:45pm)</span>
+          </div>
+        </div>
+        <div class="day-accom">
+          <span class="accom-badge badge-tbd">TBD</span>
+          <span class="accom-name">Furano hotel</span>
+          <span>Check-in ~3pm · Night 1 of 3</span>
+        </div>
+      </div>
+
+      <!-- Day 10 -->
+      <div class="day-row">
+        <div class="day-num bg-furano"><div class="d">SUN</div><div class="n">Jul 26</div></div>
+        <div class="region-tag">Furano / Biei</div>
+        <div class="day-content">
+          <div class="day-title">Farm Tomita 6:30am · Lavender East · Shikisai no Oka</div>
+          <div class="day-highlights">
+            <span class="highlight-tag">Farm Tomita dawn 6:30am ★★</span>
+            <span class="highlight-tag">Lavender East (less crowded)</span>
+            <span class="highlight-tag">Shikisai no Oka flower rows ★</span>
+            <span class="highlight-tag stamp-tag">📮 Shikisai no Oka stamp</span>
+          </div>
+        </div>
+        <div class="day-accom">
+          <span class="accom-badge badge-tbd">TBD</span>
+          <span class="accom-name">Furano hotel</span>
+          <span>Night 2 of 3</span>
+        </div>
+      </div>
+
+      <!-- Day 11 -->
+      <div class="day-row">
+        <div class="day-num bg-furano"><div class="d">MON</div><div class="n">Jul 27</div></div>
+        <div class="region-tag">Biei / Furano</div>
+        <div class="day-content">
+          <div class="day-title">Biei Patchwork Road · Shirogane Blue Pond ★★</div>
+          <div class="day-highlights">
+            <span class="highlight-tag">Biei Patchwork Road (30 min drive)</span>
+            <span class="highlight-tag">Ken &amp; Mary Tree · Seven Stars Tree</span>
+            <span class="highlight-tag stamp-tag">📮 Biei eki-stamp</span>
+            <span class="highlight-tag">Melon lunch at Tomita Melon House</span>
+            <span class="highlight-tag">Shirogane Blue Pond afternoon ★★</span>
+          </div>
+        </div>
+        <div class="day-accom">
+          <span class="accom-badge badge-tbd">TBD</span>
+          <span class="accom-name">Furano hotel</span>
+          <span>Night 3 of 3 · Checkout ~11am</span>
+        </div>
       </div>
     </div>
 
-    <!-- Day 5 -->
-    <div class="day-row">
-      <div class="day-num bg-sapporo"><div class="d">TUE</div><div class="n">Jul 21</div></div>
-      <div class="region-tag">Otaru → Sapporo</div>
-      <div class="day-content">
-        <div class="day-title">Otaru → Sapporo · Arrive · Susukino Evening</div>
-        <div class="day-highlights">
-          <span class="highlight-tag">Drive ~40min (Route 5)</span>
-          <span class="highlight-tag">Check in · Odori Park · TV Tower</span>
-          <span class="highlight-tag">Tanuki Koji shopping arcade</span>
-          <span class="highlight-tag">Light dinner in Susukino</span>
+    <!-- ══ LAKE TOYA ══ -->
+    <div class="loc-group" id="loc-toya">
+      <div class="loc-group-header">
+        <div class="loc-group-left">
+          <span class="loc-group-name bg-toya">Lake Toya</span>
+          <span class="loc-group-dates">Jul 28–29 · Nights 12–13 · 2 nights</span>
+        </div>
+        <div class="loc-group-hotel">
+          <div class="loc-group-hotel-name">🏩 Hikari no uta ✅</div>
+          <div class="loc-group-hotel-times">Check-in ~3pm · Check-out ~11am</div>
         </div>
       </div>
-      <div class="day-accom">
-        <span class="accom-badge badge-city">City</span>
-        <span class="accom-name">Sapporo Hotel</span>
-        <span>Night 5 · ~$150–180</span>
+
+      <!-- Day 12 -->
+      <div class="day-row travel-day">
+        <div class="day-num bg-toya"><div class="d">TUE</div><div class="n">Jul 28</div></div>
+        <div class="region-tag">Furano → Lake Toya</div>
+        <div class="day-content">
+          <div class="day-title">Drive Furano → Lake Toya · Hikari no uta · Mt. Usu Ropeway · Fireworks</div>
+          <div class="day-highlights">
+            <span class="highlight-tag">Checkout Furano hotel ~11am</span>
+            <span class="highlight-tag">Drive ~2–2.5hrs (Route 38/453)</span>
+            <span class="highlight-tag">Hikari no uta check-in ~3pm ★★</span>
+            <span class="highlight-tag">Mt. Usu Ropeway (active volcano) ★★</span>
+            <span class="highlight-tag">Showa Shinzan lava dome</span>
+            <span class="highlight-tag stamp-tag">📮 Lake Toya visitor center</span>
+            <span class="highlight-tag">Fireworks 8:45pm ★★</span>
+          </div>
+        </div>
+        <div class="day-accom">
+          <span class="accom-badge badge-ryokan">Ryokan</span>
+          <span class="accom-name">Hikari no uta</span>
+          <span>Check-in ~3pm · Night 1 of 2</span>
+        </div>
+      </div>
+
+      <!-- Day 13 -->
+      <div class="day-row">
+        <div class="day-num bg-toya"><div class="d">WED</div><div class="n">Jul 29</div></div>
+        <div class="region-tag">Lake Toya</div>
+        <div class="day-content">
+          <div class="day-title">Lake Toya Full Day: Island Cruise + Sculpture Park + Fireworks</div>
+          <div class="day-highlights">
+            <span class="highlight-tag">Nakajima Island boat cruise ★</span>
+            <span class="highlight-tag">Sika deer roam freely</span>
+            <span class="highlight-tag">Gurutto Sculpture Park (4km, 58 works)</span>
+            <span class="highlight-tag">Canoeing / paddleboarding</span>
+            <span class="highlight-tag">Fireworks 8:45pm ★★ (2nd night)</span>
+          </div>
+        </div>
+        <div class="day-accom">
+          <span class="accom-badge badge-ryokan">Ryokan</span>
+          <span class="accom-name">Hikari no uta</span>
+          <span>Night 2 of 2 · Checkout ~11am</span>
+        </div>
       </div>
     </div>
 
-    <!-- Day 6 -->
-    <div class="day-row">
-      <div class="day-num bg-sapporo"><div class="d">WED</div><div class="n">Jul 22</div></div>
-      <div class="region-tag">Sapporo</div>
-      <div class="day-content">
-        <div class="day-title">Sapporo Day 1: Hill of the Buddha + Moerenuma + Art Park + Ramen</div>
-        <div class="day-highlights">
-          <span class="highlight-tag">Hill of the Buddha 9am ★ (Tadao Ando)</span>
-          <span class="highlight-tag">150k lavender in July bloom</span>
-          <span class="highlight-tag">Moerenuma Park (Isamu Noguchi) ★</span>
-          <span class="highlight-tag">Nijo Market kaisen-don lunch</span>
-          <span class="highlight-tag">Sapporo Art Park ★</span>
-          <span class="highlight-tag">Ramen Yokocho dinner</span>
-          <span class="highlight-tag stamp-tag">📮 Sapporo Station eki-stamp</span>
+    <!-- ══ NOBORIBETSU + FLY HOME ══ -->
+    <div class="loc-group" id="loc-noboribetsu">
+      <div class="loc-group-header">
+        <div class="loc-group-left">
+          <span class="loc-group-name bg-noboribetsu">Noboribetsu</span>
+          <span class="loc-group-dates">Jul 30–31 · Night 14 · 1 night + fly day</span>
+        </div>
+        <div class="loc-group-hotel">
+          <div class="loc-group-hotel-name">🏩 KAI Poroto</div>
+          <div class="loc-group-hotel-times">Check-in ~3pm · Check-out ~11am</div>
         </div>
       </div>
-      <div class="day-accom">
-        <span class="accom-badge badge-city">City</span>
-        <span class="accom-name">Sapporo Hotel</span>
-        <span>Night 6 · ~$150–180</span>
-      </div>
-    </div>
 
-    <!-- Day 7 -->
-    <div class="day-row">
-      <div class="day-num bg-sapporo"><div class="d">THU</div><div class="n">Jul 23</div></div>
-      <div class="region-tag">Sapporo</div>
-      <div class="day-content">
-        <div class="day-title">Sapporo Day 2: Beer Garden OPENING DAY 🍺</div>
-        <div class="day-highlights">
-          <span class="highlight-tag">Mt. Moiwa ropeway morning ★</span>
-          <span class="highlight-tag" style="background:#fde68a;color:#78350f;">🍺 Beer Garden OPENS TODAY ✓✓ ★★</span>
-          <span class="highlight-tag">9,000 seats · 12pm–9pm</span>
-          <span class="highlight-tag">Zangi · Genghis Khan · Hofbräu Munich</span>
-          <span class="highlight-tag">Stay in Sapporo tonight — no drive</span>
+      <!-- Day 14 -->
+      <div class="day-row travel-day">
+        <div class="day-num bg-noboribetsu"><div class="d">THU</div><div class="n">Jul 30</div></div>
+        <div class="region-tag">Lake Toya → Noboribetsu</div>
+        <div class="day-content">
+          <div class="day-title">Checkout Hikari no uta → Jigokudani · Public Footbath · KAI Poroto · Demon Fireworks 🔥</div>
+          <div class="day-highlights">
+            <span class="highlight-tag">Checkout Hikari no uta ~11am</span>
+            <span class="highlight-tag">Drive ~45min (Route 37)</span>
+            <span class="highlight-tag">Jigokudani Hell Valley ★</span>
+            <span class="highlight-tag">Oyunumagawa public footbath (free)</span>
+            <span class="highlight-tag">KAI Poroto check-in ~3pm ★ (moor spring onsen)</span>
+            <span class="highlight-tag">Amano Family Farm dinner ★</span>
+            <span class="highlight-tag" style="background:#fde68a;color:#78350f;">🔥 Demon Fireworks 8:30pm ✓✓ ★★ (Thu!)</span>
+          </div>
+        </div>
+        <div class="day-accom">
+          <span class="accom-badge badge-ryokan">Ryokan</span>
+          <span class="accom-name">KAI Poroto</span>
+          <span>Check-in ~3pm · Night 1 of 1</span>
         </div>
       </div>
-      <div class="day-accom">
-        <span class="accom-badge badge-city">City</span>
-        <span class="accom-name">Sapporo Hotel</span>
-        <span>Night 7 · ~$150–180</span>
-      </div>
-    </div>
 
-    <!-- Day 8 -->
-    <div class="day-row">
-      <div class="day-num bg-sapporo"><div class="d">FRI</div><div class="n">Jul 24</div></div>
-      <div class="region-tag">Sapporo</div>
-      <div class="day-content">
-        <div class="day-title">Sapporo Day 3: Shiroi Koibito + ROYCE' + Sake Museum</div>
-        <div class="day-highlights">
-          <span class="highlight-tag">Shiroi Koibito Park ★ (cookie workshop)</span>
-          <span class="highlight-tag stamp-tag">📮 Shiroi Koibito stamp</span>
-          <span class="highlight-tag">ROYCE' Cacao &amp; Chocolate Town</span>
-          <span class="highlight-tag">Hokkaido Univ Botanical Garden</span>
-          <span class="highlight-tag">Soup curry dinner (Garaku/Aiiro)</span>
-          <span class="highlight-tag stamp-tag">📮 Sapporo Beer Museum stamp</span>
+      <!-- Day 15 -->
+      <div class="day-row travel-day">
+        <div class="day-num bg-transit"><div class="d">FRI</div><div class="n">Jul 31</div></div>
+        <div class="region-tag">Noboribetsu → Fly Home</div>
+        <div class="day-content">
+          <div class="day-title">Upopoy Museum 9am · Checkout KAI Poroto · Optional Shikotsu · CTS · ✈ Fly Home</div>
+          <div class="day-highlights">
+            <span class="highlight-tag">Upopoy National Ainu Museum 9am ★★</span>
+            <span class="highlight-tag stamp-tag">📮 Upopoy Museum stamp</span>
+            <span class="highlight-tag">Checkout KAI Poroto ~11am · explore Noboribetsu</span>
+            <span class="highlight-tag">Optional: Lake Shikotsu detour (~45min each way)</span>
+            <span class="highlight-tag stamp-tag">📮 Shikotsu-Toya NP stamp (if Shikotsu)</span>
+            <span class="highlight-tag">Drive to CTS ~45min · airport dinner</span>
+            <span class="highlight-tag">NH988 CTS→HND Dep 21:40 · Seats 14C/14B</span>
+            <span class="highlight-tag">NH106 HND→LAX Dep 00:30 Aug 1 · Seats 21C/21B</span>
+            <span class="highlight-tag">UA2315 LAX→LAS Dep 22:59 · Seats 29C/29B</span>
+            <span class="highlight-tag" style="background:#f0a0a0;color:#800;">⚠ 60-min HND connection — go straight to intl terminal</span>
+            <span class="highlight-tag" style="background:#f0a0a0;color:#800;">⚠ CTS lounge closed at 21:40 — no Priority Pass</span>
+          </div>
         </div>
-      </div>
-      <div class="day-accom">
-        <span class="accom-badge badge-city">City</span>
-        <span class="accom-name">Sapporo Hotel</span>
-        <span>Night 8 · ~$150–180</span>
-      </div>
-    </div>
-
-    <!-- Day 9 -->
-    <div class="day-row">
-      <div class="day-num bg-furano"><div class="d">SAT</div><div class="n">Jul 25</div></div>
-      <div class="region-tag">Sapporo → Furano</div>
-      <div class="day-content">
-        <div class="day-title">Drive Sapporo → Furano · Farm Tomita · Ningle Terrace</div>
-        <div class="day-highlights">
-          <span class="highlight-tag">Drive ~2hrs (Route 12/38) · arrive noon</span>
-          <span class="highlight-tag">Farm Tomita afternoon ★★</span>
-          <span class="highlight-tag stamp-tag">📮 Farm Tomita notebook stamp ★</span>
-          <span class="highlight-tag">Ningle Terrace evening ★ (until 8:45pm)</span>
+        <div class="day-accom">
+          <span class="accom-badge badge-travel">Transit</span>
+          <span class="accom-name">In the air · Arrive LAS Aug 2 12:21am</span>
         </div>
-      </div>
-      <div class="day-accom">
-        <span class="accom-badge badge-tbd">TBD</span>
-        <span class="accom-name">Furano hotel</span>
-        <span>Night 9 · ~$100–200</span>
-      </div>
-    </div>
-
-    <!-- Day 10 -->
-    <div class="day-row">
-      <div class="day-num bg-furano"><div class="d">SUN</div><div class="n">Jul 26</div></div>
-      <div class="region-tag">Furano / Biei</div>
-      <div class="day-content">
-        <div class="day-title">Farm Tomita 6:30am · Lavender East · Shikisai no Oka</div>
-        <div class="day-highlights">
-          <span class="highlight-tag">Farm Tomita dawn 6:30am ★★</span>
-          <span class="highlight-tag">Lavender East (less crowded)</span>
-          <span class="highlight-tag">Shikisai no Oka flower rows ★</span>
-          <span class="highlight-tag stamp-tag">📮 Shikisai no Oka stamp</span>
-        </div>
-      </div>
-      <div class="day-accom">
-        <span class="accom-badge badge-tbd">TBD</span>
-        <span class="accom-name">Furano hotel</span>
-        <span>Night 10 · ~$100–200</span>
-      </div>
-    </div>
-
-    <!-- Day 11 -->
-    <div class="day-row">
-      <div class="day-num bg-furano"><div class="d">MON</div><div class="n">Jul 27</div></div>
-      <div class="region-tag">Biei / Furano</div>
-      <div class="day-content">
-        <div class="day-title">Biei Patchwork Road · Shirogane Blue Pond ★★</div>
-        <div class="day-highlights">
-          <span class="highlight-tag">Biei Patchwork Road (30 min drive)</span>
-          <span class="highlight-tag">Ken &amp; Mary Tree · Seven Stars Tree</span>
-          <span class="highlight-tag stamp-tag">📮 Biei eki-stamp</span>
-          <span class="highlight-tag">Melon lunch at Tomita Melon House</span>
-          <span class="highlight-tag">Shirogane Blue Pond afternoon ★★</span>
-        </div>
-      </div>
-      <div class="day-accom">
-        <span class="accom-badge badge-tbd">TBD</span>
-        <span class="accom-name">Furano hotel</span>
-        <span>Night 11 · ~$100–200</span>
-      </div>
-    </div>
-
-    <!-- Day 12 -->
-    <div class="day-row">
-      <div class="day-num bg-toya"><div class="d">TUE</div><div class="n">Jul 28</div></div>
-      <div class="region-tag">Furano → Lake Toya</div>
-      <div class="day-content">
-        <div class="day-title">Drive Furano → Lake Toya · Hikari no uta · Mt. Usu Ropeway · Fireworks</div>
-        <div class="day-highlights">
-          <span class="highlight-tag">Drive ~2–2.5hrs (Route 38/453)</span>
-          <span class="highlight-tag">Hikari no uta check-in ★★</span>
-          <span class="highlight-tag">Mt. Usu Ropeway (active volcano) ★★</span>
-          <span class="highlight-tag">Showa Shinzan lava dome</span>
-          <span class="highlight-tag stamp-tag">📮 Lake Toya visitor center</span>
-          <span class="highlight-tag">Fireworks 8:45pm ★★</span>
-        </div>
-      </div>
-      <div class="day-accom">
-        <span class="accom-badge badge-ryokan">Ryokan</span>
-        <span class="accom-name">Hikari no uta</span>
-        <span>Night 12 · ~$400–700</span>
-      </div>
-    </div>
-
-    <!-- Day 13 -->
-    <div class="day-row">
-      <div class="day-num bg-toya"><div class="d">WED</div><div class="n">Jul 29</div></div>
-      <div class="region-tag">Lake Toya</div>
-      <div class="day-content">
-        <div class="day-title">Lake Toya Full Day: Island Cruise + Sculpture Park + Fireworks</div>
-        <div class="day-highlights">
-          <span class="highlight-tag">Nakajima Island boat cruise ★</span>
-          <span class="highlight-tag">Sika deer roam freely</span>
-          <span class="highlight-tag">Gurutto Sculpture Park (4km, 58 works)</span>
-          <span class="highlight-tag">Canoeing / paddleboarding</span>
-          <span class="highlight-tag">Fireworks 8:45pm ★★ (2nd night)</span>
-        </div>
-      </div>
-      <div class="day-accom">
-        <span class="accom-badge badge-ryokan">Ryokan</span>
-        <span class="accom-name">Hikari no uta</span>
-        <span>Night 13 · ~$400–700</span>
-      </div>
-    </div>
-
-    <!-- Day 14 -->
-    <div class="day-row">
-      <div class="day-num bg-noboribetsu"><div class="d">THU</div><div class="n">Jul 30</div></div>
-      <div class="region-tag">Lake Toya → Noboribetsu</div>
-      <div class="day-content">
-        <div class="day-title">Checkout Hikari no uta → Jigokudani · Public Footbath · KAI Poroto · Demon Fireworks 🔥</div>
-        <div class="day-highlights">
-          <span class="highlight-tag">Drive ~45min (Route 37)</span>
-          <span class="highlight-tag">Jigokudani Hell Valley ★</span>
-          <span class="highlight-tag">Oyunumagawa public footbath (free)</span>
-          <span class="highlight-tag">KAI Poroto check-in ★ (moor spring onsen)</span>
-          <span class="highlight-tag">Amano Family Farm dinner ★</span>
-          <span class="highlight-tag" style="background:#fde68a;color:#78350f;">🔥 Demon Fireworks 8:30pm ✓✓ ★★ (Thu!)</span>
-        </div>
-      </div>
-      <div class="day-accom">
-        <span class="accom-badge badge-ryokan">Ryokan</span>
-        <span class="accom-name">KAI Poroto</span>
-        <span>Night 14 · ~$300–500</span>
-      </div>
-    </div>
-
-    <!-- Day 15 -->
-    <div class="day-row">
-      <div class="day-num bg-transit"><div class="d">FRI</div><div class="n">Jul 31</div></div>
-      <div class="region-tag">Noboribetsu → Fly Home</div>
-      <div class="day-content">
-        <div class="day-title">Upopoy Museum 9am · Checkout KAI Poroto · Optional Shikotsu · CTS · ✈ Fly Home</div>
-        <div class="day-highlights">
-          <span class="highlight-tag">Upopoy National Ainu Museum 9am ★★</span>
-          <span class="highlight-tag stamp-tag">📮 Upopoy Museum stamp</span>
-          <span class="highlight-tag">Checkout ~11am · explore Noboribetsu</span>
-          <span class="highlight-tag">Optional: Lake Shikotsu detour (~45min each way)</span>
-          <span class="highlight-tag stamp-tag">📮 Shikotsu-Toya NP stamp (if Shikotsu)</span>
-          <span class="highlight-tag">Drive to CTS ~45min · airport dinner</span>
-          <span class="highlight-tag">NH988 CTS→HND Dep 21:40 · Seats 14C/14B</span>
-          <span class="highlight-tag">NH106 HND→LAX Dep 00:30 Aug 1 · Seats 21C/21B</span>
-          <span class="highlight-tag">UA2315 LAX→LAS Dep 22:59 · Seats 29C/29B</span>
-          <span class="highlight-tag" style="background:#f0a0a0;color:#800;">⚠ 60-min HND connection — go straight to intl terminal</span>
-          <span class="highlight-tag" style="background:#f0a0a0;color:#800;">⚠ CTS lounge closed at 21:40 — no Priority Pass</span>
-        </div>
-      </div>
-      <div class="day-accom">
-        <span class="accom-badge badge-travel">Transit</span>
-        <span class="accom-name">In the air · Arrive LAS Aug 2 12:21am</span>
       </div>
     </div>
 
