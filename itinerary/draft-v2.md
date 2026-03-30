@@ -258,7 +258,7 @@ Note: Hinode Park Illumination (historically ends ~Jul 21) is definitively misse
 | Night | Date | Location | Stay | Est. Cost/Night |
 |---|---|---|---|---|
 | 1–2 | Jul 17–18 | Niseko | **Park Hyatt Niseko Hanazono** ★★★ | ~$500–800 |
-| 3–4 | Jul 19–20 | Otaru | City inn (near canal) | $100–150 |
+| 3–4 | Jul 19–20 | Otaru | ✅ **Booked** · Superior King Room | $223/night ($446 total) |
 | 5–8 | Jul 21–24 | Sapporo | City hotel (Royal Park Canvas or Tokyu Stay) | $150–180 |
 | 9–11 | Jul 25–27 | Furano | Local hotel/guesthouse (3 nights) | $100–200 |
 | 12–13 | Jul 28–29 | Lake Toya | **Hikari no uta** (Tsuruga Resort) ★★ | ~$400–700 |
@@ -312,7 +312,7 @@ Note: Hinode Park Illumination (historically ends ~Jul 21) is definitively misse
 | **Upopoy Museum** | Before trip | Book online (¥1,200) · Jul 31 |
 | **Furano hotel** | 2–3 months ahead | Booking.com / Jalan · Jul 25–27, 3 nights |
 | **Sapporo hotel** | 2–3 months ahead | Jul 21–24, 4 nights |
-| **Otaru hotel** | 1–2 months ahead | Booking.com / Jalan · Jul 19–20, 2 nights |
+| **Otaru Hotel** | ✅ Booked | Booking.com · Jul 19–21 · 2 nights · Superior King Room · $446 total |
 
 ---
 
