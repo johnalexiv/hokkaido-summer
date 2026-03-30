@@ -261,7 +261,7 @@ Note: Hinode Park Illumination (historically ends ~Jul 21) is definitively misse
 | 3–4 | Jul 19–20 | Otaru | ✅ **Booked** · Superior King Room | $223/night ($446 total) |
 | 5–8 | Jul 21–24 | Sapporo | City hotel (Royal Park Canvas or Tokyu Stay) | $150–180 |
 | 9–11 | Jul 25–27 | Furano | Local hotel/guesthouse (3 nights) | $100–200 |
-| 12–13 | Jul 28–29 | Lake Toya | **Hikari no uta** (Tsuruga Resort) ★★ | ~$400–700 |
+| 12–13 | Jul 28–29 | Lake Toya | ✅ **Booked** · **Hikari no uta** (Tsuruga Resort) ★★ | $1,697 total (CSR 110,998 pts) |
 | 14 | Jul 30 | Noboribetsu | **KAI Poroto** (Hoshino Resorts) ★ | ~$300–500 |
 
 ---
@@ -305,7 +305,7 @@ Note: Hinode Park Illumination (historically ends ~Jul 21) is definitively misse
 | Item | Urgency | Book Via |
 |---|---|---|
 | **Park Hyatt Niseko Hanazono** | 3–6 months ahead | Hyatt.com or Amex FHR |
-| **Hikari no uta** | 3–5 months ahead | hikarino-uta.com · Jul 28–29, 2 nights |
+| **Hikari no uta** | ✅ Booked | hikarino-uta.com · Jul 28–30 · 2 nights · $1,697 · CSR Points 110,998 pts |
 | **KAI Poroto** (Hoshino) | Book now — very popular | hoshinoresorts.com · Jul 30, 1 night |
 | **OTARU TAISHOU GLASS MUSEUM** workshop | 1–2 months ahead | Direct reservation · Jul 20 morning |
 | **Rental car at CTS** | ✅ Booked | AVIS · Jul 17 8:00am – Jul 31 6:00pm · $832.89 pay at pickup |
