@@ -304,7 +304,7 @@ Note: Hinode Park Illumination (historically ends ~Jul 21) is definitively misse
 
 | Item | Urgency | Book Via |
 |---|---|---|
-| **Park Hyatt Niseko Hanazono** | 3–6 months ahead | Hyatt.com or Amex FHR |
+| **Park Hyatt Niseko Hanazono** | ✅ Booked | Hyatt.com or Amex FHR · Jul 17–18, 2 nights |
 | **Hikari no uta** | ✅ Booked | hikarino-uta.com · Jul 28–30 · 2 nights · $1,697 · CSR Points 110,998 pts |
 | **KAI Poroto** (Hoshino) | Book now — very popular | hoshinoresorts.com · Jul 30, 1 night |
 | **OTARU TAISHOU GLASS MUSEUM** workshop | 1–2 months ahead | Direct reservation · Jul 20 morning |
