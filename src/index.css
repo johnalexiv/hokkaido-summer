@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bone:   oklch(0.965 0.008 85);
+  --paper:  oklch(0.985 0.004 85);
+  --stone:  oklch(0.89 0.008 85);
+  --ash:    oklch(0.78 0.008 85);
+  --ink:    oklch(0.22 0.010 85);
+  --smoke:  oklch(0.48 0.008 85);
+  --indigo: oklch(0.34 0.048 258);
+  --moss:   oklch(0.44 0.030 150);
+  --ember:  oklch(0.58 0.105 38);
+}
+
+html, body, #root { height: 100%; }
+
+section[id] { scroll-margin-top: 64px; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: var(--bone);
+  color: var(--ink);
+  font-family: 'Figtree', system-ui, sans-serif;
+  font-feature-settings: "ss01", "cv01", "kern";
+  font-variant-ligatures: common-ligatures;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--indigo);
+  color: var(--paper);
+}
+
+/* Paper-grain noise overlay — fixed, subtle, behind content via pointer-events */
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.45;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.12  0 0 0 0 0.10  0 0 0 0 0.08  0 0 0 0.06 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+/* Ink-wash section top border — single hairline, nothing thicker */
+.hairline {
+  border-top: 1px solid var(--stone);
+}
+
+/* Display type — subtle Japanese mincho feel, tightened tracking */
+.font-display {
+  font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif;
+  font-feature-settings: "palt", "kern";
+}
+
+/* Vertical kanji accent (desktop only) */
+.kanji-vert {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  letter-spacing: 0.1em;
+}
+
+/* Reveal animation starting state — GSAP sets final values */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  will-change: opacity, transform;
+}
+
+/* Cards — paper-like surface; no side-stripe, no nested cards */
+.paper-card {
+  background: var(--paper);
+  border: 1px solid var(--stone);
+  border-radius: 4px;
+  transition: border-color 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+              transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.paper-card:hover { border-color: var(--ash); }
+
+/* Expandable row height transition via grid-template-rows */
+.row-collapse {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 320ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.row-collapse.open { grid-template-rows: 1fr; }
+.row-collapse > * { overflow: hidden; }
+
+/* Focus ring — visible, not aggressive */
+:focus-visible {
+  outline: 2px solid var(--indigo);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Anchor pill — sticky nav */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+  border: 1px solid var(--stone);
+  border-radius: 999px;
+  background: color-mix(in oklch, var(--paper) 85%, transparent);
+  backdrop-filter: blur(6px);
+  transition: color 180ms, border-color 180ms, background 180ms;
+  color: var(--smoke);
+  min-height: 36px;
+}
+.pill:hover, .pill.active {
+  color: var(--ink);
+  border-color: var(--ink);
+  background: var(--paper);
+}
+
+/* Chip — small amenity / status label */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: 5px 9px;
+  border-radius: 2px;
+  background: color-mix(in oklch, var(--stone) 35%, transparent);
+  color: var(--smoke);
+  letter-spacing: 0.02em;
+}
+.chip-accent {
+  background: color-mix(in oklch, var(--indigo) 14%, transparent);
+  color: var(--indigo);
+}
+.chip-moss {
+  background: color-mix(in oklch, var(--moss) 18%, transparent);
+  color: var(--moss);
+}
+.chip-ember {
+  background: color-mix(in oklch, var(--ember) 18%, transparent);
+  color: var(--ember);
+}
+
+/* Respect reduced motion — disable reveal animations + smooth scroll */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

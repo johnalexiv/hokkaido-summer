@@ -1,0 +1,14 @@
+# Claude Code session data
+.claude/
+.agents/
+skills-lock.json
+
+# Memory files (managed separately by Claude Code)
+memory/
+
+# Node / Vite
+node_modules/
+dist/
+.DS_Store
+*.log
+.vite/
