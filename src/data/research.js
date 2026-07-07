@@ -77,7 +77,7 @@ export const research = [
         h: 'Niseko (Jul 17–19)',
         items: [
           'Mt. Yotei-dominated farmland; Hokkaido\'s top summer adventure zone',
-          'Zipline MACH3, Shiribetsu rafting, e-bike in Kutchan, Hanazono golf',
+          'Hanazono Zipflight, e-bike in Kutchan, Mountain Lights after-dark art walk',
           'Hirafu Village for dinner — concentrated izakaya, ramen, pizza'
         ]
       },
@@ -93,8 +93,8 @@ export const research = [
         h: 'Sapporo (Jul 21–25)',
         items: [
           'Compact walkable city; Odori Park and Susukino as anchors',
-          'Opening day of the Odori Beer Garden lands on Jul 23 ✓✓',
-          'Hill of the Buddha (Tadao Ando) + Moerenuma (Isamu Noguchi) are the design one-two'
+          'Odori Beer Garden opens Jul 23; we attend Jul 24 (Day 8) ✓✓',
+          'Hill of the Buddha (Tadao Ando) is the design highlight — through July lavender'
         ]
       },
       {
@@ -157,7 +157,7 @@ export const research = [
       {
         h: '✓✓ Catchable',
         items: [
-          'Sapporo Odori Beer Garden OPENING DAY — Jul 23 · Day 7',
+          'Sapporo Odori Beer Garden — opens Jul 23 · we attend Jul 24 · Day 8',
           'Lake Toya nightly fireworks — 8:45pm · Jul 28–29 · Days 12–13',
           'Demon Fireworks (Oni-hanabi) — Thursday Jul 30 · 8:30pm · Day 14',
           'Lavender peak — Farm Tomita · Jul 25–26 · Days 9–10',

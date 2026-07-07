@@ -6,35 +6,33 @@ export const days = [
   {
     n: 1, date: 'Fri · Jul 17', dow: 'Friday', region: 'Niseko',
     title: 'Land CTS → Niseko',
-    tagline: 'Overnight flight lands at 7:50am. Easy afternoon; Mt. Yotei at dusk.',
+    tagline: 'Overnight flight lands at 7:50am. Settle into the grounds; Mt. Yotei at dusk.',
     hotel: 'Park Hyatt Niseko Hanazono',
     activities: [
       { time: '7:50a',  title: 'Land at New Chitose (CTS)', icon: 'plane',    note: 'After two connections via SFO and HND. ANA arrives 7:50am.' },
       { time: '8:00a',  title: 'AVIS rental car pickup',     icon: 'car',      note: 'Pre-booked · pay at counter.' },
       { time: '10:30a', title: 'Arrive Park Hyatt Hanazono', icon: 'bed',      note: '~2 hr drive via Route 276 over Nakayama Pass. Early; hotel will store bags.' },
-      { time: '11:00a', title: 'Explore grounds, late brunch', icon: 'utensils', note: 'Mt. Yotei views from the terrace; pool/spa available pre-check-in.' },
-      { time: '1–4p',   title: 'E-bike toward Kutchan town', icon: 'mountain', note: 'Flat farmland roads, unobstructed Mt. Yotei views. Skip if too tired.' },
-      { time: '4–5p',   title: 'Optional: Zipline MACH3',    icon: 'sparkles', note: '1.7km, up to 110 km/h, 3-min ride. Book at concierge.' },
-      { time: '7:00p',  title: 'Dinner in Hirafu Village',   icon: 'utensils', note: '~15 min drive. Izakaya, ramen, pizza all walkable.' },
+      { time: '11:00a', title: 'Walk the grounds, late brunch', icon: 'utensils', note: 'Mt. Yotei views from the terrace; pool/spa available pre-check-in.' },
+      { time: '2–5p',   title: 'Pool, spa, or terrace',      icon: 'hotSpring', note: 'Keep the arrival day loose — the active days start tomorrow.' },
+      { time: '7:00p',  title: 'Dinner at Park Hyatt',       icon: 'utensils', note: 'French, kaiseki, or teppanyaki in-hotel. Ease into the trip.' },
       { time: 'dusk',   title: 'Mt. Yotei from hotel terrace', icon: 'camera', note: 'Long summer sunset — evening light is the best of the day.' }
     ],
     flag: { tone: 'indigo', label: 'Arrival — keep afternoon loose' }
   },
   {
     n: 2, date: 'Sat · Jul 18', dow: 'Saturday', region: 'Niseko',
-    title: 'Niseko Full Day — Rafting',
-    tagline: 'Shiribetsu River rafting in the morning; hotel dinner to close the Niseko leg.',
+    title: 'E-bike + Zipflight + Mountain Lights',
+    tagline: 'Farmland ride and a picnic, the Hanazono zipline, then the art-installation walk after dark.',
     hotel: 'Park Hyatt Niseko Hanazono',
     activities: [
       { time: '7:30a',  title: 'Breakfast at hotel',           icon: 'utensils', note: 'Sashimi station, noodles, grilled salmon, eggs to order.' },
-      { time: '8:30a',  title: 'Drive to rafting operator',   icon: 'car',      note: '~15 min drive. Pack dry bag for phone/wallet.' },
-      { time: '9a–12p', title: 'Shiribetsu River rafting',    icon: 'waves',    note: '¥6,500/pp · ~3 hrs · wetsuits provided · Niseko\'s top summer activity.' },
-      { time: '1–4p',   title: 'Hotel pool / Twin Peaks Bike Park / Zipline', icon: 'mountain', note: 'Or hotel spa and terrace — your call.' },
+      { time: '10:00a', title: 'E-bike toward Kutchan town + picnic', icon: 'mountain', note: 'Flat farmland roads, unobstructed Mt. Yotei views. Pack a small picnic.' },
+      { time: '2:00p',  title: 'Hanazono Zipflight',           icon: 'sparkles', note: 'Walk in or book up to 1 day ahead. hanazononiseko.com/en/summer/activities/zipline#booking' },
       { time: '4–6p',   title: 'Spa, onsen, or terrace',       icon: 'hotSpring', note: 'Last afternoon at Park Hyatt — slow it down.' },
-      { time: '7:00p',  title: 'Park Hyatt dinner — teppanyaki', icon: 'utensils', note: 'French, kaiseki, or teppanyaki. Reserve at check-in.' },
-      { time: 'late',   title: 'Night view of Mt. Yotei',      icon: 'camera',    note: 'Final night in Niseko.' }
+      { time: '6:30p',  title: 'Dinner in Hirafu Village',     icon: 'utensils', note: '~15 min drive. Izakaya, ramen, pizza all walkable.' },
+      { time: 'night',  title: 'Mountain Lights art installation', icon: 'star', note: 'After-dark illuminated art walk on the mountain.' }
     ],
-    flag: { tone: 'moss', label: 'Book rafting morning slot in advance' }
+    flag: { tone: 'moss', label: 'Zipflight — walk in or book 1 day ahead' }
   },
   {
     n: 3, date: 'Sun · Jul 19', dow: 'Sunday', region: 'Cape Kamui → Otaru',
@@ -42,15 +40,16 @@ export const days = [
     tagline: 'Cliffside walk above Japan\'s most vivid cobalt water; peak-season uni for lunch.',
     hotel: 'OMO5 Otaru by Hoshino Resorts',
     activities: [
+      { time: '8:30a',  title: 'Breakfast at hotel',           icon: 'utensils', note: 'Last Park Hyatt breakfast before the coast drive.' },
       { time: '9:00a',  title: 'Checkout Park Hyatt',          icon: 'bed',      note: '' },
       { time: '9:30a',  title: 'Drive to Cape Kamui',          icon: 'car',      note: '~1.5–2 hrs via coastal Route 229.' },
       { time: '11:30a', title: 'Cape Kamui cliffside walk',    icon: 'mountain', note: '20-min narrow path · 80m sheer cliffs · Shakotan Blue water · sea stacks.' },
-      { time: '1:00p',  title: 'Uni lunch at Shakotan port',   icon: 'utensils', note: 'July peak bafun uni — same quality as Rishiri without the flight.' },
+      { time: '1:00p',  title: 'Uni lunch at Shakotan port',   icon: 'utensils', note: 'July peak bafun uni. Restaurant list: kanko-shakotan.jp/en/food' },
       { time: '2:30p',  title: 'Drive to Otaru',               icon: 'car',      note: '~1.5 hrs. Arrive mid-afternoon.' },
       { time: '4:00p',  title: 'Check in OMO5 Otaru',          icon: 'bed',      note: 'Superior King near the canal.' },
       { time: '5:30p',  title: 'Otaru canal at golden hour',   icon: 'camera',   note: 'Long summer light on the warehouses.' },
       { time: '6:30p',  title: 'Kita no Aisu soft serve',      icon: 'sparkles', note: 'Open since 1978.' },
-      { time: '7:30p',  title: 'Canal-side sushi or izakaya',  icon: 'utensils', note: '' }
+      { time: '7:30p',  title: 'Stumble into a place for dinner', icon: 'utensils', note: 'Canal-side sushi or izakaya — no plan needed.' }
     ],
     flag: { tone: 'ember', label: '★★ Shakotan uni peak season' }
   },
@@ -64,10 +63,10 @@ export const days = [
       { time: '11:30a', title: 'Snoopy Village — Canal Plaza 3F', icon: 'gift',    note: 'One of few Snoopy Town Shop locations in Japan.' },
       { time: '12:30p', title: 'Kaisen-don lunch',              icon: 'utensils',  note: 'Canal-side; peak uni + ikura season.' },
       { time: '2:00p',  title: 'Otaru Music Box Museum (Orgel-do)', icon: 'landmark', note: '1902 building · hundreds of music boxes.' },
-      { time: '3:00p',  title: 'Kitaichi Glass Building No. 3', icon: 'camera',   note: '167 oil lamps in the café — good light around 3–4pm.' },
+      { time: '3:00p',  title: 'Coffee at Kitaichi Glass café — Building No. 3', icon: 'utensils', note: '167 oil lamps in the café · open 11am–4pm · good light around 3–4pm.' },
       { time: '4:30p',  title: 'Stamp stop — Otaru Station + Canal info', icon: 'ticket', note: '📮 Eki-stamp at みどりの窓口 · canal tourist info stamp.' },
       { time: '6:00p',  title: 'Canal walk at golden hour',     icon: 'camera',   note: '' },
-      { time: '7:30p',  title: 'Canal-side izakaya dinner',     icon: 'utensils', note: '' }
+      { time: '7:30p',  title: 'Dinner & dessert — canal-side izakaya', icon: 'utensils', note: '' }
     ],
     flag: { tone: 'indigo', label: 'Workshop — book 1–2 months ahead' }
   },
@@ -77,60 +76,58 @@ export const days = [
     tagline: 'Short 40-min transfer. Long afternoon and evening to settle into the city.',
     hotel: 'Hotel Sosei Sapporo — MGallery',
     activities: [
-      { time: '10:00a', title: 'Coffee at Kitaichi Glass café', icon: 'utensils', note: 'Morning light through the oil lamps.' },
-      { time: '11:00a', title: 'Final Otaru canal walk',        icon: 'camera',   note: '' },
+      { time: '10:30a', title: 'Last Otaru canal morning',      icon: 'camera',   note: 'Quiet final walk before the transfer.' },
       { time: '12:30p', title: 'Drive Otaru → Sapporo',         icon: 'car',      note: '~40 min via Route 5. Shortest transfer of the trip.' },
       { time: '2:00p',  title: 'Check in Hotel Sosei — MGallery', icon: 'bed',    note: '1 King · 4 nights.' },
-      { time: '3:00p',  title: 'Odori Park stroll',             icon: 'flower',   note: 'Long city-center greenbelt; pre-beer-garden calm.' },
+      { time: '3:00p',  title: 'Odori Park stroll',             icon: 'flower',   note: 'Long city-center greenbelt; 15 min walk from the hotel.' },
       { time: '4:00p',  title: 'TV Tower exterior / Susukino',  icon: 'landmark', note: 'Don\'t bother with the TV Tower observation deck — Mt. Moiwa is better.' },
-      { time: '6:00p',  title: 'Tanuki Koji arcade',            icon: 'map',      note: '7-block covered shopping street; all-weather.' },
-      { time: '7:30p',  title: 'Light dinner',                   icon: 'utensils', note: 'Ease in — ramen and soup curry days ahead.' }
+      { time: '6:30p',  title: 'Light dinner',                   icon: 'utensils', note: 'Ease in — ramen and soup curry days ahead.' },
+      { time: '8:00p',  title: 'Tanuki Koji arcade',            icon: 'map',      note: '7-block covered shopping street · 9 min walk from Odori Park · all-weather.' }
     ]
   },
   {
     n: 6, date: 'Wed · Jul 22', dow: 'Wednesday', region: 'Sapporo',
-    title: 'Hill of the Buddha + Moerenuma + Ramen',
-    tagline: 'Tadao Ando\'s 13.5m Buddha through 150,000 lavender plants. Noguchi\'s landscape park.',
+    title: 'Chocolate + Sake + Ghibli',
+    tagline: 'ROYCE\' Cacao Town, a free sake-museum tasting, character shops, and a booked Italian dinner.',
     hotel: 'Hotel Sosei Sapporo — MGallery',
     activities: [
-      { time: '9:00a',  title: 'Drive to Makomanai Takino',      icon: 'car',      note: '~15 min south of central Sapporo.' },
-      { time: '9:30a',  title: 'Hill of the Buddha (Tadao Ando)', icon: 'landmark', note: '¥500 · 9a–3p last entry · 150,000 lavender in July bloom around the mound.' },
-      { time: '11:00a', title: 'Moerenuma Park (Isamu Noguchi)',  icon: 'mountain', note: 'Glass pyramid · Play Mountain · Sea Fountain · 30 min from Hill of the Buddha.' },
-      { time: '1:00p',  title: 'Nijo Market kaisen-don lunch',    icon: 'utensils', note: 'Peak sweet shrimp + uni in July.' },
-      { time: '3:00p',  title: 'Sapporo Art Park',                icon: 'landmark', note: 'Large outdoor sculpture collection; outdoor access free.' },
-      { time: '6:00p',  title: 'Ramen Yokocho — miso ramen',      icon: 'utensils', note: 'Narrow postwar alley · Sapporo-style miso with corn + butter.' },
-      { time: '8:00p',  title: 'Stamp stop — Sapporo Station',    icon: 'ticket',   note: '📮 Eki-stamp at みどりの窓口.' }
+      { time: '11:00a', title: 'ROYCE\' Cacao & Chocolate Town', icon: 'gift',     note: '✅ Booked 11:00am · ~24 min drive · factory observation · exclusive products only here.' },
+      { time: '12:30p', title: 'Chitosetsuru Sake Museum',       icon: 'landmark', note: 'Free tastings of local Hokkaido sake · flexible — fit it in any day.' },
+      { time: '2:30p',  title: 'Snoopy Town Shop',               icon: 'gift',     note: 'Central Sapporo character shop.' },
+      { time: '3:30p',  title: 'Ghibli Store',                   icon: 'gift',     note: 'Official Ghibli goods.' },
+      { time: '6:30p',  title: 'Teatro di Massa — Italian',      icon: 'utensils', note: '✅ Booked. Italian dinner in the city.' }
     ],
-    flag: { tone: 'moss', label: 'Hill of the Buddha closes 3pm' }
+    flag: { tone: 'moss', label: '✅ Teatro di Massa booked' }
   },
   {
     n: 7, date: 'Thu · Jul 23', dow: 'Thursday', region: 'Sapporo',
-    title: 'Beer Garden Opening Day',
-    tagline: 'Odori Park Summer Festival — opening day of Japan\'s largest outdoor beer event.',
+    title: 'Hill of the Buddha + Art Park',
+    tagline: 'Tadao Ando\'s Buddha through July lavender, outdoor sculpture, and a booked yakitori dinner.',
     hotel: 'Hotel Sosei Sapporo — MGallery',
     activities: [
-      { time: '9:30a',  title: 'Mount Moiwa ropeway',            icon: 'mountain', note: 'Panoramic city views · quieter than the TV Tower.' },
-      { time: '11:30a', title: 'Hokkaido University stroll',     icon: 'flower',   note: 'Large elm-lined paths · free. Ginkgo row is for autumn — plenty of green in July.' },
-      { time: '1:00p',  title: 'Light lunch near Odori',         icon: 'utensils', note: 'Save the appetite.' },
-      { time: '3:00p',  title: 'Sapporo Odori Beer Garden — OPENING DAY', icon: 'beer',  note: 'Opens Jul 23 · 9,000+ seats across 5 blocks · Sapporo, Kirin, Asahi, German Village.' },
-      { time: '4:30p',  title: 'Zangi + Genghis Khan + grilled corn', icon: 'utensils', note: 'Festival food, slow pace, long afternoon into evening.' },
-      { time: '8:00p',  title: 'Susukino stroll back to hotel',   icon: 'map',     note: 'No driving tonight.' }
+      { time: '9:30a',  title: 'Hill of the Buddha (Tadao Ando)', icon: 'landmark', note: 'Makomanai Takino · ~25 min drive · ¥500 · 9a–3p last entry · 150,000 lavender in July bloom.' },
+      { time: '11:30a', title: 'Sapporo Art Park',               icon: 'landmark', note: 'Large outdoor sculpture collection; outdoor access free.' },
+      { time: '1:00p',  title: 'Light lunch',                    icon: 'utensils', note: 'Near Makomanai or back toward the city.' },
+      { time: '2:30p',  title: 'Shiroi Koibito Park',            icon: 'sparkles', note: 'Optional / maybe · ~18 min from hotel · biscuit factory + gardens.' },
+      { time: '4:30p',  title: 'Hokkaido University Botanical Garden', icon: 'flower', note: 'Quiet city-center green · small Ainu collection.' },
+      { time: '7:00p',  title: 'Mitsuki — yakitori',            icon: 'utensils', note: '✅ Booked. Yakitori dinner.' }
     ],
-    flag: { tone: 'ember', label: '✓✓ ★★ Opening day' }
+    flag: { tone: 'moss', label: '✅ Mitsuki booked · Hill of the Buddha closes 3pm' }
   },
   {
     n: 8, date: 'Fri · Jul 24', dow: 'Friday', region: 'Sapporo',
-    title: 'Chocolate + Sake + Soup Curry',
-    tagline: 'Shiroi Koibito factory, ROYCE\' Cacao Town, and the definitive Sapporo soup curry.',
+    title: 'Beer Garden + Genghis Khan',
+    tagline: 'Odori Beer Garden and the Beer Museum, capped with zangi, Genghis Khan, and grilled corn.',
     hotel: 'Hotel Sosei Sapporo — MGallery',
     activities: [
-      { time: '9:30a',  title: 'Shiroi Koibito Park',            icon: 'sparkles', note: '¥800 · biscuit factory tour + cookie workshop · English-friendly · gardens + pond.' },
-      { time: '12:00p', title: 'ROYCE\' Cacao & Chocolate Town', icon: 'gift',     note: 'Reserve ahead · factory observation · exclusive products only here.' },
-      { time: '2:00p',  title: 'Chitosetsuru Sake Museum',       icon: 'landmark', note: 'Free tastings of local Hokkaido sake.' },
-      { time: '3:30p',  title: 'Hokkaido University Botanical Garden', icon: 'flower', note: 'Quiet city-center green · small Ainu collection.' },
-      { time: '6:30p',  title: 'Soup curry dinner — Garaku',     icon: 'utensils', note: 'Spice-forward thin broth · chicken leg classic. Aiiro is also top-tier.' },
+      { time: '9:30a',  title: 'Mount Moiwa ropeway',            icon: 'mountain', note: 'Whichever morning is clearer — city panorama.' },
+      { time: '1:00p',  title: 'Light lunch near Odori',         icon: 'utensils', note: 'Save the appetite for the beer garden.' },
+      { time: '3:00p',  title: 'Odori Beer Garden',              icon: 'beer',     note: 'Opened Jul 23 · 9,000+ seats across 5 blocks · Sapporo, Kirin, Asahi, German Village.' },
+      { time: '4:30p',  title: 'Zangi + Genghis Khan + grilled corn', icon: 'utensils', note: 'Festival food, slow pace, long afternoon into evening.' },
+      { time: '6:30p',  title: 'Sapporo Beer Museum',            icon: 'landmark', note: 'Beer Garden and Museum share the Sapporo Factory grounds.' },
       { time: '8:30p',  title: 'Stamp stop — Sapporo Beer Museum', icon: 'ticket', note: '📮 Free · quick stop.' }
-    ]
+    ],
+    flag: { tone: 'ember', label: '★★ Odori Beer Garden — opened Jul 23' }
   },
   {
     n: 9, date: 'Sat · Jul 25', dow: 'Saturday', region: 'Sapporo → Furano',

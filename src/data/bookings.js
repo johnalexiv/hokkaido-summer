@@ -9,6 +9,8 @@ export const checklist = [
   { item: 'Flights (2 pax, round-trip)', when: 'Jul 15 – Aug 2', status: 'booked', via: 'United + ANA' },
   { item: 'Otaru Taishou Glass Museum workshop', when: 'Jul 20 morning', status: 'pending', via: 'Direct — book 1–2 months ahead' },
   { item: 'Upopoy National Ainu Museum', when: 'Jul 31 morning', status: 'pending', via: 'Online · ¥1,200 · advance reservation required' },
-  { item: 'Shiribetsu River rafting', when: 'Jul 18 morning', status: 'pending', via: 'Direct or concierge · peak season Saturday' },
-  { item: 'ROYCE\' Cacao & Chocolate Town', when: 'Jul 24 midday', status: 'pending', via: 'Reserve ahead' }
+  { item: 'Hanazono Zipflight', when: 'Jul 18 afternoon', status: 'pending', via: 'Walk in or book up to 1 day ahead' },
+  { item: 'ROYCE\' Cacao & Chocolate Town', when: 'Jul 22 · 11:00am', status: 'booked', via: 'Reservation confirmed' },
+  { item: 'Teatro di Massa (Italian)', when: 'Jul 22 dinner', status: 'booked', via: 'Reservation confirmed' },
+  { item: 'Mitsuki (yakitori)', when: 'Jul 23 dinner', status: 'booked', via: 'Reservation confirmed' }
 ]

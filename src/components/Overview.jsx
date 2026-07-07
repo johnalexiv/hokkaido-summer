@@ -15,9 +15,9 @@ export function Overview() {
   ]
 
   const routeRows = [
-    ['Jul 17–19', 'Niseko', 'Park Hyatt Hanazono · rafting · Mt. Yotei'],
+    ['Jul 17–19', 'Niseko', 'Park Hyatt Hanazono · zipflight · Mt. Yotei'],
     ['Jul 19–21', 'Otaru',  'Glassblowing · canal at dusk · uni'],
-    ['Jul 21–25', 'Sapporo', 'Beer Garden opening · Hill of the Buddha · ramen'],
+    ['Jul 21–25', 'Sapporo', 'Beer Garden · Hill of the Buddha · chocolate'],
     ['Jul 25–28', 'Furano', 'Lavender at peak · Blue Pond · patchwork road'],
     ['Jul 28–30', 'Lake Toya', 'Private open-air bath · nightly fireworks'],
     ['Jul 30',    'Noboribetsu', 'Hell Valley · Oni-hanabi Thursday'],
