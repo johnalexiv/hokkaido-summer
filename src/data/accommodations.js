@@ -59,7 +59,7 @@ export const accommodations = [
     image: images.furano,
     roomType: '4-person shared unit (2 of 4)',
     amenities: ['Close to Farm Tomita', 'Shared with 2 others', 'Full kitchen', 'Lavender valley base'],
-    description: 'Shared 4-person unit in Furano — our share is 2 of 4. Base for Farm Tomita dawn visits, Lavender East, Shikisai no Oka, and the Biei patchwork day trip.'
+    description: 'Shared 4-person unit in Furano — our share is 2 of 4. Base for Farm Tomita, Shikisai no Oka, the Biei patchwork road, and Shirogane Blue Pond.'
   },
   {
     id: 'hikari-no-uta',

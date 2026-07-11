@@ -10,7 +10,7 @@ export const days = [
     hotel: 'Park Hyatt Niseko Hanazono',
     activities: [
       { time: '7:50a',  title: 'Land at New Chitose (CTS)', icon: 'plane',    note: 'After two connections via SFO and HND. ANA arrives 7:50am.' },
-      { time: '8:00a',  title: 'AVIS rental car pickup',     icon: 'car',      note: 'Pre-booked · pay at counter.' },
+      { time: '8:00a',  title: 'AVIS rental car pickup',     icon: 'car',      note: 'Pre-booked via Klook · pay at counter. Visit the Avis Budget counter on the 1st floor of the arrival terminal; shuttle bus (~15 min) runs to the off-airport location.' },
       { time: '10:30a', title: 'Arrive Park Hyatt Hanazono', icon: 'bed',      note: '~2 hr drive via Route 276 over Nakayama Pass. Early; hotel will store bags.' },
       { time: '11:00a', title: 'Walk the grounds, late brunch', icon: 'utensils', note: 'Mt. Yotei views from the terrace; pool/spa available pre-check-in.' },
       { time: '2–5p',   title: 'Pool, spa, or terrace',      icon: 'hotSpring', note: 'Keep the arrival day loose — the active days start tomorrow.' },
@@ -26,10 +26,10 @@ export const days = [
     hotel: 'Park Hyatt Niseko Hanazono',
     activities: [
       { time: '7:30a',  title: 'Breakfast at hotel',           icon: 'utensils', note: 'Sashimi station, noodles, grilled salmon, eggs to order.' },
-      { time: '10:00a', title: 'E-bike toward Kutchan town + picnic', icon: 'mountain', note: 'Flat farmland roads, unobstructed Mt. Yotei views. Pack a small picnic.' },
+      { time: '10:00a', title: 'E-bike toward Kutchan town + picnic', icon: 'mountain', note: 'Rent at Niseko Sports Hanazono 308 Store · 4 min walk from hotel · same-day rental available. Flat farmland roads, unobstructed Mt. Yotei views. Pack a small picnic.' },
       { time: '2:00p',  title: 'Hanazono Zipflight',           icon: 'sparkles', note: 'Walk in or book up to 1 day ahead. hanazononiseko.com/en/summer/activities/zipline#booking' },
       { time: '4–6p',   title: 'Spa, onsen, or terrace',       icon: 'hotSpring', note: 'Last afternoon at Park Hyatt — slow it down.' },
-      { time: '6:30p',  title: 'Dinner in Hirafu Village',     icon: 'utensils', note: '~15 min drive. Izakaya, ramen, pizza all walkable.' },
+      { time: '6:30p',  title: 'Dinner in Hirafu Village',     icon: 'utensils', note: '~15 min drive. Izakaya, ramen, pizza all walkable. Suggestions: Otsukisama & Bar Moon, Ebisutei, Rin.' },
       { time: 'night',  title: 'Mountain Lights art installation', icon: 'star', note: 'After-dark illuminated art walk on the mountain.' }
     ],
     flag: { tone: 'moss', label: 'Zipflight — walk in or book 1 day ahead' }
@@ -59,16 +59,18 @@ export const days = [
     tagline: 'Meiji-era glasswork, a dedicated Snoopy shop, and the 1902 music-box museum.',
     hotel: 'OMO5 Otaru by Hoshino Resorts',
     activities: [
-      { time: '9:30a',  title: 'Otaru Taishou Glass Museum workshop', icon: 'sparkles', note: '1-1-8 Hanazono · book 1–2 mo ahead · 60–90 min · make your own piece.' },
+      { time: '9:00a',  title: 'Otaru Taishou Glass Museum workshop', icon: 'sparkles', note: 'Walk-in · guests seen same-day in arrival order · open 9am–7pm · get there when doors open. Make your own piece. otaruglass.com' },
+      { time: '10:30a', title: 'Coffee at Kitaichi Glass café',  icon: 'utensils', note: '167 oil lamps in the café · open 9am–5:30pm.' },
       { time: '11:30a', title: 'Snoopy Village — Canal Plaza 3F', icon: 'gift',    note: 'One of few Snoopy Town Shop locations in Japan.' },
-      { time: '12:30p', title: 'Kaisen-don lunch',              icon: 'utensils',  note: 'Canal-side; peak uni + ikura season.' },
+      { time: '12:30p', title: 'Kaisen-don lunch',              icon: 'utensils',  note: 'Canal-side; peak uni + ikura season. Options: Yoichiya Uni Specialty, Yoshi, Sankaku Tei.' },
       { time: '2:00p',  title: 'Otaru Music Box Museum (Orgel-do)', icon: 'landmark', note: '1902 building · hundreds of music boxes.' },
-      { time: '3:00p',  title: 'Coffee at Kitaichi Glass café — Building No. 3', icon: 'utensils', note: '167 oil lamps in the café · open 11am–4pm · good light around 3–4pm.' },
+      { time: '3:00p',  title: 'Kitaichi Glass Building No. 3',  icon: 'sparkles', note: 'Historic warehouse of glassware · good afternoon light.' },
+      { time: '4:00p',  title: 'Otaru Milk Plant',              icon: 'sparkles', note: 'Popular spot for milk ice cream.' },
       { time: '4:30p',  title: 'Stamp stop — Otaru Station + Canal info', icon: 'ticket', note: '📮 Eki-stamp at みどりの窓口 · canal tourist info stamp.' },
       { time: '6:00p',  title: 'Canal walk at golden hour',     icon: 'camera',   note: '' },
       { time: '7:30p',  title: 'Dinner & dessert — canal-side izakaya', icon: 'utensils', note: '' }
     ],
-    flag: { tone: 'indigo', label: 'Workshop — book 1–2 months ahead' }
+    flag: { tone: 'indigo', label: 'Glass workshop — walk-in, arrive at 9am open' }
   },
   {
     n: 5, date: 'Tue · Jul 21', dow: 'Tuesday', region: 'Otaru → Sapporo',
@@ -77,25 +79,24 @@ export const days = [
     hotel: 'Hotel Sosei Sapporo — MGallery',
     activities: [
       { time: '10:30a', title: 'Last Otaru canal morning',      icon: 'camera',   note: 'Quiet final walk before the transfer.' },
-      { time: '12:30p', title: 'Drive Otaru → Sapporo',         icon: 'car',      note: '~40 min via Route 5. Shortest transfer of the trip.' },
+      { time: '12:30p', title: 'Drive Otaru → Sapporo',         icon: 'car',      note: '~45 min via Route 5. Shortest transfer of the trip.' },
       { time: '2:00p',  title: 'Check in Hotel Sosei — MGallery', icon: 'bed',    note: '1 King · 4 nights.' },
       { time: '3:00p',  title: 'Odori Park stroll',             icon: 'flower',   note: 'Long city-center greenbelt; 15 min walk from the hotel.' },
       { time: '4:00p',  title: 'TV Tower exterior / Susukino',  icon: 'landmark', note: 'Don\'t bother with the TV Tower observation deck — Mt. Moiwa is better.' },
-      { time: '6:30p',  title: 'Light dinner',                   icon: 'utensils', note: 'Ease in — ramen and soup curry days ahead.' },
-      { time: '8:00p',  title: 'Tanuki Koji arcade',            icon: 'map',      note: '7-block covered shopping street · 9 min walk from Odori Park · all-weather.' }
+      { time: '6:30p',  title: 'Dinner — stumble upon a place', icon: 'utensils', note: 'Ease in — ramen and soup curry days ahead.' }
     ]
   },
   {
     n: 6, date: 'Wed · Jul 22', dow: 'Wednesday', region: 'Sapporo',
-    title: 'Chocolate + Sake + Ghibli',
-    tagline: 'ROYCE\' Cacao Town, a free sake-museum tasting, character shops, and a booked Italian dinner.',
+    title: 'Chocolate + Ghibli + Tanuki Koji',
+    tagline: 'ROYCE\' Cacao Town, character shops along Tanuki Koji, and a booked Italian dinner.',
     hotel: 'Hotel Sosei Sapporo — MGallery',
     activities: [
       { time: '11:00a', title: 'ROYCE\' Cacao & Chocolate Town', icon: 'gift',     note: '✅ Booked 11:00am · ~24 min drive · factory observation · exclusive products only here.' },
-      { time: '12:30p', title: 'Chitosetsuru Sake Museum',       icon: 'landmark', note: 'Free tastings of local Hokkaido sake · flexible — fit it in any day.' },
-      { time: '2:30p',  title: 'Snoopy Town Shop',               icon: 'gift',     note: 'Central Sapporo character shop.' },
-      { time: '3:30p',  title: 'Ghibli Store',                   icon: 'gift',     note: 'Official Ghibli goods.' },
-      { time: '6:30p',  title: 'Teatro di Massa — Italian',      icon: 'utensils', note: '✅ Booked. Italian dinner in the city.' }
+      { time: '2:30p',  title: 'Snoopy Town Shop',               icon: 'gift',     note: 'Central Sapporo character shop · same street as the Ghibli store.' },
+      { time: '3:30p',  title: 'Ghibli Store',                   icon: 'gift',     note: 'Official Ghibli goods · same street as Tanuki Koji.' },
+      { time: '4:30p',  title: 'Tanuki Koji arcade',            icon: 'map',      note: '7-block covered shopping street · 9 min walk from Odori Park · close to the Teatro di Massa reservation.' },
+      { time: '6:00p',  title: 'Teatro di Massa — Italian',      icon: 'utensils', note: '✅ Booked 6:00pm. Italian dinner in the city.' }
     ],
     flag: { tone: 'moss', label: '✅ Teatro di Massa booked' }
   },
@@ -105,60 +106,59 @@ export const days = [
     tagline: 'Tadao Ando\'s Buddha through July lavender, outdoor sculpture, and a booked yakitori dinner.',
     hotel: 'Hotel Sosei Sapporo — MGallery',
     activities: [
-      { time: '9:30a',  title: 'Hill of the Buddha (Tadao Ando)', icon: 'landmark', note: 'Makomanai Takino · ~25 min drive · ¥500 · 9a–3p last entry · 150,000 lavender in July bloom.' },
+      { time: '9:30a',  title: 'Hill of the Buddha (Tadao Ando)', icon: 'landmark', note: 'Makomanai Takino · ~30 min drive · ¥500 · 9a–3p last entry · 150,000 lavender in July bloom.' },
       { time: '11:30a', title: 'Sapporo Art Park',               icon: 'landmark', note: 'Large outdoor sculpture collection; outdoor access free.' },
       { time: '1:00p',  title: 'Light lunch',                    icon: 'utensils', note: 'Near Makomanai or back toward the city.' },
-      { time: '2:30p',  title: 'Shiroi Koibito Park',            icon: 'sparkles', note: 'Optional / maybe · ~18 min from hotel · biscuit factory + gardens.' },
-      { time: '4:30p',  title: 'Hokkaido University Botanical Garden', icon: 'flower', note: 'Quiet city-center green · small Ainu collection.' },
-      { time: '7:00p',  title: 'Mitsuki — yakitori',            icon: 'utensils', note: '✅ Booked. Yakitori dinner.' }
+      { time: '4:30p',  title: 'Hokkaido University Botanical Garden', icon: 'flower', note: 'Quiet city-center green · small Ainu collection · 11 min walk from the dinner reservation.' },
+      { time: '6:00p',  title: 'Mitsuki — yakitori',            icon: 'utensils', note: '✅ Booked 6:00pm. Marked as "GELATERIA La Giostra" on Google Maps — Mitsuki is next door with white curtains.' }
     ],
     flag: { tone: 'moss', label: '✅ Mitsuki booked · Hill of the Buddha closes 3pm' }
   },
   {
     n: 8, date: 'Fri · Jul 24', dow: 'Friday', region: 'Sapporo',
     title: 'Beer Garden + Genghis Khan',
-    tagline: 'Odori Beer Garden and the Beer Museum, capped with zangi, Genghis Khan, and grilled corn.',
+    tagline: 'Odori Beer Garden opening day and the Beer Museum, capped with zangi, Genghis Khan, and grilled corn.',
     hotel: 'Hotel Sosei Sapporo — MGallery',
     activities: [
       { time: '9:30a',  title: 'Mount Moiwa ropeway',            icon: 'mountain', note: 'Whichever morning is clearer — city panorama.' },
-      { time: '1:00p',  title: 'Light lunch near Odori',         icon: 'utensils', note: 'Save the appetite for the beer garden.' },
-      { time: '3:00p',  title: 'Odori Beer Garden',              icon: 'beer',     note: 'Opened Jul 23 · 9,000+ seats across 5 blocks · Sapporo, Kirin, Asahi, German Village.' },
+      { time: '11:30a', title: 'Chitosetsuru Sake Museum',       icon: 'landmark', note: 'Free tastings of local Hokkaido sake · flexible — fit it in any day we have time.' },
+      { time: '1:00p',  title: 'Shiroi Koibito Park',            icon: 'sparkles', note: 'Optional / maybe · ~18 min from hotel · biscuit factory + gardens.' },
+      { time: '3:00p',  title: 'Odori Beer Garden — opening day', icon: 'beer',    note: 'Opens today · 9,000+ seats across 5 blocks · Sapporo, Kirin, Asahi, German Village.' },
       { time: '4:30p',  title: 'Zangi + Genghis Khan + grilled corn', icon: 'utensils', note: 'Festival food, slow pace, long afternoon into evening.' },
       { time: '6:30p',  title: 'Sapporo Beer Museum',            icon: 'landmark', note: 'Beer Garden and Museum share the Sapporo Factory grounds.' },
       { time: '8:30p',  title: 'Stamp stop — Sapporo Beer Museum', icon: 'ticket', note: '📮 Free · quick stop.' }
     ],
-    flag: { tone: 'ember', label: '★★ Odori Beer Garden — opened Jul 23' }
+    flag: { tone: 'ember', label: '★★ Odori Beer Garden — opening day' }
   },
   {
     n: 9, date: 'Sat · Jul 25', dow: 'Saturday', region: 'Sapporo → Furano',
-    title: 'Lavender + Ningle Terrace',
-    tagline: 'Farm Tomita at peak bloom; 15 artisan log cabins in the birch forest after dark.',
+    title: 'Arrive Furano + Ningle Terrace',
+    tagline: 'Transfer to the lavender valley; 15 artisan log cabins in the birch forest after dark.',
     hotel: 'Airbnb Shimogoryo (Furano)',
     activities: [
       { time: '9:00a',  title: 'Checkout · drive Sapporo → Furano', icon: 'car', note: '~2 hrs via Route 12/38.' },
       { time: '12:00p', title: 'Drop bags at Airbnb',             icon: 'bed',      note: 'Shimogoryo · 3 nights · shared with 2 others.' },
-      { time: '1:30p',  title: 'Farm Tomita — afternoon',         icon: 'flower',   note: '★★ Peak lavender · also poppies, marigolds, sunflowers · free entry · less crowded than dawn.' },
-      { time: '3:30p',  title: 'Lavender soft serve',             icon: 'sparkles', note: 'Farm Tomita gift shop.' },
-      { time: '4:30p',  title: 'Stamp stop — Farm Tomita notebook', icon: 'ticket', note: '📮 Decades-old notebook stamp tradition · ask at gift shop.' },
-      { time: '6:30p',  title: 'Ningle Terrace',                  icon: 'landmark', note: '15 artisan log cabins through birch forest · fairy lights after dark · open to 8:45pm.' },
+      { time: '1:00p',  title: 'Find somewhere to eat',           icon: 'utensils', note: 'Near the stay: Kitchen Farm F\'s Gate, Kitchen Café & Pizza, Soba-Ya Jurokumon, Kiyomizu, El Asador.' },
+      { time: '6:30p',  title: 'Ningle Terrace at night',         icon: 'landmark', note: '5 min from the Airbnb · 15 artisan log cabins through birch forest · fairy lights after dark · lights on until 8:45pm.' },
       { time: '8:00p',  title: 'Furano izakaya dinner',           icon: 'utensils', note: 'Melon + Furano cheese for dessert.' }
     ],
-    flag: { tone: 'ember', label: '★★ Lavender peak' }
+    flag: { tone: 'indigo', label: 'Ningle Terrace lights on until 8:45pm' }
   },
   {
     n: 10, date: 'Sun · Jul 26', dow: 'Sunday', region: 'Furano',
-    title: 'Dawn Lavender + Shikisai no Oka',
-    tagline: 'Be at Farm Tomita before the tour buses; 30+ flower varieties at Shikisai.',
+    title: 'Farm Tomita + Shikisai no Oka',
+    tagline: 'Lavender at peak in the morning; 30+ flower varieties and alpacas at Shikisai.',
     hotel: 'Airbnb Shimogoryo (Furano)',
     activities: [
-      { time: '6:30a',  title: 'Farm Tomita at dawn',             icon: 'sunrise',  note: '★★ Best light, no buses · lavender peak.' },
-      { time: '9:30a',  title: 'Lavender East (Kamifurano)',      icon: 'flower',   note: 'One of Japan\'s largest lavender fields · far less crowded than Tomita.' },
-      { time: '12:00p', title: 'Furano lunch — melon + wheat',    icon: 'utensils', note: 'Tomita Melon House or Biei Wheat winery restaurant.' },
-      { time: '2:00p',  title: 'Shikisai no Oka — Hill of Colors', icon: 'flower',  note: '★ 30+ flower varieties in horizontal rows · panoramic rolling hills.' },
+      { time: '8:30a',  title: 'Farm Tomita in the morning',      icon: 'flower',   note: '★★ Opens 8:30am · ~20 min from the stay · lavender peak, plus poppies, marigolds, sunflowers · free entry.' },
+      { time: '10:00a', title: 'Lavender soft serve',             icon: 'sparkles', note: 'At Farm Tomita.' },
+      { time: '10:30a', title: 'Stamp stop — Farm Tomita notebook', icon: 'ticket', note: '📮 Decades-old notebook stamp tradition · ask at gift shop.' },
+      { time: '12:00p', title: 'Furano lunch',                    icon: 'utensils', note: 'Tomita Melon House or Furano Wine House.' },
+      { time: '2:00p',  title: 'Shikisai no Oka — Hill of Colors', icon: 'flower',  note: '★ ~20 min from Farm Tomita · 30+ flower varieties in horizontal rows · panoramic rolling hills · Alpaca Farm on site.' },
       { time: '3:30p',  title: 'Stamp stop — Shikisai no Oka',    icon: 'ticket',   note: '📮 Attraction stamp.' },
-      { time: '7:00p',  title: 'Furano izakaya + melon dessert',  icon: 'utensils', note: '' }
+      { time: '7:00p',  title: 'Furano dinner + melon dessert',   icon: 'utensils', note: 'Near Shikisai: Mugiiro no Oka udon, Maruhachi Satō Shōten, Yamaichi. Toward the Airbnb: Nepal Dining, Domaine Raison, Kaiten Sushi Topical.' }
     ],
-    flag: { tone: 'indigo', label: 'Hinode Park illumination missed (~Jul 12–21)' }
+    flag: { tone: 'ember', label: '★★ Lavender peak' }
   },
   {
     n: 11, date: 'Mon · Jul 27', dow: 'Monday', region: 'Biei',
@@ -166,14 +166,15 @@ export const days = [
     tagline: 'Quilt-like crop hills, lone trees made famous by 1970s ads, and an accidental turquoise pond.',
     hotel: 'Airbnb Shimogoryo (Furano)',
     activities: [
-      { time: '9:00a',  title: 'Biei Patchwork Road — self-drive', icon: 'car',    note: '★ Rolling hills with differentiated crop fields.' },
+      { time: '9:00a',  title: 'Biei Patchwork Road — self-drive', icon: 'car',    note: '★ Rolling hills with differentiated crop fields · ~45 min drive from the Airbnb.' },
       { time: '9:30a',  title: 'Ken and Mary Tree (ケンとメリーの木)', icon: 'camera', note: 'Lone poplar · made famous by a 1972 Nissan ad campaign.' },
       { time: '10:15a', title: 'Seven Stars Tree (セブンスターの木)', icon: 'camera', note: 'Isolated oak on a hillcrest.' },
       { time: '11:00a', title: 'Christmas Tree (クリスマスツリーの木)', icon: 'camera', note: 'Perfectly shaped spruce in open farmland.' },
-      { time: '12:00p', title: 'Lunch at Biei',                   icon: 'utensils', note: 'Tomita Melon House or Biei Wheat winery.' },
+      { time: '11:30a', title: 'Hokusei-no-oka Observatory Park', icon: 'flower',   note: 'Flower fields around a pyramid/triangle structure with panoramic views.' },
+      { time: '12:30p', title: 'Lunch in Biei',                   icon: 'utensils', note: 'Plenty of options between Patchwork Road and the Blue Pond.' },
       { time: '1:30p',  title: 'Stamp stop — Biei Station',       icon: 'ticket',   note: '📮 Eki-stamp at みどりの窓口.' },
-      { time: '2:30p',  title: 'Shirogane Blue Pond',             icon: 'waves',    note: '★★ Vivid turquoise water · accidentally created by flood-control works · best in afternoon light.' },
-      { time: '5:00p',  title: 'Furano Winery — free tasting',    icon: 'sparkles', note: 'Optional on the drive back.' },
+      { time: '2:30p',  title: 'Shirogane Blue Pond',             icon: 'waves',    note: '★★ ~25 min from Patchwork Road · vivid turquoise water · accidentally created by flood-control works · best in afternoon light.' },
+      { time: '4:00p',  title: 'Blue Pond Café & Gifts',          icon: 'utensils', note: 'Popular for blue drinks and blue foods.' },
       { time: '7:30p',  title: 'Final Furano izakaya',            icon: 'utensils', note: 'Last night in the lavender valley.' }
     ]
   },
@@ -183,13 +184,13 @@ export const days = [
     tagline: 'Check into private open-air baths; fire mountain in the afternoon; 450 fireworks at 8:45pm.',
     hotel: 'Hikari no uta (Tsuruga Resort)',
     activities: [
-      { time: '10:00a', title: 'Checkout · Furano → Lake Toya',   icon: 'car',      note: '~2–2.5 hrs via Route 38/453. Final melon stop at roadside stand.' },
-      { time: '1:00p',  title: 'Roadside melon + bento',          icon: 'utensils', note: '' },
+      { time: '10:00a', title: 'Checkout · Furano → Lake Toya',   icon: 'car',      note: '~3 hr drive via Route 38/453. Final melon stop at roadside stand.' },
+      { time: '1:00p',  title: 'Lunch on the road',               icon: 'utensils', note: 'Roadside melon + bento.' },
       { time: '2:30p',  title: 'Check in Hikari no uta',          icon: 'bed',      note: '★★ 48 rooms all with private open-air baths · 2 nights.' },
       { time: '3:30p',  title: 'Mt. Usu Ropeway',                 icon: 'mountain', note: '★★ Active volcano · last erupted 2000 · views of Lake Toya + Showa Shinzan lava dome.' },
       { time: '6:30p',  title: 'Kaiseki dinner in-resort',        icon: 'utensils', note: 'Hikari no uta offers French, kaiseki, or teppanyaki nightly — pick kaiseki tonight.' },
       { time: '8:30p',  title: 'Stamp — Lake Toya visitor center', icon: 'ticket',  note: '📮 National Park stamp.' },
-      { time: '8:45p',  title: 'Lake Toya fireworks (~20 min)',    icon: 'sparkles', note: '★★ ~450 fireworks · from private terrace.' },
+      { time: '8:45p',  title: 'Lake Toya fireworks (~20 min)',    icon: 'sparkles', note: '★★ ~450 fireworks · from private terrace · schedule at laketoya.com/event.' },
       { time: '9:30p',  title: 'Private open-air bath',            icon: 'hotSpring', note: '' }
     ],
     flag: { tone: 'ember', label: '★★ Fireworks from room terrace' }
@@ -201,10 +202,10 @@ export const days = [
     hotel: 'Hikari no uta (Tsuruga Resort)',
     activities: [
       { time: '8:00a',  title: 'Breakfast + private bath',         icon: 'hotSpring', note: 'Slow start.' },
-      { time: '10:00a', title: 'Nakajima Island boat cruise',     icon: 'waves',    note: '★ 40-min round trip · 4 sub-islands · sika deer roam freely.' },
+      { time: '10:00a', title: 'Nakajima Island boat cruise',     icon: 'waves',    note: '★ 4 sub-islands · sika deer roam freely · morning cruises 8:30am–4:30pm every 30 min · a night fireworks cruise also runs. toyakokisen.com/en' },
       { time: '12:30p', title: 'Lakeside lunch',                  icon: 'utensils', note: '' },
       { time: '2:00p',  title: 'Lake Toya Sculpture Park — 4km walk', icon: 'map',   note: '58 outdoor sculptures along the lake path.' },
-      { time: '4:00p',  title: 'Glass crafting workshop',          icon: 'sparkles', note: 'At the lake activities center. Optional.' },
+      { time: '4:00p',  title: 'Glass café gla gla workshop',      icon: 'sparkles', note: 'Glass-making workshop by the lake. Optional.' },
       { time: '6:30p',  title: 'Teppanyaki dinner in-resort',      icon: 'utensils', note: 'Switch cuisine tonight — all Hokkaido ingredients.' },
       { time: '8:45p',  title: 'Lake Toya fireworks — different program', icon: 'sparkles', note: '★★ Night 2.' }
     ]
@@ -216,12 +217,12 @@ export const days = [
     hotel: 'Bourou Noguchi Noboribetsu',
     activities: [
       { time: '10:30a', title: 'Late checkout Hikari no uta',     icon: 'hotSpring', note: 'Final private open-air bath.' },
-      { time: '12:00p', title: 'Drive to Noboribetsu',             icon: 'car',      note: '~45 min via Route 37.' },
-      { time: '1:30p',  title: 'Jigokudani Hell Valley boardwalk', icon: 'mountain', note: '★ Free · active geothermal landscape · Oyunuma Pond (milky blue sulfuric lake).' },
-      { time: '3:00p',  title: 'Oyunumagawa natural footbath',     icon: 'hotSpring', note: 'Free · on the river fed by geothermal springs · bring a towel.' },
-      { time: '4:30p',  title: 'Check in Bourou Noguchi',          icon: 'bed',      note: '✅ Junior Suite 50m² · private hot-spring bath · pre-paid.' },
-      { time: '6:30p',  title: 'Amano Family Farm — farm-to-table dinner', icon: 'utensils', note: '天野農場 · local Hokkaido produce ★.' },
-      { time: '8:30p',  title: 'Demon Fireworks (Oni-hanabi)',     icon: 'sparkles', note: '✓✓ ★★ Thu/Fri only · from the Jigokudani rim · taiko drums.' },
+      { time: '12:00p', title: 'Drive to Noboribetsu',             icon: 'car',      note: '~50 min via Route 37.' },
+      { time: '1:30p',  title: 'Jigokudani Hell Valley boardwalk', icon: 'mountain', note: '★ Free · 5 min drive from the hotel · active geothermal landscape · Oyunuma Pond (milky blue sulfuric lake).' },
+      { time: '3:00p',  title: 'Check in Bourou Noguchi',          icon: 'bed',      note: '✅ 3pm check-in · Junior Suite 50m² · private hot-spring bath · pre-paid.' },
+      { time: '4:00p',  title: 'Oyunumagawa natural footbath',     icon: 'hotSpring', note: 'Free · 5 min drive from Hell Valley · on the river fed by geothermal springs · bring a towel.' },
+      { time: '6:30p',  title: 'Dinner — Amano Family Farm',       icon: 'utensils', note: '天野農場 · farm-to-table, local Hokkaido produce ★. Also nearby: Cowbell Restaurant.' },
+      { time: '8:00p',  title: 'Demon Fireworks (Oni-hanabi)',     icon: 'sparkles', note: '✓✓ ★★ Thu/Fri only · from the Jigokudani rim · taiko drums.' },
       { time: 'late',   title: 'Private onsen under the stars',    icon: 'hotSpring', note: 'Direct Noboribetsu spring water.' }
     ],
     flag: { tone: 'ember', label: '✓✓ ★★ Oni-hanabi catchable Thursday' }

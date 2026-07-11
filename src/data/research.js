@@ -93,16 +93,16 @@ export const research = [
         h: 'Sapporo (Jul 21–25)',
         items: [
           'Compact walkable city; Odori Park and Susukino as anchors',
-          'Odori Beer Garden opens Jul 23; we attend Jul 24 (Day 8) ✓✓',
+          'Odori Beer Garden opening day is Jul 24 (Day 8) ✓✓',
           'Hill of the Buddha (Tadao Ando) is the design highlight — through July lavender'
         ]
       },
       {
         h: 'Furano / Biei (Jul 25–28)',
         items: [
-          'Lavender valley — Farm Tomita at dawn, Lavender East, Shikisai no Oka',
-          'Biei patchwork road — Ken-and-Mary Tree, Seven Stars Tree, Christmas Tree',
-          'Shirogane Blue Pond in afternoon light'
+          'Lavender valley — Farm Tomita in the morning, Shikisai no Oka (+ Alpaca Farm)',
+          'Biei patchwork road — Ken-and-Mary Tree, Seven Stars Tree, Christmas Tree, Hokusei-no-oka Observatory',
+          'Shirogane Blue Pond in afternoon light, Blue Pond Café for blue treats'
         ]
       },
       {
@@ -118,7 +118,7 @@ export const research = [
         items: [
           'Most famous onsen town; 11 types of mineral springs (the most in Japan)',
           'Jigokudani (Hell Valley) active geothermal boardwalk is free',
-          'Demon Fireworks Thu/Fri from the crater rim at 8:30pm'
+          'Demon Fireworks Thu/Fri from the crater rim at 8pm'
         ]
       }
     ]
@@ -157,10 +157,10 @@ export const research = [
       {
         h: '✓✓ Catchable',
         items: [
-          'Sapporo Odori Beer Garden — opens Jul 23 · we attend Jul 24 · Day 8',
+          'Sapporo Odori Beer Garden — opening day Jul 24 · Day 8',
           'Lake Toya nightly fireworks — 8:45pm · Jul 28–29 · Days 12–13',
-          'Demon Fireworks (Oni-hanabi) — Thursday Jul 30 · 8:30pm · Day 14',
-          'Lavender peak — Farm Tomita · Jul 25–26 · Days 9–10',
+          'Demon Fireworks (Oni-hanabi) — Thursday Jul 30 · 8pm · Day 14',
+          'Lavender peak — Farm Tomita · Jul 26 · Day 10',
           'Shakotan uni peak — July to August · Jul 19 · Day 3'
         ]
       },
