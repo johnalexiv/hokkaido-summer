@@ -1,12 +1,12 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { BedDouble, ChevronDown } from 'lucide-react'
 import { SectionKicker, useReveal, ActivityIcon } from './ui.jsx'
-import { days } from '../data/days.js'
+import { days, getTodayDayNumber } from '../data/days.js'
 import { dayImages } from '../data/images.js'
 
 function DayCard({ day, open, onToggle }) {
   return (
-    <article className="reveal paper-card overflow-hidden">
+    <article id={`day-${day.n}`} className="reveal paper-card overflow-hidden scroll-mt-20">
       <button
         onClick={onToggle}
         aria-expanded={open}
@@ -76,7 +76,40 @@ function DayCard({ day, open, onToggle }) {
 export function Itinerary() {
   const ref = useRef(null)
   useReveal(ref, { stagger: 0.04 })
-  const [openDay, setOpenDay] = useState(1)
+  const todayN = getTodayDayNumber()
+  const [openDay, setOpenDay] = useState(todayN ?? 1)
+
+  // On load, if today falls within the trip, scroll to today's (already-open) card.
+  // Scrolling has to survive two things that happen after mount: the browser's own
+  // scroll restoration, and images above the itinerary loading in and shifting layout.
+  // So we opt out of scroll restoration and re-issue the scroll after `load` settles.
+  useEffect(() => {
+    if (!todayN) return
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const timers = []
+    const prevRestoration = 'scrollRestoration' in window.history ? window.history.scrollRestoration : null
+    if (prevRestoration !== null) window.history.scrollRestoration = 'manual'
+
+    const scrollNow = () => {
+      document.getElementById(`day-${todayN}`)?.scrollIntoView({
+        behavior: reduced ? 'auto' : 'smooth',
+        block: 'start',
+      })
+    }
+    // Fire a couple of times so a late layout shift (image loads) still lands us right.
+    const schedule = () => {
+      timers.push(setTimeout(scrollNow, 0))
+      timers.push(setTimeout(scrollNow, 250))
+    }
+    if (document.readyState === 'complete') schedule()
+    else window.addEventListener('load', schedule, { once: true })
+
+    return () => {
+      timers.forEach(clearTimeout)
+      window.removeEventListener('load', schedule)
+      if (prevRestoration !== null) window.history.scrollRestoration = prevRestoration
+    }
+  }, []) // run once on load
 
   return (
     <section id="itinerary" ref={ref} className="hairline bg-paper">

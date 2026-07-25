@@ -2,6 +2,18 @@
 // Options: plane, car, bed, utensils, mountain, camera, beer, flower, hotSpring,
 //          clock, star, waves, landmark, gift, ticket, map, sunrise, sparkles
 
+export const TRIP_START = new Date(2026, 6, 17) // Jul 17 2026, local time, day n=1
+
+// Returns the day number (1..days.length) matching today's local date, or null
+// if today is outside the trip window. Compared at local-midnight granularity so
+// device timezone / time-of-day don't matter — only the calendar date does.
+export function getTodayDayNumber(now = new Date()) {
+  const startMidnight = new Date(TRIP_START.getFullYear(), TRIP_START.getMonth(), TRIP_START.getDate())
+  const todayMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate())
+  const dayIndex = Math.round((todayMidnight - startMidnight) / 86400000) + 1
+  return dayIndex >= 1 && dayIndex <= days.length ? dayIndex : null
+}
+
 export const days = [
   {
     n: 1, date: 'Fri · Jul 17', dow: 'Friday', region: 'Niseko',

@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { images, dayImages } from '../data/images.js'
-import { days } from '../data/days.js'
+import { days, getTodayDayNumber } from '../data/days.js'
 import { accommodations } from '../data/accommodations.js'
 import { trip } from '../data/trip.js'
 
@@ -40,5 +40,22 @@ describe('data integrity', () => {
 
   it('accommodations[] has 6 entries', () => {
     expect(accommodations).toHaveLength(6)
+  })
+})
+
+describe('getTodayDayNumber', () => {
+  it('maps in-trip dates to their day number', () => {
+    expect(getTodayDayNumber(new Date(2026, 6, 17))).toBe(1)
+    expect(getTodayDayNumber(new Date(2026, 6, 25))).toBe(9)
+    expect(getTodayDayNumber(new Date(2026, 6, 31))).toBe(15)
+  })
+
+  it('ignores time-of-day, matching on calendar date', () => {
+    expect(getTodayDayNumber(new Date(2026, 6, 25, 23, 59))).toBe(9)
+  })
+
+  it('returns null outside the trip window', () => {
+    expect(getTodayDayNumber(new Date(2026, 6, 16))).toBeNull()
+    expect(getTodayDayNumber(new Date(2026, 7, 1))).toBeNull()
   })
 })
